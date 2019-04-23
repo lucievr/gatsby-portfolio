@@ -1,42 +1,43 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+import AnchorLink from "react-anchor-link-smooth-scroll"
+import Logo from "../images/favicon.png"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+const Nav = styled.div`
+  padding: 16px 0;
+  background-color: orange;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+  }
+`
+
+
+const Header = ( ) => {
+  return (
+  <Nav>
     <div
       style={{
-        margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      
+      <AnchorLink href="#home"><img src={Logo} alt="logo" width="50px" style={{
+                  borderRadius: '50%',
+                }} /></AnchorLink>
+      <AnchorLink href="#about">About</AnchorLink>
+      <AnchorLink href="#projects">Projects</AnchorLink>
+      <AnchorLink href="#contact">Contact</AnchorLink>
     </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  </Nav>
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+
 
 export default Header
