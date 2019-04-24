@@ -14,7 +14,7 @@ const IndexPage = () => (
     <Navbar />
       <h1 style={{paddingTop: `100px`, color: `rgb(243, 129, 129)`, fontFamily: 'sans-serif'}}>Lucie</h1>
       <p>Welcome to my portfolio site.</p>
-      <div style={{ maxWidth: `300px`}}>
+      <div style={{ maxWidth: `400px`}}>
         <Image />
       </div>
     </section>
@@ -23,7 +23,7 @@ const IndexPage = () => (
     <h1>Projects</h1>
     <p>Here is a selection of my projects</p>
     </section>
-    <section id="contact" style={{backgroundColor: `rgb(251, 251, 251)`}}>
+    <section id="contact" style={{backgroundColor: `rgb(242, 242, 242)`}}>
     <h1>Contact</h1>
     <p>Get in touch</p>
     </section>

@@ -7,9 +7,9 @@ const About = () => (
   <StaticQuery
     query={graphql`
       query {
-        helloImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        helloImage: file(relativePath: { eq: "hello-img2.png" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -17,9 +17,9 @@ const About = () => (
       }
     `}
     render={data => (
-      <section id="about" style={{ backgroundColor: `rgb(251, 251, 251)` }}>
+      <section id="about" style={{ backgroundColor: `rgb(242, 242, 242)` }}>
         <h1>About</h1>
-        <div style={{ maxWidth: `300px` }}>
+        <div style={{ maxWidth: `500px`, marginLeft: `auto` }}>
           <Img fluid={data.helloImage.childImageSharp.fluid} />
         </div>
         <p>Hello, my name is Lucie and I am a web developer.</p>
