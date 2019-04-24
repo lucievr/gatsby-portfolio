@@ -11,6 +11,8 @@ const Nav = styled.nav`
   justify-content: flex-start;
   width: 100%;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -18,6 +20,7 @@ const Nav = styled.nav`
 const NavListWrapper = styled.ul`
     list-style: none;
     margin-left: auto;
+    margin-right: 20px;
     padding: 0;
     display: flex;
     flex-direction: row;
@@ -61,7 +64,7 @@ const Avatar = styled.img`
 
 const Navbar = () => {
   return (
-    <Nav>
+    <Nav id="navbar">
         <AnchorLink href="#home">
           <Avatar
             src={Logo}
@@ -70,13 +73,13 @@ const Navbar = () => {
         </AnchorLink>
         <NavListWrapper>
           <NavItem>
-            <AnchorLink href="#about">About</AnchorLink>
+            <AnchorLink href="#about" offset={() => document.querySelector("#navbar").offsetHeight}>About</AnchorLink>
           </NavItem>
           <NavItem>
-            <AnchorLink href="#projects">Projects</AnchorLink>
+            <AnchorLink href="#projects" offset={() => document.querySelector("#navbar").offsetHeight}>Projects</AnchorLink>
           </NavItem>
           <NavItem>
-            <AnchorLink href="#contact">Contact</AnchorLink>
+            <AnchorLink href="#contact" offset={() => document.querySelector("#navbar").offsetHeight}>Contact</AnchorLink>
           </NavItem>
         </NavListWrapper>
     </Nav>

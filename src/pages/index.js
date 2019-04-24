@@ -4,7 +4,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import Navbar from "../components/navbar"
 import Css from "../components/main.css"
-
+import About from "../sections/about"
 
 
 const IndexPage = () => (
@@ -18,10 +18,7 @@ const IndexPage = () => (
         <Image />
       </div>
     </section>
-    <section id="about" style={{backgroundColor: `rgb(251, 251, 251)`}}>
-    <h1>About</h1>
-    <p>Hello, my name is Lucie and I am a web developer.</p>
-    </section>
+    <About />
     <section id="projects" style={{backgroundColor: `rgb(185, 225, 220)`}}>
     <h1>Projects</h1>
     <p>Here is a selection of my projects</p>
