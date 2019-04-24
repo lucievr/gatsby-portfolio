@@ -3,11 +3,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const About = () => (
+const Contact = () => (
   <StaticQuery
     query={graphql`
       query {
-        helloImage: file(relativePath: { eq: "hello-img.png" }) {
+        contactImage: file(relativePath: { eq: "contact-img.png" }) {
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
@@ -17,15 +17,15 @@ const About = () => (
       }
     `}
     render={data => (
-      <section id="about" style={{ backgroundColor: `rgb(242, 242, 242)` }}>
-        <h1>About</h1>
-        <div style={{ maxWidth: `500px`, marginLeft: `auto` }}>
-          <Img fluid={data.helloImage.childImageSharp.fluid} />
+      <section id="contact" style={{ backgroundColor: `rgb(242, 242, 242)` }}>
+        <h1>Contact</h1>
+        <p>Get in touch</p>
+        <div style={{ maxWidth: `500px` }}>
+          <Img fluid={data.contactImage.childImageSharp.fluid} />
         </div>
-        <p>Hello, my name is Lucie and I am a web developer.</p>
       </section>
     )}
   />
 )
 
-export default About
+export default Contact
