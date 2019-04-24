@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-size: calc(11px + 0.5vw);
+    line-height: 1.5;
+    overflow-x: hidden;
+    display: block;
+}
