@@ -4,8 +4,8 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 import Logo from "../images/favicon.png"
 
 const Nav = styled.nav`
-  padding: .5rem 1rem;
-  background-color: orange;
+  padding: 0 1rem;
+  background-color: #756c83;
   position: fixed;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -40,8 +40,7 @@ const NavItem = styled.li`
   display: block;
   a {
     text-decoration: none;
-    opacity: 0.8;
-    color: white;
+    color: rgb(251, 251, 251);
     padding: 2%;
     width: auto;
   }

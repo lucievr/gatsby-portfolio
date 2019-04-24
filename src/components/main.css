@@ -1,4 +1,4 @@
-* {
+html {
     box-sizing: border-box;
 }
 
@@ -9,4 +9,9 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     display: block;
+}
+
+h1 {
+    color: rgb(243, 129, 129);
+    font-family: sans-serif;
 }
