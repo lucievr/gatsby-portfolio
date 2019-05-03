@@ -5,15 +5,17 @@
   "version": "0.1.0",
   "author": "Lucie Vrsovska",
   "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
     "babel-preset-gatsby": "^0.1.11",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.3.27",
     "gatsby-image": "^2.0.39",
+    "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.35",
-    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-source-filesystem": "^2.0.31",
     "gatsby-transformer-remark": "^2.3.11",
@@ -24,11 +26,9 @@
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-scrollspy": "^3.4.0",
-    "styled-components": "^4.2.0"
+    "react-scrollspy": "^3.4.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.0",
     "prettier": "^1.17.0"
   },
   "keywords": [
