@@ -22,6 +22,7 @@ const NavListWrapper = styled.ul`
   margin-left: auto;
   margin-right: 20px;
   padding: 0;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
 

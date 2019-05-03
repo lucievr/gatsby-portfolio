@@ -27,6 +27,7 @@
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
+    "react-icons": "^3.6.1",
     "react-scrollspy": "^3.4.0",
     "styled-components": "^4.2.0"
   },

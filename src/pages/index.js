@@ -39,7 +39,7 @@ h2 {
     color: rgb(243, 129, 129);
 }
 section {
-  padding: 1px;
+  padding: 40px;
 }
 
 .colorSection {
@@ -50,8 +50,14 @@ section {
 .whiteSection {
   background-color: rgb(242, 242, 242);
 }
+
+.contactIcons {
+  font-size: 5rem;
+  color: #756c83;
+}
 footer {
   background-color: rgb(185, 225, 220);
+  padding-bottom: 10px;
 }
 `
 
