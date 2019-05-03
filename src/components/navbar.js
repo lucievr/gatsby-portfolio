@@ -86,6 +86,14 @@ const Navbar = () => {
         </NavItem>
         <NavItem>
           <AnchorLink
+            href="#skills"
+            offset={() => document.querySelector("#navbar").offsetHeight}
+          >
+            Skills
+          </AnchorLink>
+        </NavItem>
+        <NavItem>
+          <AnchorLink
             href="#contact"
             offset={() => document.querySelector("#navbar").offsetHeight}
           >

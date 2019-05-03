@@ -50,6 +50,9 @@ section {
 .whiteSection {
   background-color: rgb(242, 242, 242);
 }
+footer {
+  background-color: rgb(185, 225, 220);
+}
 `
 
 const IndexPage = () => (
