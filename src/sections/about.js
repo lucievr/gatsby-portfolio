@@ -1,5 +1,5 @@
 import React from "react"
-// import styled from "styled-components"
+// import css from "@emotion/core"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -17,8 +17,8 @@ const About = () => (
       }
     `}
     render={data => (
-      <section id="about" style={{ backgroundColor: `rgb(242, 242, 242)` }}>
-        <h1>About</h1>
+      <section id="about" className="whiteSection">
+        <h2>About</h2>
         <div style={{ maxWidth: `500px`, marginLeft: `auto` }}>
           <Img fluid={data.helloImage.childImageSharp.fluid} />
         </div>

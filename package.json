@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
+    "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-gatsby": "^0.1.11",
     "bootstrap": "^4.3.1",
     "gatsby": "^2.3.27",
@@ -26,9 +27,11 @@
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "react-scrollspy": "^3.4.0"
+    "react-scrollspy": "^3.4.0",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
+    "gatsby-plugin-styled-components": "^3.0.7",
     "prettier": "^1.17.0"
   },
   "keywords": [

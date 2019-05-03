@@ -18,17 +18,16 @@ const Nav = styled.nav`
   align-items: center;
 `
 const NavListWrapper = styled.ul`
-    list-style: none;
-    margin-left: auto;
-    margin-right: 20px;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    
+  list-style: none;
+  margin-left: auto;
+  margin-right: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 
-    ${({ mobile }) =>
-      mobile &&
-      `
+  ${({ mobile }) =>
+    mobile &&
+    `
         flex-direction: column;
         margin-top: 1em;
         > ${NavItem} {
@@ -36,7 +35,7 @@ const NavListWrapper = styled.ul`
           margin-top: 0.75em;
         }
         `};
-`;
+`
 
 const NavItem = styled.li`
   margin: 0 0.75em;
@@ -52,7 +51,7 @@ const NavItem = styled.li`
       opacity: 1;
     }
   }
-`;
+`
 
 const Avatar = styled.img`
   border-radius: 50%;
@@ -60,30 +59,42 @@ const Avatar = styled.img`
   width: 50px;
   white-space: nowrap;
   vertical-align: top;
-`;
+`
 
 const Navbar = () => {
   return (
     <Nav id="navbar">
-        <AnchorLink href="#home">
-          <Avatar
-            src={Logo}
-            alt="logo"
-          />
-        </AnchorLink>
-        <NavListWrapper>
-          <NavItem>
-            <AnchorLink href="#about" offset={() => document.querySelector("#navbar").offsetHeight}>About</AnchorLink>
-          </NavItem>
-          <NavItem>
-            <AnchorLink href="#projects" offset={() => document.querySelector("#navbar").offsetHeight}>Projects</AnchorLink>
-          </NavItem>
-          <NavItem>
-            <AnchorLink href="#contact" offset={() => document.querySelector("#navbar").offsetHeight}>Contact</AnchorLink>
-          </NavItem>
-        </NavListWrapper>
+      <AnchorLink href="#home">
+        <Avatar src={Logo} alt="logo" />
+      </AnchorLink>
+      <NavListWrapper>
+        <NavItem>
+          <AnchorLink
+            href="#about"
+            offset={() => document.querySelector("#navbar").offsetHeight}
+          >
+            About
+          </AnchorLink>
+        </NavItem>
+        <NavItem>
+          <AnchorLink
+            href="#projects"
+            offset={() => document.querySelector("#navbar").offsetHeight}
+          >
+            Projects
+          </AnchorLink>
+        </NavItem>
+        <NavItem>
+          <AnchorLink
+            href="#contact"
+            offset={() => document.querySelector("#navbar").offsetHeight}
+          >
+            Contact
+          </AnchorLink>
+        </NavItem>
+      </NavListWrapper>
     </Nav>
-  );
-};
+  )
+}
 
 export default Navbar

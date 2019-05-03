@@ -20,16 +20,10 @@ const Home = () => (
     render={data => (
       <section
         id="home"
-        style={{ width: `100%`, backgroundColor: `rgb(185, 225, 220)` }}
+        className="colorSection"
       >
         <Navbar />
-        <h1
-          style={{
-            paddingTop: `100px`,
-            color: `rgb(243, 129, 129)`,
-            fontFamily: "sans-serif",
-          }}
-        >
+        <h1>
           Lucie
         </h1>
         <p>Welcome to my portfolio site.</p>

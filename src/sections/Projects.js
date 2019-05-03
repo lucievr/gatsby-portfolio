@@ -29,8 +29,8 @@ const Projects = () => (
       }
     `}
     render={data => (
-  <section id="projects" style={{backgroundColor: `rgb(185, 225, 220)`}}>
-    <h1>Projects</h1>
+  <section id="projects" className="colorSection">
+    <h2>Projects</h2>
     <p>Here is a selection of my projects</p>
       <Container style={{justifyContent: `center`, alignContent: `space-around`, alignItems: `center`}}>
       <Row>
