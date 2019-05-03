@@ -1,5 +1,5 @@
 import React from "react"
-// import styled from "styled-components"
+
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Navbar from "../components/Navbar"
@@ -18,13 +18,15 @@ const Home = () => (
       }
     `}
     render={data => (
-      <section
-        id="home"
-        className="colorSection"
-      >
+      <section id="home" className="colorSection">
         <Navbar />
-        <h1>
-          {"<"} Lucie {">"}
+        <h1 className="ml11">
+          <span class="text-wrapper">
+            <span class="line line1" />
+            <span class="letters">
+              {"<"} Lucie {">"}
+            </span>
+          </span>
         </h1>
         <p>Welcome to my portfolio site.</p>
         <div style={{ maxWidth: `400px` }}>
