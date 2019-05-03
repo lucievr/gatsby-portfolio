@@ -33,6 +33,7 @@ body {
 h1 {
   padding-top: 100px;
   color: rgb(243, 129, 129);
+  font-size: calc(20px + 2vw);
 }
 
 h2 {
@@ -57,7 +58,7 @@ section {
 }
 footer {
   background-color: rgb(185, 225, 220);
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 `
 

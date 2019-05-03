@@ -24,7 +24,7 @@ const Home = () => (
       >
         <Navbar />
         <h1>
-          Lucie
+          {"<"} Lucie {">"}
         </h1>
         <p>Welcome to my portfolio site.</p>
         <div style={{ maxWidth: `400px` }}>
