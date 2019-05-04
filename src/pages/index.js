@@ -2,7 +2,7 @@ import React from "react"
 
 import SEO from "../components/seo"
 import "../components/bootstrap.min.css"
-// import "../components/anime.min"
+
 import { css, Global } from "@emotion/core"
 
 import Home from "../sections/Home"
@@ -31,11 +31,26 @@ body {
     line-height: 1.5;
 }
 
-h1 {
-  padding-top: 100px;
+.bigHeading {
   color: rgb(243, 129, 129);
   font-size: calc(20px + 2vw);
 }
+.Typist .Cursor {
+  display: inline-block; 
+  color: rgb(243, 129, 129);
+  font-size: calc(18px + 2vw);
+  }
+  .Typist .Cursor--blinking {
+    opacity: 1;
+    animation: blink 1s linear infinite; }
+
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 h2 {
     color: rgb(243, 129, 129);
@@ -64,38 +79,6 @@ section {
 footer {
   background-color: rgb(185, 225, 220);
   padding-bottom: 20px;
-}
-.ml11 {
-  font-weight: 900;
-  font-size: 3.5em;
-}
-
-.ml11 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.1em;
-  padding-right: 0.05em;
-  padding-bottom: 0.15em;
-}
-
-.ml11 .line {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 3px;
-  background-color: #fff;
-  transform-origin: 0 50%;
-}
-
-.ml11 .line1 { 
-  top: 0; 
-  left: 0;
-}
-
-.ml11 .letter {
-  display: inline-block;
-  line-height: 1em;
 }
 `
 const IndexPage = () => (

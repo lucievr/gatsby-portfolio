@@ -3,6 +3,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Navbar from "../components/Navbar"
+import Typist from "react-typist"
 
 const Home = () => (
   <StaticQuery
@@ -20,15 +21,16 @@ const Home = () => (
     render={data => (
       <section id="home" className="colorSection">
         <Navbar />
-        <h1 className="ml11">
-          <span class="text-wrapper">
-            <span class="line line1" />
-            <span class="letters">
-              {"<"} Lucie {">"}
-            </span>
-          </span>
-        </h1>
-        <p>Welcome to my portfolio site.</p>
+<div style={{ margin: `60px` }}>
+          <Typist cursor={{ hideWhenDone: `true`, hideWhenDoneDelay: `8000`}}>
+            <span className="bigHeading">{"<"} Lucie {">"}</span>
+            <Typist.Delay ms={500} /> <br />
+            <span className="bigHeading">{"{"} Full-stack web developer {"}"}</span>
+            <br />
+            Welcome to my portfolio site.
+          </Typist>
+</div>
+
         <div style={{ maxWidth: `400px` }}>
           <Img fluid={data.laptopImage.childImageSharp.fluid} />
         </div>

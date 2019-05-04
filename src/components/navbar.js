@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Logo from "../images/favicon.png"
+import { TiHome } from "react-icons/ti";
 
 const Nav = styled.nav`
   padding: 0 1rem;
@@ -69,6 +70,13 @@ const Navbar = () => {
         <Avatar src={Logo} alt="logo" />
       </AnchorLink>
       <NavListWrapper>
+      <NavItem>
+          <AnchorLink
+            href="#home"
+          >
+            <TiHome />
+          </AnchorLink>
+        </NavItem>
         <NavItem>
           <AnchorLink
             href="#about"
