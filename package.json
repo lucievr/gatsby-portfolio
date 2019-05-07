@@ -28,6 +28,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.6.1",
+    "react-reveal": "^1.2.2",
     "react-scrollspy": "^3.4.0",
     "react-typist": "^2.0.5",
     "styled-components": "^4.2.0"

@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Logo from "../images/favicon.png"
-import { TiHome } from "react-icons/ti";
+import { TiHome } from "react-icons/ti"
+import Fade from "react-reveal/Fade"
 
 const Nav = styled.nav`
   padding: 0 1rem;
@@ -65,52 +66,55 @@ const Avatar = styled.img`
 
 const Navbar = () => {
   return (
-    <Nav id="navbar">
-      <AnchorLink href="#home">
-        <Avatar src={Logo} alt="logo" />
-      </AnchorLink>
-      <NavListWrapper>
-      <NavItem>
-          <AnchorLink
-            href="#home"
-          >
-            <TiHome />
-          </AnchorLink>
-        </NavItem>
-        <NavItem>
-          <AnchorLink
-            href="#about"
-            offset={() => document.querySelector("#navbar").offsetHeight}
-          >
-            About
-          </AnchorLink>
-        </NavItem>
-        <NavItem>
-          <AnchorLink
-            href="#projects"
-            offset={() => document.querySelector("#navbar").offsetHeight}
-          >
-            Projects
-          </AnchorLink>
-        </NavItem>
-        <NavItem>
-          <AnchorLink
-            href="#skills"
-            offset={() => document.querySelector("#navbar").offsetHeight}
-          >
-            Skills
-          </AnchorLink>
-        </NavItem>
-        <NavItem>
-          <AnchorLink
-            href="#contact"
-            offset={() => document.querySelector("#navbar").offsetHeight}
-          >
-            Contact
-          </AnchorLink>
-        </NavItem>
-      </NavListWrapper>
-    </Nav>
+      <Nav id="navbar">
+      <Fade top>
+        <AnchorLink href="#home">
+          <Avatar src={Logo} alt="logo" />
+        </AnchorLink>
+        </Fade>
+      
+        <NavListWrapper>
+        <Fade top>
+          <NavItem>
+            <AnchorLink href="#home">
+              <TiHome />
+            </AnchorLink>
+          </NavItem>
+          <NavItem>
+            <AnchorLink
+              href="#about"
+              offset={() => document.querySelector("#navbar").offsetHeight}
+            >
+              About
+            </AnchorLink>
+          </NavItem>
+          <NavItem>
+            <AnchorLink
+              href="#projects"
+              offset={() => document.querySelector("#navbar").offsetHeight}
+            >
+              Projects
+            </AnchorLink>
+          </NavItem>
+          <NavItem>
+            <AnchorLink
+              href="#skills"
+              offset={() => document.querySelector("#navbar").offsetHeight}
+            >
+              Skills
+            </AnchorLink>
+          </NavItem>
+          <NavItem>
+            <AnchorLink
+              href="#contact"
+              offset={() => document.querySelector("#navbar").offsetHeight}
+            >
+              Contact
+            </AnchorLink>
+          </NavItem>
+          </Fade>
+        </NavListWrapper>
+      </Nav>
   )
 }
 

@@ -26,8 +26,6 @@ const Home = () => (
             <span className="bigHeading">{"<"} Lucie {">"}</span>
             <Typist.Delay ms={500} /> <br />
             <span className="bigHeading">{"{"} Full-stack web developer {"}"}</span>
-            <br />
-            Welcome to my portfolio site.
           </Typist>
 </div>
 
