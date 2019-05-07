@@ -2,6 +2,7 @@ import React from 'react'
 
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import Fade from "react-reveal/Fade"
 
 const Skills = () => (
   <StaticQuery
@@ -20,9 +21,11 @@ const Skills = () => (
       <section id="skills" className="whiteSection">
         <h2>Skills</h2>
         <p>Check out my skillz</p>
+        <Fade left>
         <div style={{ maxWidth: `500px` }}>
           <Img fluid={data.contactImage.childImageSharp.fluid} />
         </div>
+        </Fade>
       </section>
     )}
   />

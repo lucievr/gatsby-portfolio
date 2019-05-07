@@ -34,6 +34,7 @@ body {
 .bigHeading {
   color: rgb(243, 129, 129);
   font-size: calc(20px + 2vw);
+  font-weight: 700;
 }
 .Typist .Cursor {
   display: inline-block; 
@@ -57,6 +58,10 @@ h2 {
 }
 section {
   padding: 40px;
+}
+
+container {
+  display: flex;
 }
 
 .colorSection {

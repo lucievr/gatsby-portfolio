@@ -1,5 +1,5 @@
 import React from "react"
-// import styled from "styled-components"
+// import { css } from "@emotion/core"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../components/bootstrap.min.css"
@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import Fade from "react-reveal/Fade"
+import { FaLink, FaCode } from "react-icons/fa";
 
 const Projects = () => (
   <StaticQuery
@@ -43,7 +44,7 @@ const Projects = () => (
           <Row>
             <Col>
             <Fade bottom>
-              <Card style={{ width: `20rem`, margin: `10px auto` }}>
+              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)` }}>
                 <Card.Title
                   style={{
                     borderBottom: `5px solid rgb(117, 108, 131)`,
@@ -61,15 +62,15 @@ const Projects = () => (
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link href="#">Demo</Card.Link>
-                  <Card.Link href="#">View source</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
             </Col>
             <Col>
             <Fade bottom delay={200}>
-              <Card style={{ width: `20rem`, margin: `10px auto` }}>
+              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)` }}>
                 <Card.Title
                   style={{
                     borderBottom: `5px solid rgb(117, 108, 131)`,
@@ -87,8 +88,8 @@ const Projects = () => (
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link href="#">Demo</Card.Link>
-                  <Card.Link href="#">View source</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
@@ -97,8 +98,8 @@ const Projects = () => (
 
           <Row>
             <Col>
-            <Fade bottom>
-              <Card style={{ width: `20rem`, margin: `10px auto` }}>
+            <Fade bottom delay={100}>
+              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)` }}>
                 <Card.Title
                   style={{
                     borderBottom: `5px solid rgb(117, 108, 131)`,
@@ -116,15 +117,15 @@ const Projects = () => (
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link href="#">Demo</Card.Link>
-                  <Card.Link href="#">View source</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
             </Col>
             <Col>
-            <Fade bottom>
-              <Card style={{ width: `20rem`, margin: `10px auto` }}>
+            <Fade bottom delay={200}>
+              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)`}}>
                 <Card.Title
                   style={{
                     borderBottom: `5px solid rgb(117, 108, 131)`,
@@ -142,8 +143,8 @@ const Projects = () => (
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link href="#">Demo</Card.Link>
-                  <Card.Link href="#">View source</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
