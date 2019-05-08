@@ -21,19 +21,20 @@ const Home = () => (
     render={data => (
       <section id="home" className="colorSection">
         <Navbar />
-        <div style={{ margin: `60px`, marginLeft: `200px` }}>
+  
+        <div style={{ margin: `60px` }}>
           <Typist cursor={{ hideWhenDone: `true`, hideWhenDoneDelay: `8000` }}>
-            <span className="bigHeading">
-              {"<"} Lucie {">"}
+            <span className="topHeading">
+              Hello, I'm {"<"} <span className="name">Lucie</span> {"/>"}
             </span>
             <Typist.Delay ms={500} /> <br />
-            <span className="bigHeading">
-              {"{"} Full-stack web developer {"}"}
+            <span className="bottomHeading">
+              {"{"} a full-stack <span className="name">web developer</span> {"}"}
             </span>
           </Typist>
         </div>
 
-        <div style={{ maxWidth: `400px`}}>
+        <div style={{ maxWidth: `400px`, margin: `0 auto`}}>
           <Img fluid={data.laptopImage.childImageSharp.fluid} />
         </div>
       </section>

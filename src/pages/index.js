@@ -31,15 +31,29 @@ body {
     line-height: 1.5;
 }
 
-.bigHeading {
-  color: rgb(243, 129, 129);
+.topHeading {
+  color: white;
   font-size: calc(20px + 2vw);
   font-weight: 700;
+  font-family: 'Playfair Display', serif;
+  line-height: 2.5;
 }
+.bottomHeading {
+  color: #756c83;
+  font-size: calc(12px + 1.5vw);
+  font-weight: 700;
+  font-family: 'Playfair Display', serif;
+}
+
+.name {
+  color: rgb(248, 124, 124);
+  font-weight: 900;
+}
+
 .Typist .Cursor {
   display: inline-block; 
-  color: rgb(243, 129, 129);
-  font-size: calc(18px + 2vw);
+  color: 	rgb(248, 124, 124);
+  font-size: calc(12px + 1.5vw);
   }
   .Typist .Cursor--blinking {
     opacity: 1;
@@ -54,10 +68,12 @@ body {
     opacity: 1; } }
 
 h2 {
-    color: rgb(243, 129, 129);
+    color: 	rgb(248, 124, 124);
 }
 section {
   padding: 40px;
+  min-height: 100vh;
+  width: 100%;
 }
 
 container {
@@ -65,8 +81,7 @@ container {
 }
 
 .colorSection {
-  background-color: rgb(185, 225, 220);
-  width: 100%;
+  background-color: rgb(166,202,198);
 }
 
 .whiteSection {
@@ -82,7 +97,7 @@ container {
   border-radius: 50%;
 }
 footer {
-  background-color: rgb(185, 225, 220);
+  background-color: rgb(166,202,198);
   padding-bottom: 20px;
 }
 `
