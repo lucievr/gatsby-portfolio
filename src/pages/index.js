@@ -85,7 +85,8 @@ container {
 }
 
 .whiteSection {
-  background-color: rgb(242, 242, 242);
+  ${'' /* background-color: rgb(242, 242, 242); */}
+  background-color: #756c83;
 }
 
 .contactIcons {

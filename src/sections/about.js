@@ -37,9 +37,9 @@ const About = () => (
         </Fade>
         </Col>
         <Col sm={12} md={6}>
-        <Fade right>
+        {/* <Fade right>
             <Img fluid={data.helloImage.childImageSharp.fluid} />
-        </Fade>
+        </Fade> */}
         </Col>
         </Row>
         </Container>
