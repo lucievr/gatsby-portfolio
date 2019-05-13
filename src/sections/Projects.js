@@ -34,13 +34,7 @@ const Projects = () => (
       <section id="projects" className="colorSection">
         <h2>Projects</h2>
         <p>Here is a selection of my projects</p>
-        <Container
-          style={{
-            justifyContent: `center`,
-            alignContent: `space-around`,
-            alignItems: `center`,
-          }}
-        >
+        <Container>
           <Row>
             <Col>
             <Fade bottom>
