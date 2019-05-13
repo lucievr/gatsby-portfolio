@@ -19,7 +19,7 @@ const Skills = () => (
     `}
     render={data => (
       <section id="skills" className="whiteSection">
-        <h2>Skills</h2>
+        <h2>SKILLS</h2>
         <p>Check out my skillz</p>
         <Fade left>
         <div style={{ maxWidth: `500px` }}>

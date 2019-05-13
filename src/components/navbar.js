@@ -67,11 +67,11 @@ const Avatar = styled.img`
 const Navbar = () => {
   return (
       <Nav id="navbar">
-      <Fade top>
+      {/* <Fade top>
         <AnchorLink href="#home">
           <Avatar src={Logo} alt="logo" />
         </AnchorLink>
-        </Fade>
+        </Fade> */}
       
         <NavListWrapper>
         <Fade top>

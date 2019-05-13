@@ -33,16 +33,18 @@ body {
 
 .topHeading {
   color: white;
-  font-size: calc(20px + 2vw);
+  font-size: calc(24px + 3vw);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
-  line-height: 2.5;
+  padding-top: 120px;
+
 }
 .bottomHeading {
   color: #756c83;
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(16px + 2vw);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
+  padding: 40px 10px 80px;
 }
 
 .name {
@@ -53,7 +55,7 @@ body {
 .Typist .Cursor {
   display: inline-block; 
   color: 	rgb(248, 124, 124);
-  font-size: calc(12px + 1.5vw);
+  font-size: calc(20px + 2.5vw);
   }
   .Typist .Cursor--blinking {
     opacity: 1;
@@ -76,6 +78,12 @@ section {
   width: 100%;
 }
 
+hr {
+  margin: 0;
+  border: 0;
+  border-top: 5px dashed #756c83;
+}
+
 container {
   display: flex;
 }
@@ -85,8 +93,7 @@ container {
 }
 
 .whiteSection {
-  ${'' /* background-color: rgb(242, 242, 242); */}
-  background-color: #756c83;
+  background-color: rgb(242, 242, 242);
 }
 
 .contactIcons {
@@ -108,9 +115,15 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
     <Home />
+    <hr />
+    
     <About />
+
+    <hr />
     <Projects />
+    <hr />
     <Skills />
+    <hr />
     <Contact />
 
     <footer>© {new Date().getFullYear()}, Lucie Vrsovska</footer>
