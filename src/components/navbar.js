@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade"
 
 const Nav = styled.nav`
   padding: 0 1rem;
-  background-color: #756c83;
+  background-color: rgb(117, 108, 131);
   position: fixed;
   flex-flow: row nowrap;
   justify-content: flex-start;

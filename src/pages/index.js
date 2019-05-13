@@ -29,6 +29,7 @@ body {
     text-align: center;
     font-size: calc(11px + 0.5vw);
     line-height: 1.5;
+    font-family: 'Playfair Display', serif;
 }
 
 .topHeading {
@@ -71,6 +72,10 @@ body {
 
 h2 {
     color: 	rgb(248, 124, 124);
+    font-size: calc(16px + 2vw);
+    padding: 10px 10px 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
 }
 section {
   padding: 40px;
@@ -116,9 +121,7 @@ const IndexPage = () => (
 
     <Home />
     <hr />
-    
     <About />
-
     <hr />
     <Projects />
     <hr />
