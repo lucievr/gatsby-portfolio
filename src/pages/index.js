@@ -94,7 +94,8 @@ container {
 }
 
 .colorSection {
-  background-color: rgb(166,202,198);
+  ${'' /* background-color: rgb(166,202,198); */}
+  background-image: url('/background.svg');
 }
 
 .whiteSection {
