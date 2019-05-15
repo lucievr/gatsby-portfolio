@@ -1,12 +1,7 @@
 import React from "react"
 // import css from "@emotion/core"
-import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import Fade from "react-reveal/Fade"
 import Logo from "../images/favicon.png"
-// import Container from 'react-bootstrap/Container'
-// import Row from 'react-bootstrap/Row'
-// import Col from 'react-bootstrap/Col'
 
 const About = () => { 
   

@@ -36,18 +36,18 @@ body {
 
 .topHeading {
   color: white;
-  font-size: calc(24px + 3vw);
+  font-size: calc(20px + 2vw);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
-  padding-top: 120px;
+  padding-top: 100px;
 
 }
 .bottomHeading {
   color: #4FB99F;
-  font-size: calc(16px + 2vw);
+  font-size: calc(12px + 1.2vw);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
-  padding: 40px 10px 80px;
+  padding: 20px 10px 80px;
 }
 
 .heading--teal {
@@ -61,7 +61,7 @@ body {
 
 .nameBottom {
   color: #ff7f50;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .Typist .Cursor {
@@ -111,6 +111,19 @@ container {
 .whiteSection {
   ${'' /* background-color: #113541; */}
   background-image: url('/background.svg');
+}
+
+.skillIcons {
+  width: 100px;
+}
+
+.circleIcons {
+  border-radius: 50%;
+}
+
+.gatsbyicon {
+  border: 4px solid #663399;
+  border-radius: 100%;
 }
 
 .contactIcons {
