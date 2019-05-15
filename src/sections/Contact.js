@@ -10,7 +10,7 @@ import {
 
 const Contact = () => (
   <section id="contact" className="colorSection">
-    <h2>CONTACT</h2>
+    <h2 className="heading--teal">CONTACT</h2>
     <div style={{padding: `20px`}}>
       <a href="https://github.com/lucievr" target="_blank" rel="noopener noreferrer"><TiSocialGithubCircular className="contactIcons" /></a>
       <a href="https://www.linkedin.com/in/lucie-vrsovska/" target="_blank" rel="noopener noreferrer"><TiSocialLinkedinCircular className="contactIcons" /></a>

@@ -32,7 +32,7 @@ const Projects = () => (
     `}
     render={data => (
       <section id="projects" className="colorSection">
-        <h2>PROJECTS</h2>
+        <h2 className="heading--teal">PROJECTS</h2>
         <p>Here is a selection of my projects</p>
         <Container>
           <Row>

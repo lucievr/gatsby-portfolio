@@ -30,6 +30,8 @@ body {
     font-size: calc(11px + 0.5vw);
     line-height: 1.5;
     font-family: 'Playfair Display', serif;
+    color: white;
+    background-color: #112F41;
 }
 
 .topHeading {
@@ -41,21 +43,30 @@ body {
 
 }
 .bottomHeading {
-  color: #756c83;
+  color: #4FB99F;
   font-size: calc(16px + 2vw);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
   padding: 40px 10px 80px;
 }
 
+.heading--teal {
+  color: #4FB99F;
+}
+
 .name {
-  color: rgb(248, 124, 124);
+  color: #F2B134;
+  font-weight: 900;
+}
+
+.nameBottom {
+  color: #ff7f50;
   font-weight: 900;
 }
 
 .Typist .Cursor {
   display: inline-block; 
-  color: 	rgb(248, 124, 124);
+  color: 	#F2B134;
   font-size: calc(20px + 2.5vw);
   }
   .Typist .Cursor--blinking {
@@ -71,7 +82,7 @@ body {
     opacity: 1; } }
 
 h2 {
-    color: 	rgb(248, 124, 124);
+    color: white;
     font-size: calc(16px + 2vw);
     padding: 10px 10px 30px;
     font-family: 'Playfair Display', serif;
@@ -86,7 +97,7 @@ section {
 hr {
   margin: 0;
   border: 0;
-  border-top: 5px dashed #756c83;
+  border-top: 2px dashed #F2B134;
 }
 
 container {
@@ -94,25 +105,24 @@ container {
 }
 
 .colorSection {
-  background-color: rgb(166,202,198);
-  
+  background-color: #112F41;
 }
 
 .whiteSection {
-  ${'' /* background-color: rgb(242, 242, 242); */}
+  ${'' /* background-color: #113541; */}
   background-image: url('/background.svg');
 }
 
 .contactIcons {
   font-size: 5rem;
-  color: #756c83;
+  color: #F2B134;
 }
 .contactIcons:hover {
   background-color: rgb(242, 242, 242);
   border-radius: 50%;
 }
 footer {
-  background-color: rgb(166,202,198);
+  background-color: #112F41;
   padding-bottom: 20px;
 }
 `

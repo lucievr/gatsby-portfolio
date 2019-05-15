@@ -31,7 +31,7 @@ const Home = () => (
           </Typist>
         </div>
           <div className="bottomHeading">
-            {"{"} a full-stack <span className="name">web developer</span> {"}"}
+            {"{"} a full-stack <span className="nameBottom">web developer</span> {"}"}
           </div>
         </div>
 
