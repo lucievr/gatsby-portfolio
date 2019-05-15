@@ -94,12 +94,13 @@ container {
 }
 
 .colorSection {
-  ${'' /* background-color: rgb(166,202,198); */}
-  background-image: url('/background.svg');
+  background-color: rgb(166,202,198);
+  
 }
 
 .whiteSection {
-  background-color: rgb(242, 242, 242);
+  ${'' /* background-color: rgb(242, 242, 242); */}
+  background-image: url('/background.svg');
 }
 
 .contactIcons {

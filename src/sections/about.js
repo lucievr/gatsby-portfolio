@@ -15,13 +15,11 @@ const About = () => {
         <h2>ABOUT</h2>
   
         <Fade left>
-        <div style={{ width: `700px`, height: `700px`, margin: `0 auto`, borderRadius: `50%`, padding: `20px`, border: `20px solid rgb(166,202,198)`, 
+        <div style={{ minHeight: `80vh`, maxWidth: `100vmin`, maxHeight: `100vmin`, margin: `0 auto`, borderRadius: `50%`, padding: `calc(1px + 1vw)`, border: `20px solid rgb(166,202,198)`, 
         backgroundColor: `rgba(117, 108, 131, 0.9)`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)`, color: `white` }}>
-                <img src={Logo} alt="logo" style={{ maxWidth: `180px`, borderRadius: `50%`, margin: `20px` }} />
-          <p style={{ fontSize: `22px`, lineHeight: `2`, margin: `20px` }}>Hello, my name is Lucie and I am a web developer with a passion for modern technologies and creative ways of
-          solving problems. I am currently enrolled in Coding Bootcamp Praha – a
-          12-week intensive Full-stack Developer programme to level up my skills
-          and get more experience in team programming and Agile practices.</p>
+                <img src={Logo} alt="logo" style={{ maxWidth: `30vmin`, borderRadius: `50%`, margin: `0` }} />
+          <p style={{ fontSize: `calc(12px + 0.5vw)`, lineHeight: `1.5`, margin: `0` }}>Hello, my name is Lucie and I am a web developer based in Prague, Czech Republic. I am passionate about modern technologies and creative ways of
+          solving problems. My current jam is mostly JavaScript and React. </p>
         </div>
         </Fade>
   
