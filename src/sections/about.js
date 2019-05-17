@@ -11,7 +11,7 @@ const About = () => {
         <Fade left>
         <div style={{ width: `80vmin`, height: `80vmin`, maxWidth: `480px`, maxHeight: `480px`, margin: `0 auto`, borderRadius: `50%`, padding: `calc(1px + 1vw)`, border: `3px solid #F2B134`, 
         backgroundColor: `#068587`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)`, color: `white` }}>
-                <img src={Logo} alt="logo" style={{ width: `calc(80px + 2vw)`,
+                <img src={Logo} alt="logo" style={{ width: `calc(80px + 3vw)`,
                   borderRadius: `50%`, margin: `0` }} />
           <p style={{ fontSize: `calc(10px + 0.5vw)`, lineHeight: `1.5`, margin: `0 auto`, width: `80%`, paddingTop: `calc(5px + 1vw)` }}>
           Hello, my name is Lucie and I am a web developer based in Prague, Czech Republic. I am passionate about modern technologies and creative ways of

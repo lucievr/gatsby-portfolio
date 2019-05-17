@@ -1,5 +1,5 @@
 import React from "react"
-// import { css } from "@emotion/core"
+import { css } from "@emotion/core"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import "../components/bootstrap.min.css"
@@ -10,11 +10,42 @@ import Card from "react-bootstrap/Card"
 import Fade from "react-reveal/Fade"
 import { FaLink, FaCode } from "react-icons/fa";
 
+const cardStyle = css`
+width: 20rem;
+min-width: 0;
+max-width: 400px;
+margin: 10px auto;
+box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+background-color: rgba(255, 255, 255, 0.15);
+position: relative;
+display: flex;
+flex-direction: column;
+word-wrap: break-word;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
+`
+
+const cardTitle = css`
+  margin: 16px;
+  padding: 4px;
+  color: #F2B134;
+`
+
+
 const Projects = () => (
   <StaticQuery
     query={graphql`
       query {
-        workingImage: file(relativePath: { eq: "working.png" }) {
+        plantypusImage: file(relativePath: { eq: "plantypus-cafe.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+
+        portfolioImage: file(relativePath: { eq: "portfolio.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
@@ -28,6 +59,7 @@ const Projects = () => (
             }
           }
         }
+
       }
     `}
     render={data => (
@@ -38,52 +70,40 @@ const Projects = () => (
           <Row>
             <Col>
             <Fade bottom>
-              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)` }}>
-                <Card.Title
-                  style={{
-                    borderBottom: `5px solid rgb(117, 108, 131)`,
-                    margin: `16px`,
-                    padding: `4px`,
-                  }}
-                >
-                  Project I Title
+              <Card css={cardStyle}>
+                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
+                  Plantypus Café
                 </Card.Title>
-                <Card.Body>
-                  <Img fluid={data.workingImage.childImageSharp.fluid} />
+                <Card.Body style={{paddingTop: `0`}}>
+                  <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <p style={{marginTop: `16px`}}>Website of an ethical vegan café.</p> 
+                  <p style={{margin: 0}}>Technologies used: HTML, CSS, Sass, JavaScript, Gulp.</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
             </Col>
             <Col>
             <Fade bottom delay={200}>
-              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)` }}>
-                <Card.Title
-                  style={{
-                    borderBottom: `5px solid rgb(117, 108, 131)`,
-                    margin: `16px`,
-                    padding: `4px`,
-                  }}
-                >
-                  Project II Title
+              <Card css={cardStyle}>
+                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
+                  Personal Portfolio
                 </Card.Title>
-                <Card.Body>
-                  <Img fluid={data.laptopImage.childImageSharp.fluid} />
+                <Card.Body style={{paddingTop: `0`}}>
+                  <Img fluid={data.portfolioImage.childImageSharp.fluid} />
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
@@ -93,17 +113,11 @@ const Projects = () => (
           <Row>
             <Col>
             <Fade bottom delay={100}>
-              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)` }}>
-                <Card.Title
-                  style={{
-                    borderBottom: `5px solid rgb(117, 108, 131)`,
-                    margin: `16px`,
-                    padding: `4px`,
-                  }}
-                >
+              <Card css={cardStyle}>
+                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
                   Project III Title
                 </Card.Title>
-                <Card.Body>
+                <Card.Body style={{paddingTop: `0`}}>
                   <Img fluid={data.laptopImage.childImageSharp.fluid} />
                   <Card.Text>
                     Some quick example text to build on the card title and make
@@ -111,34 +125,28 @@ const Projects = () => (
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
             </Col>
             <Col>
             <Fade bottom delay={200}>
-              <Card style={{ width: `20rem`, margin: `10px auto`, boxShadow: `0 12px 16px rgba(0, 0, 0, 0.2)`}}>
-                <Card.Title
-                  style={{
-                    borderBottom: `5px solid rgb(117, 108, 131)`,
-                    margin: `16px`,
-                    padding: `4px`,
-                  }}
-                >
+              <Card css={cardStyle}>
+                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
                   Project IV Title
                 </Card.Title>
-                <Card.Body>
-                  <Img fluid={data.workingImage.childImageSharp.fluid} />
+                <Card.Body style={{paddingTop: `0`}}>
+                  <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#756c83`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>

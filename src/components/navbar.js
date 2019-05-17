@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import AnchorLink from "react-anchor-link-smooth-scroll"
-import Logo from "../images/favicon.png"
 import { TiHome } from "react-icons/ti"
 import Fade from "react-reveal/Fade"
 
@@ -21,8 +20,9 @@ const Nav = styled.nav`
 `
 const NavListWrapper = styled.ul`
   list-style: none;
-  margin-left: auto;
-  margin-right: 20px;
+  ${'' /* margin-left: auto;
+  margin-right: 20px; */}
+  margin: 0 20px 10px auto;
   padding: 0;
   padding-top: 10px;
   display: flex;
@@ -56,28 +56,15 @@ const NavItem = styled.li`
   }
 `
 
-const Avatar = styled.img`
-  border-radius: 50%;
-  display: inline-block;
-  width: 50px;
-  white-space: nowrap;
-  vertical-align: top;
-`
-
 const Navbar = () => {
   return (
       <Nav id="navbar">
-      {/* <Fade top>
-        <AnchorLink href="#home">
-          <Avatar src={Logo} alt="logo" />
-        </AnchorLink>
-        </Fade> */}
       
         <NavListWrapper>
         <Fade top>
           <NavItem>
             <AnchorLink href="#home">
-              <TiHome />
+              <TiHome style={{fontSize: `calc(10px + 0.9vw)`, marginBottom: `4px`}} />
             </AnchorLink>
           </NavItem>
           <NavItem>
