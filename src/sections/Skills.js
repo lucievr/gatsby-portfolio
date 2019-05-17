@@ -23,7 +23,7 @@ import Webpack from "../images/webpack.png"
 const Skills = () => {
   return (
     <section id="skills" className="whiteSection">
-      <h2>SKILLS</h2>
+      <h2><span className="dot--orange">+</span> Skills <span className="dot--orange">+</span></h2>
       <p>Skills, technologies and tools I use:</p>
 
       <Container>

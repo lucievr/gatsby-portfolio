@@ -32,8 +32,8 @@
     "react-scrollspy": "^3.4.0",
     "react-typist": "^2.0.5",
     "styled-components": "^4.2.0",
-    "typeface-playfair-display": "0.0.72",
-    "typeface-raleway": "0.0.54"
+    "typeface-montserrat": "0.0.54",
+    "typeface-playfair-display": "0.0.72"
   },
   "devDependencies": {
     "gatsby-plugin-styled-components": "^3.0.7",

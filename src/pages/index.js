@@ -29,7 +29,8 @@ body {
     text-align: center;
     font-size: calc(11px + 0.5vw);
     line-height: 1.5;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     color: white;
     background-color: #112F41;
 }
@@ -87,11 +88,11 @@ h2 {
     font-size: calc(16px + 2vw);
     padding: 10px 10px 30px;
     font-family: 'Playfair Display', serif;
-    font-weight: 900;
+    font-weight: 700;
 }
 section {
   padding: 40px;
-  min-height: 100vh;
+  ${'' /* min-height: 50vh; */}
   width: 100%;
 }
 
@@ -108,6 +109,10 @@ hr {
 .whiteSection {
   ${'' /* background-color: #113541; */}
   background-image: url('/background.svg');
+}
+
+.dot--orange {
+  color: #ff7f50;
 }
 
 img.skillIcons.hvr-grow.small {
