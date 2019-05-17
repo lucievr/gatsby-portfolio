@@ -37,7 +37,7 @@ const Skills = () => {
               <img
                 src={Bootstrap}
                 alt="bootstrap"
-                className="skillIcons circleIcons hvr-grow"
+                className="skillIcons circleIcons hvr-grow big"
               />
             </a>
           </Col>
@@ -53,7 +53,7 @@ const Skills = () => {
               <img
                 src={Webpack}
                 alt="webpack"
-                className="skillIcons hvr-grow"
+                className="skillIcons hvr-grow small"
               />
             </a>
           </Col>
@@ -81,11 +81,12 @@ const Skills = () => {
               href="https://www.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
+              
             >
               <img
                 src={Netlify}
                 alt="netlify"
-                className="skillIcons hvr-grow"
+                className="skillIcons hvr-grow big"
               />
             </a>
           </Col>
@@ -107,7 +108,7 @@ const Skills = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Git} alt="git" className="skillIcons hvr-grow" />
+              <img src={Git} alt="git" className="skillIcons hvr-grow big" />
             </a>
           </Col>
           <Col>
@@ -115,7 +116,7 @@ const Skills = () => {
             <img
               src={Jsicon}
               alt="javascript"
-              className="skillIcons hvr-grow"
+              className="skillIcons hvr-grow small"
             />
           </Col>
           <Col>
@@ -127,7 +128,7 @@ const Skills = () => {
               <img
                 src={Reacticon}
                 alt="react"
-                className="skillIcons hvr-grow"
+                className="skillIcons hvr-grow small"
               />
             </a>
           </Col>
@@ -149,7 +150,7 @@ const Skills = () => {
             <img
               src={Cssicon}
               alt="css"
-              className="skillIcons circleIcons hvr-grow"
+              className="skillIcons circleIcons hvr-grow big"
             />
           </Col>
           <Col>
@@ -174,7 +175,7 @@ const Skills = () => {
               <img
                 src={Gatsby}
                 alt="gatsby"
-                className="skillIcons circleIcons gatsbyicon hvr-grow"
+                className="skillIcons circleIcons gatsbyicon hvr-grow big"
               />
             </a>
           </Col>
@@ -183,7 +184,7 @@ const Skills = () => {
             <img
               src={Htmlicon}
               alt="html"
-              className="skillIcons circleIcons hvr-grow"
+              className="skillIcons circleIcons hvr-grow big"
             />
           </Col>
         </Row>
@@ -195,7 +196,7 @@ const Skills = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={Code} alt="vs code" className="skillIcons hvr-grow" />
+              <img src={Code} alt="vs code" className="skillIcons hvr-grow big" />
             </a>
           </Col>
         </Row>

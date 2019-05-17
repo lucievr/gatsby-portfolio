@@ -79,7 +79,8 @@ body {
   50% {
     opacity: 0; }
   100% {
-    opacity: 1; } }
+    opacity: 1; } 
+    }
 
 h2 {
     color: white;
@@ -100,10 +101,6 @@ hr {
   border-top: 2px dashed #F2B134;
 }
 
-container {
-  display: flex;
-}
-
 .colorSection {
   background-color: #112F41;
 }
@@ -113,8 +110,18 @@ container {
   background-image: url('/background.svg');
 }
 
-.skillIcons {
-  width: 100px;
+img.skillIcons.hvr-grow.small {
+  margin: 20px;
+  width: calc(60px + 2vw);
+}
+
+img.skillIcons.hvr-grow {
+  margin: 20px;
+  width: calc(55px + 1.9vw);
+}
+
+img.skillIcons.hvr-grow.big {
+  width: calc(50px + 1.2vw);
 }
 
 .circleIcons {
@@ -123,7 +130,7 @@ container {
 
 .gatsbyicon {
   border: 4px solid #663399;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .contactIcons {
