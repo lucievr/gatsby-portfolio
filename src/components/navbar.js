@@ -20,24 +20,14 @@ const Nav = styled.nav`
 `
 const NavListWrapper = styled.ul`
   list-style: none;
-  ${'' /* margin-left: auto;
-  margin-right: 20px; */}
   margin: 0 20px 10px auto;
   padding: 0;
   padding-top: 10px;
   display: flex;
   flex-direction: row;
-
-  ${({ mobile }) =>
-    mobile &&
-    `
-        flex-direction: column;
-        margin-top: 1em;
-        > ${NavItem} {
-          margin: 0;
-          margin-top: 0.75em;
-        }
-        `};
+  @media (max-width: 450px) {
+    margin: 0 auto 10px auto;
+  }
 `
 
 const NavItem = styled.li`

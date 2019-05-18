@@ -11,7 +11,7 @@ const Home = () => (
       query {
         laptopImage: file(relativePath: { eq: "laptop.png" }) {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -35,7 +35,7 @@ const Home = () => (
           </div>
         </div>
 
-        <div style={{ maxWidth: `400px`, margin: `0 auto` }}>
+        <div style={{ width: `calc(220px + 10vw)`, margin: `0 auto`, paddingBottom: `20px` }}>
           <Img fluid={data.laptopImage.childImageSharp.fluid} />
         </div>
       </section>

@@ -43,7 +43,7 @@ const Projects = () => (
     render={data => (
       <section id="projects" className="colorSection">
         <h2 className="heading--teal"><span className="dot--orange">+</span> Projects <span className="dot--orange">+</span></h2>
-        <p>Here is a selection of my projects</p>
+        <p>Here is a selection of my projects.</p>
         <Container>
           <Row>
             <Col>
@@ -76,7 +76,7 @@ const Projects = () => (
                   <Img fluid={data.portfolioImage.childImageSharp.fluid} />
                   <Card.Text>
                   <p style={{marginTop: `16px`}}>Personal portfolio site.</p> 
-                  <p style={{margin: 0}}><span style={{ color: `#4FB99F`, fontWeight: `500`}}>Technologies used:</span> JavaScript, React, Gatsby, GraphQL, Webpack, Babel, Styled Components.</p>
+                  <p style={{margin: 0}}><span style={{ color: `#4FB99F`, fontWeight: `500`}}>Technologies used:</span> JavaScript, React, Gatsby, GraphQL, Babel, Webpack, Styled Components.</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>

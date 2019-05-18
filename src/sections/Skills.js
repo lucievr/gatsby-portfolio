@@ -24,7 +24,7 @@ const Skills = () => {
   return (
     <section id="skills" className="whiteSection">
       <h2><span className="dot--orange">+</span> Skills <span className="dot--orange">+</span></h2>
-      <p>Skills, technologies and tools I use:</p>
+      <div style={{maxWidth: `70vw`, margin: `0 auto`, paddingBottom: `calc(20px + 1vw)`, lineHeight: `1.7`}}>As a fullstack developer, I have picked up a lot of different skills and used various technologies and tools.</div>
 
       <Container>
         <Row>

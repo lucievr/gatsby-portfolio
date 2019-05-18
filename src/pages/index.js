@@ -37,18 +37,20 @@ body {
 
 .topHeading {
   color: white;
-  font-size: calc(20px + 2vw);
+  font-size: calc(18px + 2.5vw);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
-  padding-top: 100px;
-
+  padding-top: calc(60px + 3vw);
 }
+
 .bottomHeading {
   color: #4FB99F;
   font-size: calc(12px + 1.2vw);
   font-weight: 700;
   font-family: 'Playfair Display', serif;
-  padding: 20px 10px 80px;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  padding-bottom: calc(60px + 3vw)
 }
 
 .heading--teal {
@@ -92,8 +94,7 @@ h2 {
     letter-spacing: 1px;
 }
 section {
-  padding: 40px;
-  ${'' /* min-height: 50vh; */}
+  padding: 40px 5px;
   width: 100%;
 }
 
@@ -117,10 +118,9 @@ hr {
 }
 
 .card-style {
-width: 20rem;
-min-width: 0;
-max-width: 400px;
-margin: 10px auto;
+width: calc(270px + 4vw);
+max-width: 90vw;
+margin: 15px auto;
 box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 background-color: rgba(255, 255, 255, 0.15);
 position: relative;
@@ -130,15 +130,14 @@ word-wrap: break-word;
 background-clip: border-box;
 border: 1px solid rgba(0,0,0,.125);
 border-radius: .25rem;
-align-self: center;
 }
 
 .card-title {
   color: #ff7f50;
-  font-family: 'Playfair Display', serif;
+  ${'' /* font-family: 'Playfair Display', serif; */}
   font-weight: 500;
   font-size: calc(14px + 0.6vw);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin: 16px;
   padding: 4px;
   padding-bottom: 12px;
