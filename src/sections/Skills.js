@@ -1,9 +1,10 @@
 import React from "react"
+import Fade from "react-reveal/Fade"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
-import Fade from "react-reveal/Fade"
+
 import Bootstrap from "../images/bootstrap.png"
 import Code from "../images/code.png"
 import Cssicon from "../images/css.png"
@@ -25,7 +26,7 @@ const Skills = () => {
     <section id="skills" className="whiteSection">
       <h2><span className="dot--orange">+</span> Skills <span className="dot--orange">+</span></h2>
       <div style={{maxWidth: `70vw`, margin: `0 auto`, paddingBottom: `calc(20px + 1vw)`, lineHeight: `1.7`}}>As a fullstack developer, I have picked up a lot of different skills and used various technologies and tools.</div>
-
+      <Fade right>
       <Container>
         <Row>
           <Col>
@@ -201,6 +202,7 @@ const Skills = () => {
           </Col>
         </Row>
       </Container>
+      </Fade>
     </section>
   )
 }

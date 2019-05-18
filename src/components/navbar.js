@@ -39,9 +39,12 @@ const NavItem = styled.li`
     padding: 2%;
     width: auto;
   }
+  a:hover {
+    color: #F2B134;
+  }
   &.active {
     a {
-      opacity: 1;
+      color: #F2B134;
     }
   }
 `

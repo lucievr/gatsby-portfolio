@@ -94,7 +94,9 @@ h2 {
     letter-spacing: 1px;
 }
 section {
-  padding: 40px 5px;
+  padding: 5px;
+  padding-top: calc(25px + 1.5vw);
+  padding-bottom: calc(35px + 1.5vw);
   width: 100%;
 }
 
@@ -120,7 +122,9 @@ hr {
 .card-style {
 width: calc(270px + 4vw);
 max-width: 90vw;
-margin: 15px auto;
+margin: 20px auto;
+margin-top: calc(20px + 1vw);
+margin-bottom: calc(20px + 1vw);
 box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 background-color: rgba(255, 255, 255, 0.15);
 position: relative;
@@ -134,7 +138,6 @@ border-radius: .25rem;
 
 .card-title {
   color: #ff7f50;
-  ${'' /* font-family: 'Playfair Display', serif; */}
   font-weight: 500;
   font-size: calc(14px + 0.6vw);
   letter-spacing: 1px;
@@ -150,6 +153,10 @@ border-radius: .25rem;
 
 .card-link {
   color: #F2B134;
+}
+
+.card-link:hover {
+  color: #ff7f50;
 }
 
 img.skillIcons.hvr-grow.small {
@@ -183,6 +190,46 @@ img.skillIcons.hvr-grow.big {
 .contactIcons:hover {
   color: #ff7f50;
 }
+
+.form-style {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 90vw;
+  @media (min-width: 700px) {
+    max-width: 70vw;
+  } 
+  @media (min-width: 1000px) {
+    max-width: 60vw;
+  } 
+}
+
+.form-control {
+  margin-bottom: calc(10px + 0.5vw);
+}
+
+.form-control ::placeholder {
+  font-size: calc(11px + 0.5vw);
+}
+
+${'' /* .form-control ::focus {
+  border: 2px solid #F2B134;
+} */}
+
+.btn-submit {
+  font-size: calc(13px + 0.6vw);
+  background-color: rgba(255,255,255,0.1);
+  font-weight: 500;
+  color: #4FB99F;
+  border: 2px solid #ff7f50;
+  letter-spacing: 2px;
+}
+
+.btn-submit:hover {
+  background-color: rgba(255,255,255,0.2);
+  color: white;
+  border: 2px solid #ff7f50;
+}
+
 footer {
   background-color: #112F41;
   padding-bottom: 20px;
@@ -271,6 +318,22 @@ footer {
   cursor: pointer;
 }
 
+/* Glow */
+.hvr-glow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
 `
 const IndexPage = () => (
   <>
@@ -287,7 +350,7 @@ const IndexPage = () => (
     <hr />
     <Contact />
 
-    <footer>© {new Date().getFullYear()}, Lucie Vrsovska</footer>
+    <footer>© {new Date().getFullYear()} Lucie Vrsovska</footer>
   </>
 )
 
