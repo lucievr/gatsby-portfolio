@@ -12,9 +12,9 @@ const Contact = () => (
   <section id="contact" className="colorSection">
     <h2 className="heading--teal"><span className="dot--orange">+</span> Contact <span className="dot--orange">+</span></h2>
     <div style={{padding: `20px`}}>
-      <a href="https://github.com/lucievr" target="_blank" rel="noopener noreferrer"><TiSocialGithubCircular className="contactIcons" /></a>
-      <a href="https://www.linkedin.com/in/lucie-vrsovska/" target="_blank" rel="noopener noreferrer"><TiSocialLinkedinCircular className="contactIcons" /></a>
-      <a href="https://twitter.com/lucie_vrs" target="_blank" rel="noopener noreferrer"><TiSocialTwitterCircular className="contactIcons" /></a>
+      <a href="https://github.com/lucievr" target="_blank" rel="noopener noreferrer"><TiSocialGithubCircular className="contactIcons hvr-bob" /></a>
+      <a href="https://www.linkedin.com/in/lucie-vrsovska/" target="_blank" rel="noopener noreferrer"><TiSocialLinkedinCircular className="contactIcons hvr-bob" /></a>
+      <a href="https://twitter.com/lucie_vrs" target="_blank" rel="noopener noreferrer"><TiSocialTwitterCircular className="contactIcons hvr-bob" /></a>
     </div>
     <Form style={{ width: `70%`, margin: `0 auto`, padding: `20px` }}>
       <Form.Row>
