@@ -89,6 +89,7 @@ h2 {
     padding: 10px 10px 30px;
     font-family: 'Playfair Display', serif;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 section {
   padding: 40px;
@@ -113,6 +114,43 @@ hr {
 
 .dot--orange {
   color: #ff7f50;
+}
+
+.card-style {
+width: 20rem;
+min-width: 0;
+max-width: 400px;
+margin: 10px auto;
+box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+background-color: rgba(255, 255, 255, 0.15);
+position: relative;
+display: flex;
+flex-direction: column;
+word-wrap: break-word;
+background-clip: border-box;
+border: 1px solid rgba(0,0,0,.125);
+border-radius: .25rem;
+align-self: center;
+}
+
+.card-title {
+  color: #ff7f50;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: calc(14px + 0.6vw);
+  letter-spacing: 2px;
+  margin: 16px;
+  padding: 4px;
+  padding-bottom: 12px;
+  border-bottom: 3px dotted #4FB99F;
+}
+
+.card-body {
+  padding-top: 0;
+}
+
+.card-link {
+  color: #F2B134;
 }
 
 img.skillIcons.hvr-grow.small {

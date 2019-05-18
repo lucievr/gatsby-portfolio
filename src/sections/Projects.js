@@ -10,28 +10,6 @@ import Card from "react-bootstrap/Card"
 import Fade from "react-reveal/Fade"
 import { FaLink, FaCode } from "react-icons/fa";
 
-const cardStyle = css`
-width: 20rem;
-min-width: 0;
-max-width: 400px;
-margin: 10px auto;
-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-background-color: rgba(255, 255, 255, 0.15);
-position: relative;
-display: flex;
-flex-direction: column;
-word-wrap: break-word;
-background-clip: border-box;
-border: 1px solid rgba(0,0,0,.125);
-border-radius: .25rem;
-`
-
-const cardTitle = css`
-  margin: 16px;
-  padding: 4px;
-  color: #F2B134;
-`
-
 
 const Projects = () => (
   <StaticQuery
@@ -70,40 +48,40 @@ const Projects = () => (
           <Row>
             <Col>
             <Fade bottom>
-              <Card css={cardStyle}>
-                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
+              <Card className="card-style">
+                <Card.Title className="card-title">
                   Plantypus Café
                 </Card.Title>
-                <Card.Body style={{paddingTop: `0`}}>
+                <Card.Body className="card-body">
                   <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                   <Card.Text>
                   <p style={{marginTop: `16px`}}>Website of an ethical vegan café.</p> 
-                  <p style={{margin: 0}}>Technologies used: HTML, CSS, Sass, JavaScript, Gulp.</p>
+                  <p style={{margin: 0}}><span style={{ color: `#4FB99F`, fontWeight: `500`}}>Technologies used:</span> HTML, CSS, Bootstrap, JavaScript, Gulp.</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
             </Col>
             <Col>
             <Fade bottom delay={200}>
-              <Card css={cardStyle}>
-                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
+              <Card className="card-style">
+                <Card.Title className="card-title">
                   Personal Portfolio
                 </Card.Title>
-                <Card.Body style={{paddingTop: `0`}}>
+                <Card.Body className="card-body">
                   <Img fluid={data.portfolioImage.childImageSharp.fluid} />
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <p style={{marginTop: `16px`}}>Personal portfolio site.</p> 
+                  <p style={{margin: 0}}><span style={{ color: `#4FB99F`, fontWeight: `500`}}>Technologies used:</span> JavaScript, React, Gatsby, GraphQL, Webpack, Babel, Styled Components.</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
@@ -113,40 +91,40 @@ const Projects = () => (
           <Row>
             <Col>
             <Fade bottom delay={100}>
-              <Card css={cardStyle}>
-                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
+              <Card className="card-style">
+                <Card.Title className="card-title">
                   Project III Title
                 </Card.Title>
-                <Card.Body style={{paddingTop: `0`}}>
+                <Card.Body className="card-body">
                   <Img fluid={data.laptopImage.childImageSharp.fluid} />
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <p style={{marginTop: `16px`}}>Website of an ethical vegan café.</p> 
+                  <p style={{margin: 0}}><span style={{ color: `#4FB99F`, fontWeight: `500`}}>Technologies used:</span> HTML, CSS, Sass, JavaScript, Gulp.</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
             </Col>
             <Col>
             <Fade bottom delay={200}>
-              <Card css={cardStyle}>
-                <Card.Title css={cardTitle} style={{borderBottom: `3px dotted #ff7f50`, fontWeight: `400`, margin: `16px`, paddingBottom: `12px`}}>
+              <Card className="card-style">
+                <Card.Title className="card-title">
                   Project IV Title
                 </Card.Title>
-                <Card.Body style={{paddingTop: `0`}}>
+                <Card.Body className="card-body">
                   <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                   <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                  <p style={{marginTop: `16px`}}>Website of an ethical vegan café.</p> 
+                  <p style={{margin: 0}}><span style={{ color: `#4FB99F`, fontWeight: `500`}}>Technologies used:</span> HTML, CSS, Sass, JavaScript, Gulp.</p>
                   </Card.Text>
                 </Card.Body>
                 <Card.Footer>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaLink /> Demo</Card.Link>
-                  <Card.Link style={{color: `#F2B134`}} href="#"><FaCode /> GitHub</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaLink /> Demo</Card.Link>
+                  <Card.Link className="card-link" href="#"><FaCode /> GitHub</Card.Link>
                 </Card.Footer>
               </Card>
               </Fade>
