@@ -16,7 +16,7 @@ import Contact from "../sections/Contact"
 const IndexPage = () => (
   <>
     <Global styles={GlobalStyles} />
-    <SEO title="Home" keywords={[`developer`, `portfolio`, `gatsby`, `react` ]} />
+    <SEO title="Home" keywords={[`developer`, `portfolio`, `prague`, `gatsby`, `react` ]} />
 
     <Home />
     <hr />

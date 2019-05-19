@@ -5,27 +5,22 @@
   </a>
 </p>
 <h1 align="center">
-  My Portfolio Site Made with Gatsby
+  My Web Developer Portfolio Site Made with Gatsby
 </h1>
 
 Repo structure:
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+
+    2.1.  **`/pages`**: contains **index.js** (main index page) and **404.js**.
+
+    2.2.  **`/sections`**: main sections of the index page - **Home.js**, **About.js**, **Projects.js**, **Skills.js**, and **Contact.js**.
+
+    2.3.  **`/components`**: contains **Navbar.js** component, **Bootstrap** file, **SEO.js**, and **style.js**, which contains the global CSS styles for the site.
+
+    2.4.  **`/images`**: includes all images and icons used in the project.
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
@@ -39,11 +34,11 @@ Repo structure:
 
 8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+9.  **`LICENSE`**: This site is licensed under the MIT license.
 
 10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
 11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+12. **`README.md`**: A text file containing useful reference information about this project.
 
