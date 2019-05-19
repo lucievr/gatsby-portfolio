@@ -19,23 +19,26 @@ const Home = () => (
       }
     `}
     render={data => (
-      <section id="home" className="colorSection">
+      <section id="home" className="section--dark">
         <Navbar />
 
         <div>
-          <div className="topHeading">
-          <Typist cursor={{ hideWhenDone: `true`, hideWhenDoneDelay: `8000` }}>
-            <span>
-              Hello, I'm {"<"} <span className="name">Lucie</span> {"/>"}
-            </span>
-          </Typist>
-        </div>
-          <div className="bottomHeading">
-            {"{"} a full-stack <span className="nameBottom">web developer</span> {"}"}
+          <div className="title__top">
+            <Typist
+              cursor={{ hideWhenDone: `true`, hideWhenDoneDelay: `8000` }}
+            >
+              <span>
+                Hello, I'm {"<"} <span className="title__name">Lucie</span>{" "}
+                {"/>"}
+              </span>
+            </Typist>
+          </div>
+          <div className="title__bottom">
+            {"{"} a full-stack <span className="title__dev">web developer</span>{" "}
+            {"}"}
           </div>
         </div>
-
-        <div style={{ width: `calc(220px + 10vw)`, margin: `0 auto`, paddingBottom: `20px` }}>
+        <div className="div--laptop">
           <Img fluid={data.laptopImage.childImageSharp.fluid} />
         </div>
       </section>

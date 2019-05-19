@@ -23,185 +23,206 @@ import Webpack from "../images/webpack.png"
 
 const Skills = () => {
   return (
-    <section id="skills" className="whiteSection">
-      <h2><span className="dot--orange">+</span> Skills <span className="dot--orange">+</span></h2>
-      <div style={{maxWidth: `70vw`, margin: `0 auto`, paddingBottom: `calc(20px + 1vw)`, lineHeight: `1.7`}}>As a fullstack developer, I have picked up a lot of different skills and used various technologies and tools.</div>
+    <section id="skills" className="section--light">
+      <h2>
+        <span className="symbol--orange">+</span> Skills{" "}
+        <span className="symbol--orange">+</span>
+      </h2>
+      <div className="div--skills">
+        As a fullstack developer, I have picked up a lot of different skills and
+        used various technologies and tools.
+      </div>
       <Fade right>
-      <Container>
-        <Row>
-          <Col>
-            <a
-              href="https://getbootstrap.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={Bootstrap}
-                alt="bootstrap"
-                className="skillIcons circleIcons hvr-grow big"
-              />
-            </a>
-          </Col>
-        </Row>
+        <Container>
+          <Row>
+            <Col>
+              <a
+                href="https://getbootstrap.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Bootstrap}
+                  alt="bootstrap"
+                  className="icon--skill icon--circle hvr-grow big"
+                />
+              </a>
+            </Col>
+          </Row>
 
-        <Row>
-          <Col>
-            <a
-              href="https://webpack.js.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={Webpack}
-                alt="webpack"
-                className="skillIcons hvr-grow small"
-              />
-            </a>
-          </Col>
-          <Col>
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Github} alt="github" className="skillIcons hvr-grow" />
-            </a>
-          </Col>
+          <Row>
+            <Col>
+              <a
+                href="https://webpack.js.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Webpack}
+                  alt="webpack"
+                  className="icon--skill hvr-grow small"
+                />
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Github}
+                  alt="github"
+                  className="icon--skill hvr-grow"
+                />
+              </a>
+            </Col>
 
-          <Col>
-            <a
-              href="https://gulpjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Gulp} alt="gulp" className="skillIcons hvr-grow" />
-            </a>
-          </Col>
-          <Col>
-            <a
-              href="https://www.netlify.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              
-            >
-              <img
-                src={Netlify}
-                alt="netlify"
-                className="skillIcons hvr-grow big"
-              />
-            </a>
-          </Col>
-        </Row>
+            <Col>
+              <a
+                href="https://gulpjs.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Gulp} alt="gulp" className="icon--skill hvr-grow" />
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://www.netlify.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Netlify}
+                  alt="netlify"
+                  className="icon--skill hvr-grow big"
+                />
+              </a>
+            </Col>
+          </Row>
 
-        <Row>
-          <Col>
-            <a
-              href="https://sass-lang.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Sassicon} alt="sass" className="skillIcons hvr-grow" />
-            </a>
-          </Col>
-          <Col>
-            <a
-              href="https://git-scm.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Git} alt="git" className="skillIcons hvr-grow big" />
-            </a>
-          </Col>
-          <Col>
-            <a href="" target="_blank" rel="noopener noreferrer" />
-            <img
-              src={Jsicon}
-              alt="javascript"
-              className="skillIcons hvr-grow small"
-            />
-          </Col>
-          <Col>
-            <a
-              href="https://reactjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <Row>
+            <Col>
+              <a
+                href="https://sass-lang.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Sassicon}
+                  alt="sass"
+                  className="icon--skill hvr-grow"
+                />
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://git-scm.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={Git} alt="git" className="icon--skill hvr-grow big" />
+              </a>
+            </Col>
+            <Col>
+              <a href="" target="_blank" rel="noopener noreferrer" />
               <img
-                src={Reacticon}
-                alt="react"
-                className="skillIcons hvr-grow small"
+                src={Jsicon}
+                alt="javascript"
+                className="icon--skill hvr-grow small"
               />
-            </a>
-          </Col>
+            </Col>
+            <Col>
+              <a
+                href="https://reactjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Reacticon}
+                  alt="react"
+                  className="icon--skill hvr-grow small"
+                />
+              </a>
+            </Col>
 
-          <Col>
-            <a
-              href="https://www.mongodb.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Mongo} alt="mongodb" className="skillIcons hvr-grow" />
-            </a>
-          </Col>
-        </Row>
+            <Col>
+              <a
+                href="https://www.mongodb.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Mongo}
+                  alt="mongodb"
+                  className="icon--skill hvr-grow"
+                />
+              </a>
+            </Col>
+          </Row>
 
-        <Row>
-          <Col>
-            <a href="" target="_blank" rel="noopener noreferrer" />
-            <img
-              src={Cssicon}
-              alt="css"
-              className="skillIcons circleIcons hvr-grow big"
-            />
-          </Col>
-          <Col>
-            <a
-              href="https://graphql.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <Row>
+            <Col>
+              <a href="" target="_blank" rel="noopener noreferrer" />
               <img
-                src={Graphqlicon}
-                alt="graphql"
-                className="skillIcons hvr-grow"
+                src={Cssicon}
+                alt="css"
+                className="icon--skill icon--circle hvr-grow big"
               />
-            </a>
-          </Col>
-          <Col>
-            <a
-              href="https://www.gatsbyjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            </Col>
+            <Col>
+              <a
+                href="https://graphql.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Graphqlicon}
+                  alt="graphql"
+                  className="icon--skill hvr-grow"
+                />
+              </a>
+            </Col>
+            <Col>
+              <a
+                href="https://www.gatsbyjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Gatsby}
+                  alt="gatsby"
+                  className="icon--skill icon--circle icon--gatsby hvr-grow big"
+                />
+              </a>
+            </Col>
+            <Col>
+              <a href="" target="_blank" rel="noopener noreferrer" />
               <img
-                src={Gatsby}
-                alt="gatsby"
-                className="skillIcons circleIcons gatsbyicon hvr-grow big"
+                src={Htmlicon}
+                alt="html"
+                className="icon--skill icon--circle hvr-grow big"
               />
-            </a>
-          </Col>
-          <Col>
-            <a href="" target="_blank" rel="noopener noreferrer" />
-            <img
-              src={Htmlicon}
-              alt="html"
-              className="skillIcons circleIcons hvr-grow big"
-            />
-          </Col>
-        </Row>
+            </Col>
+          </Row>
 
-        <Row>
-          <Col>
-            <a
-              href="https://code.visualstudio.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Code} alt="vs code" className="skillIcons hvr-grow big" />
-            </a>
-          </Col>
-        </Row>
-      </Container>
+          <Row>
+            <Col>
+              <a
+                href="https://code.visualstudio.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Code}
+                  alt="vs code"
+                  className="icon--skill hvr-grow big"
+                />
+              </a>
+            </Col>
+          </Row>
+        </Container>
       </Fade>
     </section>
   )
