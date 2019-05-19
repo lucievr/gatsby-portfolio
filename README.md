@@ -14,13 +14,13 @@ Repo structure:
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-    2.1.  **`/pages`**: contains **index.js** (main index page) and **404.js**.
+    2.1.  **`./pages`**: this folder contains **index.js** (main index page) and **404.js**.
 
-    2.2.  **`/sections`**: main sections of the index page - **Home.js**, **About.js**, **Projects.js**, **Skills.js**, and **Contact.js**.
+    2.2.  **`./sections`**: main sections of the index page - **Home.js**, **About.js**, **Projects.js**, **Skills.js**, and **Contact.js**.
 
-    2.3.  **`/components`**: contains **Navbar.js** component, **Bootstrap** file, **SEO.js**, and **style.js**, which contains the global CSS styles for the site.
+    2.3.  **`./components`**: contains **Navbar.js** component, **Bootstrap** style file, **SEO.js**, and **style.js**, which includes the global CSS styles for the site.
 
-    2.4.  **`/images`**: includes all images and icons used in the project.
+    2.4.  **`./images`**: includes all images and icons used in the project.
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
