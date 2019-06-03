@@ -57,21 +57,23 @@ const Projects = () => (
                     <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                     <Card.Text>
                       <p style={{ marginTop: `16px` }}>
-                        Website of an ethical vegan café.
+                        Website of a vegan café.
                       </p>
                       <p style={{ margin: 0 }}>
-                        <span style={{ color: `#4FB99F`, fontWeight: `500` }}>
+                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        HTML, CSS, Bootstrap, JavaScript, Gulp.
+                        HTML, Sass/CSS, Bootstrap, JavaScript, Gulp.
                       </p>
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link className="card__link" href="https://plantypus.netlify.com/" target="_blank"
+        rel="noopener noreferrer">
                       <FaLink /> Demo
                     </Card.Link>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link className="card__link" href="https://github.com/lucievr/plantypus-cafe-website" target="_blank"
+        rel="noopener noreferrer">
                       <FaCode /> GitHub
                     </Card.Link>
                   </Card.Footer>
@@ -91,7 +93,7 @@ const Projects = () => (
                         Personal portfolio site.
                       </p>
                       <p style={{ margin: 0 }}>
-                        <span style={{ color: `#4FB99F`, fontWeight: `500` }}>
+                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
                         JavaScript, React, Gatsby, GraphQL, Babel, Webpack,
@@ -126,7 +128,7 @@ const Projects = () => (
                         Website of an ethical vegan café.
                       </p>
                       <p style={{ margin: 0 }}>
-                        <span style={{ color: `#4FB99F`, fontWeight: `500` }}>
+                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
                         HTML, CSS, Sass, JavaScript, Gulp.
@@ -154,10 +156,10 @@ const Projects = () => (
                     <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                     <Card.Text>
                       <p style={{ marginTop: `16px` }}>
-                        Website of an ethical vegan café.
+                        Website of a vegan café.
                       </p>
                       <p style={{ margin: 0 }}>
-                        <span style={{ color: `#4FB99F`, fontWeight: `500` }}>
+                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
                         HTML, CSS, Sass, JavaScript, Gulp.

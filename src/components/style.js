@@ -183,8 +183,8 @@ const GlobalStyles = css`
   }
 
   .card__title {
-    color: #ff7f50;
-    font-weight: 500;
+    color: #f2b134;
+    font-weight: 400;
     font-size: calc(14px + 0.6vw);
     letter-spacing: 1px;
     margin: 16px;
@@ -198,7 +198,7 @@ const GlobalStyles = css`
   }
 
   .card__link {
-    color: #f2b134;
+    color: #4fb99f;
   }
 
   .card__link:hover {

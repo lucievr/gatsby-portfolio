@@ -34,7 +34,7 @@ const Home = () => (
             </Typist>
           </div>
           <div className="title__bottom">
-            {"{"} a full-stack <span className="title__dev">web developer</span>{" "}
+            {"{"} a software <span className="title__dev"> developer</span>{" "}
             {"}"}
           </div>
         </div>

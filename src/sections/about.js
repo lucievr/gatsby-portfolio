@@ -14,16 +14,17 @@ const About = () => {
         <div className="div--circle">
           <img src={Logo} alt="logo" className="img--avatar" />
           <p className="par--top">
-            Hello, my name is Lucie and I am a web developer based in Prague,
-            Czech Republic. I am passionate about modern technologies and
+            Welcome to my site! I am a full-stack web developer based in Prague,
+            Czech Republic, who is passionate about modern technologies and
             creative ways of solving problems.
           </p>
           <span className="symbol--orange" style={{ fontWeight: `900` }}>
             . . .
           </span>
           <p className="par--bottom">
-            Get in touch if you think I would make a good addition to your team
-            – I am open to new positions starting this July.
+            My current tech stack is mostly JavaScript and React, and I am eager to start working with JAMstack and serverless architectures.
+            {/* Get in touch if you think I would make a good addition to your team
+            – I am open to new positions starting this July. */}
           </p>
           <span className="symbol--orange" style={{ fontWeight: `900` }}>
             . . .
