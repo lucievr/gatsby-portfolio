@@ -61,7 +61,6 @@ const Contact = () => (
         message: "",
       }}
       validationSchema={SignupSchema}
-
       onSubmit={(values, { setSubmitting }) => {
         setTimeout(() => {
           alert(JSON.stringify(values, null, 2))
@@ -78,7 +77,21 @@ const Contact = () => (
         handleSubmit,
         isSubmitting,
       }) => (
-        <Form className="form--main" onSubmit={handleSubmit}>
+        <Form
+          className="form--main"
+          onSubmit={handleSubmit}
+          name="contact"
+          method="post"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/src/pages/success"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>
+              Don’t fill this out if you're human: <input name="bot-field" />
+            </label>
+          </p>
           <Form.Row>
             <Form.Group as={Col} md="6" controlId="formGridName">
               <Form.Label>Full name *</Form.Label>
