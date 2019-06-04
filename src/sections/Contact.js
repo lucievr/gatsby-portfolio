@@ -84,7 +84,7 @@ const Contact = () => (
           method="post"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          action="/src/pages/success"
+          action="/success/"
         >
           <input type="hidden" name="form-name" value="contact" />
           <p class="hidden">
