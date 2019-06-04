@@ -7,7 +7,7 @@ import { Global } from "@emotion/core"
 import GlobalStyles from "../components/style"
 
 import Home from "../sections/Home"
-import About from "../sections/About"
+import About from "../sections/about"
 import Projects from "../sections/Projects"
 import Skills from "../sections/Skills"
 import Contact from "../sections/Contact"
