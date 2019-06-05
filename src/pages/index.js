@@ -1,16 +1,16 @@
 import React from "react"
 
-import SEO from "../components/seo"
-import "../components/bootstrap.min.css"
+import SEO from "@components/seo"
+import "@components/bootstrap.min.css"
 
 import { Global } from "@emotion/core"
-import GlobalStyles from "../components/style"
+import GlobalStyles from "@components/style"
 
-import Home from "../sections/home"
-import About from "../sections/about"
-import Projects from "../sections/projects"
-import Skills from "../sections/skills"
-import Contact from "../sections/contact"
+import Home from "@sections/home"
+import About from "@sections/about"
+import Projects from "@sections/projects"
+import Skills from "@sections/skills"
+import Contact from "@sections/contact"
 
 
 const IndexPage = () => (

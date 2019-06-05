@@ -2,7 +2,7 @@ import React from "react"
 
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Navbar from "../components/navbar"
+import Navbar from "@components/navbar"
 import Typist from "react-typist"
 
 const Home = () => (

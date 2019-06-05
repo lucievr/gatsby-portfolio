@@ -1,7 +1,7 @@
 import React from "react"
 
 import Fade from "react-reveal/Fade"
-import Logo from "../images/favicon.png"
+import Logo from "@images/favicon.png"
 
 const About = () => {
   return (

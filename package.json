@@ -13,6 +13,7 @@
     "formik": "^1.4.4",
     "gatsby": "^2.3.27",
     "gatsby-image": "^2.0.39",
+    "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
