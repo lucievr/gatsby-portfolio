@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Lucie's portfolio`,
@@ -19,9 +21,9 @@ module.exports = {
         alias: {
           '@components': path.resolve(__dirname, 'src/components'),
           '@images': path.resolve(__dirname, 'src/images'),
-          '@sections': path.resolve(__dirname, 'src/components/sections'),
-          '@pages': path.resolve(__dirname, 'src/components/pages'),
-          '@static': path.resolve(__dirname, 'public/static/'),
+          '@sections': path.resolve(__dirname, 'src/sections'),
+          '@pages': path.resolve(__dirname, 'src/pages'),
+          '@static': path.resolve(__dirname, 'public/static'),
         },
       },
     },
