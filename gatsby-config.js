@@ -23,7 +23,6 @@ module.exports = {
           '@images': path.resolve(__dirname, 'src/images'),
           '@sections': path.resolve(__dirname, 'src/sections'),
           '@pages': path.resolve(__dirname, 'src/pages'),
-          '@static': path.resolve(__dirname, 'public/static'),
         },
       },
     },
