@@ -6,11 +6,11 @@ import "@components/bootstrap.min.css"
 import { Global } from "@emotion/core"
 import GlobalStyles from "@components/style"
 
-import Home from "@sections/home"
-import About from "@sections/about"
-import Projects from "@sections/projects"
-import Skills from "@sections/skills"
-import Contact from "@sections/contact"
+import Home from "@sections/Home"
+import About from "@sections/About"
+import Projects from "@sections/Projects"
+import Skills from "@sections/Skills"
+import Contact from "@sections/Contact"
 
 
 const IndexPage = () => (
