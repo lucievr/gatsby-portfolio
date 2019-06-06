@@ -83,15 +83,10 @@ const Contact = () => (
           name="contact"
           method="post"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
           action="/success/"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <p class="hidden">
-            <label>
-              Don’t fill this out if you're human: <input name="bot-field" />
-            </label>
-          </p>
+          
           <Form.Row>
             <Form.Group as={Col} md="6" controlId="formGridName">
               <Form.Label>Full name *</Form.Label>

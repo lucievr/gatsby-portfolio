@@ -1,11 +1,12 @@
 import React from "react"
 
 import Fade from "react-reveal/Fade"
+import bgUrl from "@images/background.svg"
 import Logo from "@images/favicon.png"
 
 const About = () => {
   return (
-    <section id="about" className="section--light">
+    <section id="about" className="section--light" style={{ backgroundImage: `url(${bgUrl})` }}>
       <h2>
         <span className="symbol--orange">+</span> About{" "}
         <span className="symbol--orange">+</span>

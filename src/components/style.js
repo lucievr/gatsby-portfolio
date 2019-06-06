@@ -39,7 +39,6 @@ const GlobalStyles = css`
 
   .section--light {
     /* background-color: #113541; */
-    background-image: url("static/background.svg");
   }
 
   h2 {
