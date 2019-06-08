@@ -1,6 +1,7 @@
 import React from "react"
 import Form from "react-bootstrap/Form"
 import { Formik } from "formik"
+import { navigateTo } from "gatsby-link";
 import * as Yup from "yup"
 import Button from "react-bootstrap/Button"
 import Col from "react-bootstrap/Col"
@@ -24,7 +25,39 @@ const SignupSchema = Yup.object().shape({
     .required("Required"),
 })
 
-const Contact = () => (
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value });
+  };
+
+  handleSubmit = e => {
+    e.preventDefault();
+    const form = e.target;
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state
+      })
+    })
+      .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error));
+  };
+
+render() {
+  return (
   <section id="contact" className="section--dark">
     <h2 className="heading--teal">
       <span className="symbol--orange">+</span> Contact{" "}
@@ -61,12 +94,12 @@ const Contact = () => (
         message: "",
       }}
       validationSchema={SignupSchema}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2))
-          setSubmitting(false)
-        }, 600)
-      }}
+      // onSubmit={(values, { setSubmitting }) => {
+      //   setTimeout(() => {
+      //     alert(JSON.stringify(values, null, 2))
+      //     setSubmitting(false)
+      //   }, 600)
+      // }}
     >
       {({
         values,
@@ -75,7 +108,6 @@ const Contact = () => (
         handleChange,
         handleBlur,
         handleSubmit,
-        isSubmitting,
       }) => (
         <Form
           className="form--main"
@@ -142,7 +174,6 @@ const Contact = () => (
             className="btn--submit hvr-glow"
             block
             type="submit"
-            disabled={isSubmitting}
           >
             Send message
           </Button>
@@ -150,6 +181,5 @@ const Contact = () => (
       )}
     </Formik>
   </section>
-)
-
-export default Contact
+)}
+}
