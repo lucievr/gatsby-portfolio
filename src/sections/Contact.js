@@ -105,13 +105,11 @@ render() {
         values,
         errors,
         touched,
-        handleChange,
         handleBlur,
-        handleSubmit,
       }) => (
         <Form
           className="form--main"
-          onSubmit={handleSubmit}
+          onSubmit={this.handleSubmit}
           name="contact"
           method="post"
           data-netlify="true"
@@ -127,7 +125,7 @@ render() {
                 type="text"
                 placeholder="Enter your name"
                 name="name"
-                onChange={handleChange}
+                onChange={this.handleChange}
                 onBlur={handleBlur}
                 value={values.name}
               />
@@ -142,7 +140,7 @@ render() {
                 type="email"
                 placeholder="Your email"
                 name="email"
-                onChange={handleChange}
+                onChange={this.handleChange}
                 onBlur={handleBlur}
                 value={values.email}
               />
@@ -161,7 +159,7 @@ render() {
               rows="5"
               placeholder="Enter your message here..."
               name="message"
-              onChange={handleChange}
+              onChange={this.handleChange}
               onBlur={handleBlur}
               value={values.message}
             />
