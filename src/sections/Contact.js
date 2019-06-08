@@ -45,7 +45,7 @@ export default class Contact extends React.Component {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...this.state
+        "value": form.value,
       })
     })
       .then(() => navigateTo(form.getAttribute("action")))
