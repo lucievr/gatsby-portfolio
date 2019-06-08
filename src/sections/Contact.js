@@ -37,10 +37,6 @@ export default class Contact extends React.Component {
     this.state = {};
   }
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
-  };
-
   handleSubmit = e => {
     e.preventDefault();
     const form = e.target;
@@ -106,6 +102,7 @@ render() {
         errors,
         touched,
         handleBlur,
+        handleChange,
       }) => (
         <Form
           className="form--main"
@@ -125,7 +122,7 @@ render() {
                 type="text"
                 placeholder="Enter your name"
                 name="name"
-                onChange={this.handleChange}
+                onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.name}
               />
@@ -140,7 +137,7 @@ render() {
                 type="email"
                 placeholder="Your email"
                 name="email"
-                onChange={this.handleChange}
+                onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
               />
@@ -159,7 +156,7 @@ render() {
               rows="5"
               placeholder="Enter your message here..."
               name="message"
-              onChange={this.handleChange}
+              onChange={handleChange}
               onBlur={handleBlur}
               value={values.message}
             />
