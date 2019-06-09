@@ -63,7 +63,7 @@ const Projects = () => (
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        HTML, Sass/CSS, Bootstrap, JavaScript, Gulp.
+                        HTML, SCSS + BEM, Bootstrap, JavaScript, Gulp.
                       </p>
                     </Card.Text>
                   </Card.Body>
@@ -84,7 +84,7 @@ const Projects = () => (
               <Fade bottom delay={200}>
                 <Card className="card--main">
                   <Card.Title className="card__title">
-                    Personal Portfolio
+                    DEVELOPER PORTFOLIO
                   </Card.Title>
                   <Card.Body className="card__body">
                     <Img fluid={data.portfolioImage.childImageSharp.fluid} />
@@ -102,10 +102,12 @@ const Projects = () => (
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link className="card__link" href="https://www.lucie.dev/" target="_blank"
+        rel="noopener noreferrer">
                       <FaLink /> Demo
                     </Card.Link>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link className="card__link" href="https://github.com/lucievr/gatsby-portfolio" target="_blank"
+        rel="noopener noreferrer">
                       <FaCode /> GitHub
                     </Card.Link>
                   </Card.Footer>
@@ -119,19 +121,19 @@ const Projects = () => (
               <Fade bottom delay={100}>
                 <Card className="card--main">
                   <Card.Title className="card__title">
-                    Project III Title
+                    DRONIFY
                   </Card.Title>
                   <Card.Body className="card__body">
                     <Img fluid={data.laptopImage.childImageSharp.fluid} />
                     <Card.Text>
-                      <p style={{ marginTop: `16px` }}>
-                        Website of an ethical vegan café.
+                      <p style={{ marginTop: `16px`, color: `white`, fontWeight: `600`, letterSpacing: `1px` }}>
+                        E-commerce site of high-tech multi-purpose drones.
                       </p>
                       <p style={{ margin: 0 }}>
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        HTML, CSS, Sass, JavaScript, Gulp.
+                        JAMstack with JavaScript, React, Gatsby, Snipcart, GraphQL, MongoDB, Netlify, AWS Lambda.
                       </p>
                     </Card.Text>
                   </Card.Body>

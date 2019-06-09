@@ -1,6 +1,9 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+
+import { Global } from "@emotion/core"
+import GlobalStyles from "@components/style"
 
 import SEO from "@components/seo"
 
@@ -18,14 +21,23 @@ const NotFoundPage = () => (
       }
     `}
     render={data => (
-      <div style={{textAlign: `center`, lineHeight: 2}}>
-        <SEO title="404: Not found" />
-        <h1>NOTHING TO SEE HERE</h1>
-        <p>Oops! You just hit a route that doesn&#39;t exist... Try again.</p>
-        <div style={{ maxWidth: `500px`, margin: `20px auto` }}>
-          <Img fluid={data.notFoundImage.childImageSharp.fluid} />
-        </div>
-      </div>
+      <>
+        <Global styles={GlobalStyles} />
+        <section className="section-suc">
+          <SEO title="404: Not found" />
+          <h2 className="title__name">NOTHING TO SEE HERE</h2>
+          <p>Oops! You just hit a route that doesn&#39;t exist... Try again.</p>
+          <div className="div--img">
+            <Img fluid={data.notFoundImage.childImageSharp.fluid} />
+          </div>
+          <Link className="link--back" to="/">
+            Go back to the homepage
+          </Link>
+          <footer style={{ backgroundColor: `#1a5365`, marginTop: `40px` }}>
+            © {new Date().getFullYear()} Lucie Vrsovska
+          </footer>
+        </section>
+      </>
     )}
   />
 )

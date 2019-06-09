@@ -171,7 +171,8 @@ const GlobalStyles = css`
     margin-top: calc(20px + 1vw);
     margin-bottom: calc(20px + 1vw);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    background-color: rgba(255, 255, 255, 0.15);
+    ${'' /* background-color: rgba(255, 255, 255, 0.15); */}
+    background-color: #1a5365;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -183,9 +184,10 @@ const GlobalStyles = css`
 
   .card__title {
     color: #f2b134;
-    font-weight: 400;
+    font-weight: 600;
     font-size: calc(14px + 0.6vw);
-    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 2px;
     margin: 16px;
     padding: 4px;
     padding-bottom: 12px;
@@ -285,6 +287,32 @@ const GlobalStyles = css`
     background-color: #112f41;
     padding-bottom: 20px;
   }
+
+  ${'' /* success & 404 pages */}
+  .div--img {
+  width: calc(280px + 12vw);
+  max-width: 95vw;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px
+  }
+
+ .section-suc {
+  background-color: #1a5365;
+  min-height: 100vh;
+ }
+
+ .link--back {
+  color: #ff7f50;
+  font-size: calc(15px + 0.7vw);
+  font-weight: 500;
+ }
+
+ .link--back:hover {
+   color: #4fb99f;
+   text-decoration: none;
+ }
 
   /* hover.css styles */
 
