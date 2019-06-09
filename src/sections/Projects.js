@@ -21,7 +21,6 @@ const Projects = () => (
             }
           }
         }
-
         portfolioImage: file(relativePath: { eq: "portfolio.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 400) {
@@ -29,7 +28,14 @@ const Projects = () => (
             }
           }
         }
-        laptopImage: file(relativePath: { eq: "laptop.png" }) {
+        droneImage: file(relativePath: { eq: "dronify.jpg" }) {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        shoolixImage: file(relativePath: { eq: "shoolix.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
@@ -51,29 +57,36 @@ const Projects = () => (
               <Fade bottom>
                 <Card className="card--main">
                   <Card.Title className="card__title">
-                    Plantypus Café
+                    PLANTYPUS CAFÉ
                   </Card.Title>
                   <Card.Body className="card__body">
                     <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                     <Card.Text>
-                      <p style={{ marginTop: `16px` }}>
-                        Website of a vegan café.
-                      </p>
+                      <p className="card__subtitle">Website of a vegan café.</p>
                       <p style={{ margin: 0 }}>
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        HTML, SCSS + BEM, Bootstrap, JavaScript, Gulp.
+                        HTML, SCSS + BEM methodology, Bootstrap, vanilla
+                        JavaScript, Gulp.
                       </p>
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link className="card__link" href="https://plantypus.netlify.com/" target="_blank"
-        rel="noopener noreferrer">
+                    <Card.Link
+                      className="card__link"
+                      href="https://plantypus.netlify.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaLink /> Demo
                     </Card.Link>
-                    <Card.Link className="card__link" href="https://github.com/lucievr/plantypus-cafe-website" target="_blank"
-        rel="noopener noreferrer">
+                    <Card.Link
+                      className="card__link"
+                      href="https://github.com/lucievr/plantypus-cafe-website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaCode /> GitHub
                     </Card.Link>
                   </Card.Footer>
@@ -89,9 +102,7 @@ const Projects = () => (
                   <Card.Body className="card__body">
                     <Img fluid={data.portfolioImage.childImageSharp.fluid} />
                     <Card.Text>
-                      <p style={{ marginTop: `16px` }}>
-                        Personal portfolio site.
-                      </p>
+                      <p className="card__subtitle">Personal portfolio site.</p>
                       <p style={{ margin: 0 }}>
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
@@ -102,12 +113,20 @@ const Projects = () => (
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link className="card__link" href="https://www.lucie.dev/" target="_blank"
-        rel="noopener noreferrer">
+                    <Card.Link
+                      className="card__link"
+                      href="https://www.lucie.dev/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaLink /> Demo
                     </Card.Link>
-                    <Card.Link className="card__link" href="https://github.com/lucievr/gatsby-portfolio" target="_blank"
-        rel="noopener noreferrer">
+                    <Card.Link
+                      className="card__link"
+                      href="https://github.com/lucievr/gatsby-portfolio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaCode /> GitHub
                     </Card.Link>
                   </Card.Footer>
@@ -120,20 +139,19 @@ const Projects = () => (
             <Col>
               <Fade bottom delay={100}>
                 <Card className="card--main">
-                  <Card.Title className="card__title">
-                    DRONIFY
-                  </Card.Title>
+                  <Card.Title className="card__title">DRONIFY</Card.Title>
                   <Card.Body className="card__body">
-                    <Img fluid={data.laptopImage.childImageSharp.fluid} />
+                    <Img fluid={data.droneImage.childImageSharp.fluid} />
                     <Card.Text>
-                      <p style={{ marginTop: `16px`, color: `white`, fontWeight: `600`, letterSpacing: `1px` }}>
-                        E-commerce site of high-tech multi-purpose drones.
+                      <p className="card__subtitle">
+                        E-commerce site for high-tech multi-purpose drones.
                       </p>
                       <p style={{ margin: 0 }}>
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        JAMstack with JavaScript, React, Gatsby, Snipcart, GraphQL, MongoDB, Netlify, AWS Lambda.
+                        JAMstack with JavaScript, React, Gatsby, Snipcart,
+                        GraphQL, MongoDB, Netlify, AWS Lambda serverless.
                       </p>
                     </Card.Text>
                   </Card.Body>
@@ -151,20 +169,18 @@ const Projects = () => (
             <Col>
               <Fade bottom delay={200}>
                 <Card className="card--main">
-                  <Card.Title className="card__title">
-                    Project IV Title
-                  </Card.Title>
+                  <Card.Title className="card__title">SHOOLIX</Card.Title>
                   <Card.Body className="card__body">
-                    <Img fluid={data.plantypusImage.childImageSharp.fluid} />
+                    <Img fluid={data.shoolixImage.childImageSharp.fluid} />
                     <Card.Text>
-                      <p style={{ marginTop: `16px` }}>
-                        Website of a vegan café.
+                      <p className="card__subtitle">
+                        Sport & leisure shoe product compare app.
                       </p>
                       <p style={{ margin: 0 }}>
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        HTML, CSS, Sass, JavaScript, Gulp.
+                        JavaScript, React, Gatsby, GraphQL, MongoDB.
                       </p>
                     </Card.Text>
                   </Card.Body>
