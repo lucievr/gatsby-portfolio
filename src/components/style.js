@@ -24,6 +24,20 @@ const GlobalStyles = css`
     background-color: #112f41;
   }
 
+  .nav__wrapper {
+  list-style: none;
+  margin: 0 20px 10px auto;
+  padding: 0;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  ${'' /* justify-content: center;
+  align-items: center; */}
+  @media (max-width: 450px) {
+    margin: 0 auto 10px auto;
+  }
+  }
+
   /* common styles */
 
   section {

@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
-import AnchorLink from "react-anchor-link-smooth-scroll"
+import Scroll from "@components/Scroll"
+import Scrollspy from "react-scrollspy"
 import { TiHome } from "react-icons/ti"
-import Fade from "react-reveal/Fade"
 
 const Nav = styled.nav`
   padding: 0 1rem;
@@ -18,17 +18,6 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
 `
-const NavListWrapper = styled.ul`
-  list-style: none;
-  margin: 0 20px 10px auto;
-  padding: 0;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  @media (max-width: 450px) {
-    margin: 0 auto 10px auto;
-  }
-`
 
 const NavItem = styled.li`
   margin: 0 0.75em;
@@ -36,65 +25,63 @@ const NavItem = styled.li`
   a {
     text-decoration: none;
     color: rgb(251, 251, 251);
+    font-weight: 400;
     padding: 2%;
     width: auto;
+    :hover {
+      color: #f2b134;
+    }
   }
-  a:hover {
-    color: #F2B134;
-  }
-  &.active {
+  &.is-active {
     a {
-      color: #F2B134;
+      color: #f2b134;
     }
   }
 `
 
 const Navbar = () => {
   return (
-      <Nav id="navbar">
-      
-        <NavListWrapper>
-        <Fade top>
-          <NavItem>
-            <AnchorLink href="#home">
-              <TiHome style={{fontSize: `calc(10px + 0.9vw)`, marginBottom: `4px`}} />
-            </AnchorLink>
-          </NavItem>
-          <NavItem>
-            <AnchorLink
-              href="#about"
-              offset={() => document.querySelector("#navbar").offsetHeight}
-            >
-              About
-            </AnchorLink>
-          </NavItem>
-          <NavItem>
-            <AnchorLink
-              href="#projects"
-              offset={() => document.querySelector("#navbar").offsetHeight}
-            >
-              Projects
-            </AnchorLink>
-          </NavItem>
-          <NavItem>
-            <AnchorLink
-              href="#skills"
-              offset={() => document.querySelector("#navbar").offsetHeight}
-            >
-              Skills
-            </AnchorLink>
-          </NavItem>
-          <NavItem>
-            <AnchorLink
-              href="#contact"
-              offset={() => document.querySelector("#navbar").offsetHeight}
-            >
-              Contact
-            </AnchorLink>
-          </NavItem>
-          </Fade>
-        </NavListWrapper>
-      </Nav>
+    <Nav id="navbar">
+      <Scrollspy
+        items={["home", "about", "projects", "skills", "contact"]}
+        currentClassName="is-active"
+        offset={-200}
+        className="nav__wrapper"
+      >
+        <NavItem>
+          <Scroll type="id" element="home">
+            <a href="#">
+              <TiHome
+                style={{ fontSize: `calc(10px + 0.9vw)`, marginBottom: `4px` }}
+              />
+            </a>
+          </Scroll>
+        </NavItem>
+
+        <NavItem>
+          <Scroll type="id" element="about">
+            <a href="#">About</a>
+          </Scroll>
+        </NavItem>
+
+        <NavItem>
+          <Scroll type="id" element="projects">
+            <a href="#">Projects</a>
+          </Scroll>
+        </NavItem>
+        <NavItem>
+          <Scroll type="id" element="skills">
+            <a href="#">Skills</a>
+          </Scroll>
+        </NavItem>
+
+        <NavItem>
+          <Scroll type="id" element="contact">
+            <a href="#">Contact</a>
+          </Scroll>
+        </NavItem>
+      </Scrollspy>
+    </Nav>
   )
 }
 
