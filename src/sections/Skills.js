@@ -1,20 +1,22 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-import bgUrl from '@images/background.svg'
+import bgUrl from "@images/background.svg"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-import Bootstrap from "@images/bootstrap.png"
+import Next from "@images/nextjs.png"
+
 import Code from "@images/code.png"
-import Cssicon from "@images/css.png"
+import Lambda from "@images/lambda.png"
 import Gatsby from "@images/gatsby.png"
 import Git from "@images/git.png"
 import Github from "@images/github.png"
 import Graphqlicon from "@images/graphql.png"
 import Gulp from "@images/gulp.png"
-import Htmlicon from "@images/html.png"
+
+import Auth from "@images/auth0.png"
 import Jsicon from "@images/js.png"
 import Mongo from "@images/mongodb.png"
 import Netlify from "@images/netlify.png"
@@ -24,7 +26,11 @@ import Webpack from "@images/webpack.png"
 
 const Skills = () => {
   return (
-    <section id="skills" className="section--light" style={{ backgroundImage: `url(${bgUrl})` }}>
+    <section
+      id="skills"
+      className="section--light"
+      style={{ backgroundImage: `url(${bgUrl})` }}
+    >
       <h2>
         <span className="symbol--orange">+</span> Skills{" "}
         <span className="symbol--orange">+</span>
@@ -38,13 +44,13 @@ const Skills = () => {
           <Row>
             <Col>
               <a
-                href="https://getbootstrap.com/"
+                href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src={Bootstrap}
-                  alt="bootstrap"
+                  src={Next}
+                  alt="next js"
                   className="icon--skill icon--circle hvr-grow big"
                 />
               </a>
@@ -127,11 +133,15 @@ const Skills = () => {
               </a>
             </Col>
             <Col>
-              <a href="" target="_blank" rel="noopener noreferrer" />
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
               <img
                 src={Jsicon}
                 alt="javascript"
-                className="icon--skill hvr-grow small"
+                className="icon--skill hvr-grow big"
               />
             </Col>
             <Col>
@@ -143,7 +153,7 @@ const Skills = () => {
                 <img
                   src={Reacticon}
                   alt="react"
-                  className="icon--skill hvr-grow small"
+                  className="icon--skill hvr-grow"
                 />
               </a>
             </Col>
@@ -157,7 +167,7 @@ const Skills = () => {
                 <img
                   src={Mongo}
                   alt="mongodb"
-                  className="icon--skill hvr-grow"
+                  className="icon--skill hvr-grow big"
                 />
               </a>
             </Col>
@@ -165,10 +175,14 @@ const Skills = () => {
 
           <Row>
             <Col>
-              <a href="" target="_blank" rel="noopener noreferrer" />
+              <a
+                href="https://aws.amazon.com/lambda/"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
               <img
-                src={Cssicon}
-                alt="css"
+                src={Lambda}
+                alt="aws lambda"
                 className="icon--skill icon--circle hvr-grow big"
               />
             </Col>
@@ -199,11 +213,14 @@ const Skills = () => {
               </a>
             </Col>
             <Col>
-              <a href="" target="_blank" rel="noopener noreferrer" />
+              <a 
+              href="https://auth0.com/" 
+              target="_blank" 
+              rel="noopener noreferrer" />
               <img
-                src={Htmlicon}
-                alt="html"
-                className="icon--skill icon--circle hvr-grow big"
+                src={Auth}
+                alt="auth 0"
+                className="icon--skill icon--circle hvr-grow"
               />
             </Col>
           </Row>

@@ -151,7 +151,7 @@ const Projects = () => (
                           Technologies used:
                         </span>{" "}
                         JAMstack with JavaScript, React, Gatsby, Snipcart,
-                        GraphQL, MongoDB, Netlify, AWS Lambda serverless.
+                        GraphQL, MongoDB, Auth0, Emotion, Netlify, AWS Lambda.
                       </p>
                     </Card.Text>
                   </Card.Body>
@@ -174,13 +174,13 @@ const Projects = () => (
                     <Img fluid={data.shoolixImage.childImageSharp.fluid} />
                     <Card.Text>
                       <p className="card__subtitle">
-                        Sport & leisure shoe product compare app.
+                        Sport & leisure shoe product compare app. [WIP]
                       </p>
                       <p style={{ margin: 0 }}>
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        JavaScript, React, Gatsby, GraphQL, MongoDB.
+                        JavaScript, React, Gatsby, GraphQL, Firebase, Emotion.
                       </p>
                     </Card.Text>
                   </Card.Body>
