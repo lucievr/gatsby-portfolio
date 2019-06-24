@@ -23,9 +23,7 @@ const About = () => {
             . . .
           </span>
           <p className="par--bottom">
-            My current tech stack is mostly JavaScript and React, and I am eager to get more experience with JAMstack and serverless architectures.
-            {/* Get in touch if you think I would make a good addition to your team
-            – I am open to new positions starting this July. */}
+            My current tech stack is mostly JavaScript and React, and I love experimenting with JAMstack and serverless architectures.
           </p>
           <span className="symbol--orange" style={{ fontWeight: `900` }}>
             . . .

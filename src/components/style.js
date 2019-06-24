@@ -240,16 +240,28 @@ const GlobalStyles = css`
   }
 
   img.icon--skill.hvr-grow {
-    margin: calc(15px + 1vw);
-    width: calc(55px + 1.9vw);
+    margin: calc(17px + 1.2vw);
+    width: calc(50px + 1.7vw);
   }
 
   img.icon--skill.hvr-grow.small {
-    width: calc(60px + 2vw);
+    width: calc(53px + 2vw);
+  }
+
+  img.icon--skill.hvr-grow.sem {
+    width: calc(50px + 1.9vw);
+  }
+
+  img.icon--skill.hvr-grow.mid {
+    width: calc(50px + 1.5vw);
+  }
+
+  img.icon--skill.hvr-grow.med {
+    width: calc(50px + 1.2vw);
   }
 
   img.icon--skill.hvr-grow.big {
-    width: calc(50px + 1.2vw);
+    width: calc(47px + 1vw);
   }
 
   .icon--circle {

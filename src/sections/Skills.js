@@ -6,22 +6,20 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-import Next from "@images/nextjs.png"
-
+import Auth from "@images/auth0.png"
 import Code from "@images/code.png"
-import Lambda from "@images/lambda.png"
 import Gatsby from "@images/gatsby.png"
 import Git from "@images/git.png"
 import Github from "@images/github.png"
 import Graphqlicon from "@images/graphql.png"
 import Gulp from "@images/gulp.png"
-
-import Auth from "@images/auth0.png"
 import Jsicon from "@images/js.png"
+import Lambda from "@images/lambda.png"
 import Mongo from "@images/mongodb.png"
 import Netlify from "@images/netlify.png"
+import Next from "@images/nextjs.png"
 import Reacticon from "@images/react.png"
-import Sassicon from "@images/sass.png"
+import Snipcart from "@images/snipcart.png"
 import Webpack from "@images/webpack.png"
 
 const Skills = () => {
@@ -51,7 +49,7 @@ const Skills = () => {
                 <img
                   src={Next}
                   alt="next js"
-                  className="icon--skill icon--circle hvr-grow big"
+                  className="icon--skill icon--circle hvr-grow mid"
                 />
               </a>
             </Col>
@@ -67,7 +65,7 @@ const Skills = () => {
                 <img
                   src={Webpack}
                   alt="webpack"
-                  className="icon--skill hvr-grow small"
+                  className="icon--skill hvr-grow big"
                 />
               </a>
             </Col>
@@ -80,30 +78,33 @@ const Skills = () => {
                 <img
                   src={Github}
                   alt="github"
-                  className="icon--skill hvr-grow"
+                  className="icon--skill hvr-grow small"
                 />
               </a>
             </Col>
-
+            <Col>
+              <a
+                href="https://www.gatsbyjs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={Gatsby}
+                  alt="gatsby"
+                  className="icon--skill icon--circle icon--gatsby hvr-grow mid"
+                />
+              </a>
+            </Col>
             <Col>
               <a
                 href="https://gulpjs.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={Gulp} alt="gulp" className="icon--skill hvr-grow" />
-              </a>
-            </Col>
-            <Col>
-              <a
-                href="https://www.netlify.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
                 <img
-                  src={Netlify}
-                  alt="netlify"
-                  className="icon--skill hvr-grow big"
+                  src={Gulp}
+                  alt="gulp"
+                  className="icon--skill hvr-grow small"
                 />
               </a>
             </Col>
@@ -112,14 +113,14 @@ const Skills = () => {
           <Row>
             <Col>
               <a
-                href="https://sass-lang.com/"
+                href="https://snipcart.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src={Sassicon}
-                  alt="sass"
-                  className="icon--skill hvr-grow"
+                  src={Snipcart}
+                  alt="snipcart"
+                  className="icon--skill hvr-grow big"
                 />
               </a>
             </Col>
@@ -129,7 +130,7 @@ const Skills = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={Git} alt="git" className="icon--skill hvr-grow big" />
+                <img src={Git} alt="git" className="icon--skill hvr-grow mid" />
               </a>
             </Col>
             <Col>
@@ -141,7 +142,7 @@ const Skills = () => {
               <img
                 src={Jsicon}
                 alt="javascript"
-                className="icon--skill hvr-grow big"
+                className="icon--skill hvr-grow mid"
               />
             </Col>
             <Col>
@@ -153,7 +154,7 @@ const Skills = () => {
                 <img
                   src={Reacticon}
                   alt="react"
-                  className="icon--skill hvr-grow"
+                  className="icon--skill hvr-grow sem"
                 />
               </a>
             </Col>
@@ -183,7 +184,7 @@ const Skills = () => {
               <img
                 src={Lambda}
                 alt="aws lambda"
-                className="icon--skill icon--circle hvr-grow big"
+                className="icon--skill icon--circle hvr-grow mid"
               />
             </Col>
             <Col>
@@ -195,33 +196,35 @@ const Skills = () => {
                 <img
                   src={Graphqlicon}
                   alt="graphql"
-                  className="icon--skill hvr-grow"
+                  className="icon--skill hvr-grow sem"
                 />
               </a>
             </Col>
+
             <Col>
               <a
-                href="https://www.gatsbyjs.org/"
+                href="https://auth0.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              />
+              <img
+                src={Auth}
+                alt="auth 0"
+                className="icon--skill icon--circle hvr-grow small"
+              />
+            </Col>
+            <Col>
+              <a
+                href="https://www.netlify.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src={Gatsby}
-                  alt="gatsby"
-                  className="icon--skill icon--circle icon--gatsby hvr-grow big"
+                  src={Netlify}
+                  alt="netlify"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
-            </Col>
-            <Col>
-              <a 
-              href="https://auth0.com/" 
-              target="_blank" 
-              rel="noopener noreferrer" />
-              <img
-                src={Auth}
-                alt="auth 0"
-                className="icon--skill icon--circle hvr-grow"
-              />
             </Col>
           </Row>
 
@@ -235,7 +238,7 @@ const Skills = () => {
                 <img
                   src={Code}
                   alt="vs code"
-                  className="icon--skill hvr-grow big"
+                  className="icon--skill hvr-grow med"
                 />
               </a>
             </Col>
