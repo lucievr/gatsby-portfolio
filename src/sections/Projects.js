@@ -150,16 +150,26 @@ const Projects = () => (
                         <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
                           Technologies used:
                         </span>{" "}
-                        JAMstack with JavaScript, React, Gatsby, Snipcart,
-                        GraphQL, MongoDB, Auth0, Emotion, Netlify, AWS Lambda.
+                        JAMstack with JavaScript, React, Redux, Gatsby, GraphQL,
+                        MongoDB, Auth0, Emotion, Netlify.
                       </p>
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link
+                      className="card__link"
+                      href="https://dronify.netlify.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaLink /> Demo
                     </Card.Link>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link
+                      className="card__link"
+                      href="https://github.com/n0rtt/dronify"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <FaCode /> GitHub
                     </Card.Link>
                   </Card.Footer>
@@ -185,10 +195,18 @@ const Projects = () => (
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link
+                      className="card__link"
+                      href="#"
+                      style={{ color: `grey` }}
+                    >
                       <FaLink /> Demo
                     </Card.Link>
-                    <Card.Link className="card__link" href="#">
+                    <Card.Link
+                      className="card__link"
+                      href="#"
+                      style={{ color: `grey` }}
+                    >
                       <FaCode /> GitHub
                     </Card.Link>
                   </Card.Footer>

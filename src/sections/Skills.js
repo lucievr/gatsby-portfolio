@@ -14,11 +14,11 @@ import Github from "@images/github.png"
 import Graphqlicon from "@images/graphql.png"
 import Gulp from "@images/gulp.png"
 import Jsicon from "@images/js.png"
-import Lambda from "@images/lambda.png"
 import Mongo from "@images/mongodb.png"
 import Netlify from "@images/netlify.png"
 import Next from "@images/nextjs.png"
 import Reacticon from "@images/react.png"
+import Redux from "@images/redux.png"
 import Snipcart from "@images/snipcart.png"
 import Webpack from "@images/webpack.png"
 
@@ -177,13 +177,13 @@ const Skills = () => {
           <Row>
             <Col>
               <a
-                href="https://aws.amazon.com/lambda/"
+                href="https://redux.js.org/"
                 target="_blank"
                 rel="noopener noreferrer"
               />
               <img
-                src={Lambda}
-                alt="aws lambda"
+                src={Redux}
+                alt="redux"
                 className="icon--skill icon--circle hvr-grow mid"
               />
             </Col>
