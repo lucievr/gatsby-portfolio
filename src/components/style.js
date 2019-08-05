@@ -13,7 +13,7 @@ const GlobalStyles = css`
     overflow-x: hidden;
   }
 
-  body {
+  body.light-mode {
     margin: 0;
     text-align: center;
     font-size: calc(11px + 0.5vw);
@@ -22,7 +22,89 @@ const GlobalStyles = css`
     font-weight: 300;
     color: white;
     background-color: #112f41;
+    transition: background-color 0.3s ease;
   }
+
+  body.dark-mode {
+    margin: 0;
+    text-align: center;
+    font-size: calc(11px + 0.5vw);
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    ${'' /* background-color: #dfdfdf;
+    color: #10171d; */}
+
+  .dark-mode-toggle > button {
+    color: #999;
+    &:last-child {
+      color: #10171d;
+    }
+  }
+}
+
+.dark-mode-toggle {
+  display: flex;
+  margin: 0 auto;
+  & > button {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    color: #ffe600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:last-child {
+      color: #666;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.toggle-control {
+  position: relative;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'].dmcheck {
+  width: 40px;
+  height: 10px;
+  background: #555;
+  position: relative;
+  border-radius: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  vertical-align: 2px;
+  outline: none;
+
+  &:checked + label {
+    left: 30px;
+  }
+
+  &:focus-visible {
+    outline: solid 2px white;
+  }
+
+  & + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    opacity: 0.9;
+    background-color: #f6f6f6;
+  }
+}
 
   .nav__wrapper {
   list-style: none;
@@ -31,8 +113,8 @@ const GlobalStyles = css`
   padding-top: 10px;
   display: flex;
   flex-direction: row;
-  ${'' /* justify-content: center;
-  align-items: center; */}
+  justify-content: center;
+  align-items: center;
   @media (max-width: 450px) {
     margin: 0 auto 10px auto;
   }

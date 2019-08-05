@@ -1,11 +1,12 @@
 import React from "react"
 import styled from "styled-components"
 import Scroll from "@components/Scroll"
+import DarkModeToggle from "@components/DarkModeToggle"
 import Scrollspy from "react-scrollspy"
 import { TiHome } from "react-icons/ti"
 
 const Nav = styled.nav`
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
   background-color: #068587;
   position: fixed;
   flex-flow: row nowrap;
@@ -42,12 +43,16 @@ const NavItem = styled.li`
 const Navbar = () => {
   return (
     <Nav id="navbar">
+          <NavItem>
+        <DarkModeToggle />
+      </NavItem>
       <Scrollspy
         items={["home", "about", "projects", "skills", "contact"]}
         currentClassName="is-active"
         offset={-200}
         className="nav__wrapper"
       >
+
         <NavItem>
           <Scroll type="id" element="home">
             <a href="#">

@@ -30,6 +30,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-styled-components`,
+    'gatsby-plugin-use-dark-mode',
     'gatsby-plugin-svgr',
     {
       resolve: `gatsby-transformer-remark`,
