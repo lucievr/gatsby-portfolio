@@ -131,7 +131,7 @@ const GlobalStyles = css`
   }
     
   .dark-mode-toggle > button {
-    color: #999;
+    color: #a6a6a6;
     &:last-child {
       color: #ffe600;
     }
@@ -145,11 +145,11 @@ const GlobalStyles = css`
     font-size: 1.2em;
     background: none;
     border: none;
-    color: #ffe600;
+    color: #262626;
     cursor: pointer;
     transition: color 0.5s ease;
     &:last-child {
-      color: #666;
+      color: #a6a6a6;
     }
 
     &:focus {
@@ -196,8 +196,8 @@ input[type='checkbox'].dmcheck {
     position: absolute;
     left: 2px;
     background: #fff;
-    opacity: 0.9;
-    background-color: #f6f6f6;
+    opacity: 0.8;
+    background-color: rgba(255,255,255,0.9);
   }
 }
 
