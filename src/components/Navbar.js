@@ -8,6 +8,7 @@ import { TiHome } from "react-icons/ti"
 const Nav = styled.nav`
   padding: 0 1rem 0 0;
   background-color: #068587;
+  transition: background-color 0.6s ease;
   position: fixed;
   flex-flow: row nowrap;
   justify-content: flex-start;

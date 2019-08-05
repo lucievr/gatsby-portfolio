@@ -1,4 +1,6 @@
 import { css } from "@emotion/core"
+import bgUrl from "@images/background.svg"
+import bgLightUrl from "@images/background-light.svg"
 
 const GlobalStyles = css`
   * {
@@ -22,7 +24,7 @@ const GlobalStyles = css`
     font-weight: 300;
     color: white;
     background-color: #112f41;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.6s ease;
   }
 
   body.dark-mode {
@@ -32,13 +34,106 @@ const GlobalStyles = css`
     line-height: 1.5;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    ${'' /* background-color: #dfdfdf;
-    color: #10171d; */}
+    background-color: #dee9ed;
+    transition: background-color 0.6s ease;
 
+    nav#navbar {
+      background-color: rgba(80, 80, 242, 0.8);
+      background-color: #6161d1;
+      transition: background-color 0.6s ease;
+    }
+
+    ul.nav__wrapper li {
+      a {
+        color: white;
+      :hover {
+      color: #ff7f50;
+    }
+  }
+      &.is-active {
+    a {
+      color: #ff7f50;
+      }
+      }
+    }
+
+    section.section--dark {
+      background-color: #dee9ed;
+      transition: background-color 0.6s ease;
+    }
+
+    section.section--light {
+      background-image: url(${bgLightUrl});
+      transition: background-image 0.6s ease;
+    }
+
+    h2 {
+      color: #4d4d4d;
+      transition: color 0.6s ease;
+    }
+
+    div.title__top {
+      color: #4d4d4d;
+      transition: color 0.6s ease;
+    }
+
+    .Typist .Cursor {
+      color: #ff7f50;
+    }
+
+    div.title__bottom {
+      color: rgba(80, 80, 242, 0.9);
+      transition: color 0.6s ease;
+    }
+
+    span.title__name {
+      color: #ff7f50;
+      transition: color 0.6s ease;
+    }
+
+    span.title__dev {
+      color: #4d4d4d;
+      transition: color 0.6s ease;
+    }
+
+    hr {
+      border-top: 2px dashed #ffa280;
+      transition: border-top 0.6s ease;
+    }
+
+    .div--circle {
+      background-color: rgba(97, 97, 209, 0.9);
+      border: 3px solid #ffa280;
+      transition: all 0.6s ease;
+    }
+
+    .icon--contact {
+      color: #ff7f50;
+    }
+    .icon--contact:hover {
+      color: #666;
+    }
+
+    .btn--submit {
+      background-color: rgba(97, 97, 209, 0.9);
+      transition: all 0.6s ease;
+      color: white;
+    }
+
+    .btn--submit:hover {
+      background-color: #666;
+    }
+
+    footer {
+      background-color: #dee9ed;
+      transition: background-color 0.6s ease;
+      padding-bottom: 20px;
+  }
+    
   .dark-mode-toggle > button {
     color: #999;
     &:last-child {
-      color: #10171d;
+      color: #ffe600;
     }
   }
 }
@@ -52,7 +147,7 @@ const GlobalStyles = css`
     border: none;
     color: #ffe600;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
     &:last-child {
       color: #666;
     }
@@ -96,7 +191,7 @@ input[type='checkbox'].dmcheck {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
     position: absolute;
     left: 2px;
@@ -129,16 +224,19 @@ input[type='checkbox'].dmcheck {
     width: 100%;
   }
 
-  .section--dark {
+  section.section--dark {
     background-color: #112f41;
+    transition: background-color 0.6s ease;
   }
 
-  .section--light {
-    /* background-color: #113541; */
+  section.section--light {
+    background-image: url(${bgUrl});
+    transition: background-image 0.6s ease;
   }
 
   h2 {
     color: white;
+    transition: color 0.6s ease;
     font-size: calc(16px + 2vw);
     padding: 10px 10px 30px;
     font-family: "Playfair Display", serif;
@@ -164,7 +262,9 @@ input[type='checkbox'].dmcheck {
 
   .title__top {
     color: white;
+    transition: color 0.6s ease;
     font-size: calc(18px + 2.5vw);
+    letter-spacing: 1px;
     font-weight: 700;
     font-family: "Playfair Display", serif;
     padding-top: calc(60px + 3vw);
@@ -172,21 +272,24 @@ input[type='checkbox'].dmcheck {
 
   .title__bottom {
     color: #4fb99f;
-    font-size: calc(12px + 1.2vw);
+    transition: color 0.6s ease;
+    font-size: calc(14px + 1.2vw);
     font-weight: 700;
     font-family: "Playfair Display", serif;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     padding-top: 20px;
     padding-bottom: calc(60px + 3vw);
   }
 
   .title__name {
     color: #f2b134;
-    font-weight: 900;
+    transition: color 0.6s ease;
+    font-weight: 700;
   }
 
   .title__dev {
     color: #ff7f50;
+    transition: color 0.6s ease;
     font-weight: 700;
   }
 
@@ -230,6 +333,7 @@ input[type='checkbox'].dmcheck {
     margin: 0 auto;
     border-radius: 50%;
     background-color: #068587;
+    transition: background-color 0.6s ease;
     color: white;
     padding: 2px;
     border: 3px solid #f2b134;
@@ -389,6 +493,7 @@ input[type='checkbox'].dmcheck {
   .btn--submit {
     font-size: calc(13px + 0.6vw);
     background-color: rgba(242, 177, 52, 0.9);
+    transition: all 0.6s ease;
     font-weight: 700;
     color: #112f41;
     border: 1px solid black;
@@ -404,6 +509,7 @@ input[type='checkbox'].dmcheck {
 
   footer {
     background-color: #112f41;
+    transition: background-color 0.6s ease;
     padding-bottom: 20px;
   }
 

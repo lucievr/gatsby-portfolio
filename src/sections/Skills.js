@@ -1,6 +1,5 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-import bgUrl from "@images/background.svg"
 
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
@@ -27,7 +26,6 @@ const Skills = () => {
     <section
       id="skills"
       className="section--light"
-      style={{ backgroundImage: `url(${bgUrl})` }}
     >
       <h2>
         <span className="symbol--orange">+</span> Skills{" "}
