@@ -63,8 +63,8 @@ const Projects = () => (
                     <Img fluid={data.plantypusImage.childImageSharp.fluid} />
                     <Card.Text>
                       <p className="card__subtitle">Website of a vegan café.</p>
-                      <p style={{ margin: 0 }}>
-                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
+                      <p className="text--tech">
+                        <span className="span--tech">
                           Technologies used:
                         </span>{" "}
                         HTML, SCSS + BEM methodology, Bootstrap, vanilla
@@ -103,8 +103,8 @@ const Projects = () => (
                     <Img fluid={data.portfolioImage.childImageSharp.fluid} />
                     <Card.Text>
                       <p className="card__subtitle">Personal portfolio site.</p>
-                      <p style={{ margin: 0 }}>
-                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
+                      <p className="text--tech">
+                        <span className="span--tech">
                           Technologies used:
                         </span>{" "}
                         JavaScript, React, Gatsby, GraphQL, Babel, Webpack,
@@ -146,8 +146,8 @@ const Projects = () => (
                       <p className="card__subtitle">
                         E-commerce site for high-tech multi-purpose drones.
                       </p>
-                      <p style={{ margin: 0 }}>
-                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
+                      <p className="text--tech">
+                        <span className="span--tech">
                           Technologies used:
                         </span>{" "}
                         JAMstack with JavaScript, React, Redux, Gatsby, GraphQL,
@@ -186,8 +186,8 @@ const Projects = () => (
                       <p className="card__subtitle">
                         Sport & leisure shoe product compare app. [WIP]
                       </p>
-                      <p style={{ margin: 0 }}>
-                        <span style={{ color: `#ff7f50`, fontWeight: `500` }}>
+                      <p className="text--tech">
+                        <span className="span--tech">
                           Technologies used:
                         </span>{" "}
                         JavaScript, React, Gatsby, GraphQL, Firebase, Emotion.

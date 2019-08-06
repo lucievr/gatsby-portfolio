@@ -1,5 +1,6 @@
 import React from "react"
 import Form from "react-bootstrap/Form"
+import Gif from "@images/thumbs-up.gif"
 import { Formik } from "formik"
 import { navigate } from "gatsby"
 import * as Yup from "yup"
@@ -175,6 +176,7 @@ const Contact = () => {
     <div style={{margin: `1rem`}}>
       <a class="twitter-timeline" data-width="350" data-height="900" data-link-color="#ff7f50" href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw">Tweets by lucie_vrs</a>
     </div>
+    <img src={Gif} alt="gif" />
 </div>
     </section>
   )

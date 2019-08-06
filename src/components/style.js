@@ -77,7 +77,7 @@ const GlobalStyles = css`
       transition: color 0.6s ease;
     }
 
-    .Typist .Cursor {
+    div.Typist span.Cursor {
       color: #ff7f50;
     }
 
@@ -101,31 +101,70 @@ const GlobalStyles = css`
       transition: border-top 0.6s ease;
     }
 
-    .div--circle {
+    div.div--circle {
       background: rgb(73,73,171);
       background: radial-gradient(circle, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
       border: 3px solid #ffa280;
-      transition: all 0.6s ease;
+      transition: background 0.6s ease;
+      transition: border 0.6s ease;
     }
 
-    .icon--contact {
+    div.card--main {
+      background: rgba(73,73,171,1);
+      background: linear-gradient(45deg, rgba(255,127,80,1) 0%, rgba(73,73,171,1) 75%);
+      transition: background-color 0.6s ease;
+      border: 1px solid rgba(255,255,255,0.5);
+    }
+
+    div.card__title {
+      color: white;
+      text-shadow: none;
+      border-bottom: 3px dotted #ffa280;
+    }
+
+    p.card__subtitle {
+    font-weight: 500;
+    }
+
+    p.text--tech {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    span.span--tech { 
+      color: white;
+      font-weight: 400;
+    }
+
+    a.card__link {
+      color: white;
+      font-weight: 400;
+    }
+
+    a.card__link:hover {
+      color: rgba(85,86,200,1);
+    }
+
+    svg.icon--contact {
       color: #ff7f50;
     }
-    .icon--contact:hover {
+    svg.icon--contact:hover {
       color: #666;
     }
 
-    .btn--submit {
-      background: rgba(85,86,200,1);
-      background: linear-gradient(90deg, rgba(85,86,200,1) 0%, rgba(73,73,171,1) 50%, rgba(85,86,200,1) 100%);
-      transition: all 0.6s ease;
+    button.btn--submit {
+      background: rgba(73,73,171,1);
+      background: linear-gradient(45deg, rgba(255,127,80,1) 0%, rgba(73,73,171,1) 75%);
+      transition: background 0.3s ease;
       font-weight: 500;
       color: white;
     }
 
-    .btn--submit:hover {
+    button.btn--submit:hover {
       font-weight: 500;
-      background: #666;
+      background: rgba(73,73,171,1);
+      background: linear-gradient(90deg, rgba(85,86,200,1) 0%, rgba(73,73,171,1) 50%, rgba(85,86,200,1) 100%);
+      transition: background 0.3s ease;
     }
 
     footer {
@@ -205,7 +244,7 @@ input[type='checkbox'].dmcheck {
   }
 }
 
-  .nav__wrapper {
+  ul.nav__wrapper {
   list-style: none;
   margin: 0 20px 10px auto;
   padding: 0;
@@ -248,7 +287,7 @@ input[type='checkbox'].dmcheck {
     letter-spacing: 1px;
   }
 
-  .heading--teal {
+  h2.heading--teal {
     color: #4fb99f;
   }
 
@@ -258,13 +297,13 @@ input[type='checkbox'].dmcheck {
     border-top: 2px dashed #f2b134;
   }
 
-  .symbol--orange {
+  span.symbol--orange {
     color: #ff7f50;
   }
 
   /* home section */
 
-  .title__top {
+  div.title__top {
     color: white;
     transition: color 0.6s ease;
     font-size: calc(18px + 2.5vw);
@@ -274,7 +313,7 @@ input[type='checkbox'].dmcheck {
     padding-top: calc(60px + 3vw);
   }
 
-  .title__bottom {
+  div.title__bottom {
     color: #4fb99f;
     transition: color 0.6s ease;
     font-size: calc(14px + 1.2vw);
@@ -285,24 +324,24 @@ input[type='checkbox'].dmcheck {
     padding-bottom: calc(60px + 3vw);
   }
 
-  .title__name {
+  span.title__name {
     color: #f2b134;
     transition: color 0.6s ease;
-    font-weight: 700;
+    font-weight: 800;
   }
 
-  .title__dev {
+  span.title__dev {
     color: #ff7f50;
     transition: color 0.6s ease;
     font-weight: 700;
   }
 
-  .Typist .Cursor {
+  div.Typist span.Cursor {
     display: inline-block;
     color: #f2b134;
     font-size: calc(20px + 2.5vw);
   }
-  .Typist .Cursor--blinking {
+  div.Typist span.Cursor--blinking {
     opacity: 1;
     animation: blink 1s linear infinite;
   }
@@ -319,7 +358,7 @@ input[type='checkbox'].dmcheck {
     }
   }
 
-  .div--laptop {
+  div.div--laptop {
     width: calc(220px + 10vw);
     margin: 0 auto;
     padding-bottom: 20px;
@@ -327,7 +366,7 @@ input[type='checkbox'].dmcheck {
 
   /* about section  */
 
-  .div--circle {
+  div.div--circle {
     width: calc(280px + 15vw);
     height: calc(280px + 15vw);
     min-width: 280px;
@@ -341,17 +380,18 @@ input[type='checkbox'].dmcheck {
     color: white;
     padding: 2px;
     border: 3px solid #f2b134;
+    transition: border 0.6s ease;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   }
 
-  .img--avatar {
+  img.img--avatar {
     width: calc(55px + 6vw);
     border-radius: 50%;
     margin: 0;
     padding-top: calc(5px + 1vw);
   }
 
-  .par--top {
+  p.par--top {
     font-size: calc(9px + 0.5vw);
     line-height: 1.7;
     margin: 0 auto;
@@ -359,7 +399,7 @@ input[type='checkbox'].dmcheck {
     padding-top: calc(5px + 1.3vw);
   }
 
-  .par--bottom {
+  p.par--bottom {
     font-size: calc(9px + 0.5vw);
     line-height: 1.7;
     margin: 0 auto;
@@ -368,7 +408,7 @@ input[type='checkbox'].dmcheck {
 
   /* projects section */
 
-  .card--main {
+  div.card--main {
     width: calc(260px + 7vw);
     max-width: 90vw;
     margin: 20px auto;
@@ -376,6 +416,7 @@ input[type='checkbox'].dmcheck {
     margin-bottom: calc(20px + 1vw);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
     background-color: #1a5365;
+    transition: background-color 0.6s ease;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -385,7 +426,7 @@ input[type='checkbox'].dmcheck {
     border-radius: 0.25rem;
   }
 
-  .card__title {
+  div.card__title {
     color: #f2b134;
     font-weight: 500;
     font-size: calc(13px + 0.5vw);
@@ -398,31 +439,40 @@ input[type='checkbox'].dmcheck {
     border-bottom: 3px dotted #4fb99f;
   }
 
-  .card__body {
+  div.card__body {
     padding-top: 0;
   }
 
-  .card__subtitle {
+  p.card__subtitle {
     margin-top: 16px;
     font-size: calc(12px + 0.5vw);
     color: white;
     font-weight: 300;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-shadow: 1.5px 1px black;
   }
 
-  .card__link {
+  a.card__link {
     color: #4fb99f;
     font-weight: 400;
   }
 
-  .card__link:hover {
+  a.card__link:hover {
     color: #ff7f50;
+  }
+
+  p.text--tech {
+      margin: 0;
+  }
+
+  span.span--tech { 
+    color: #ff7f50;
+    font-weight: 500;
   }
 
   /* skills section */
 
-  .div--skills {
+  div.div--skills {
     max-width: 70vw;
     margin: 0 auto;
     padding-bottom: calc(20px + 1vw);
@@ -454,27 +504,27 @@ input[type='checkbox'].dmcheck {
     width: calc(47px + 1vw);
   }
 
-  .icon--circle {
+  img.icon--circle {
     border-radius: 50%;
   }
 
-  .icon--gatsby {
+  img.icon--gatsby {
     border: 4px solid #663399;
     border-radius: 50%;
   }
 
   /* contact section */
 
-  .icon--contact {
+  svg.icon--contact {
     font-size: calc(52px + 2.5vw);
     margin: 10px;
     color: #f2b134;
   }
-  .icon--contact:hover {
+  svg.icon--contact:hover {
     color: #ff7f50;
   }
 
-  .form--main {
+  form.form--main {
     padding: 20px;
     margin: 0 auto;
     max-width: 90vw;
@@ -486,25 +536,26 @@ input[type='checkbox'].dmcheck {
     }
   }
 
-  .form__control {
+  input.form__control {
     margin-bottom: calc(10px + 0.5vw);
   }
 
-  .form__control ::placeholder {
+  input.form__control ::placeholder {
     font-size: calc(11px + 0.5vw);
   }
 
-  .btn--submit {
+  button.btn--submit {
     font-size: calc(13px + 0.6vw);
     background-color: rgba(242, 177, 52, 0.9);
-    transition: all 0.6s ease;
+    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
     font-weight: 600;
     color: #112f41;
     border: 1px solid black;
     letter-spacing: 1px;
   }
 
-  .btn--submit:hover {
+  button.btn--submit:hover {
     background-color: #ff7f50;
     font-weight: 600;
     color: white;
@@ -518,7 +569,7 @@ input[type='checkbox'].dmcheck {
   }
 
   ${"" /* success & 404 pages */}
-  .div--img {
+  div.div--img {
     width: calc(280px + 12vw);
     max-width: 95vw;
     margin: 0 auto;
@@ -532,13 +583,13 @@ input[type='checkbox'].dmcheck {
     min-height: 100vh;
   }
 
-  .link--back {
+  a.link--back {
     color: #ff7f50;
     font-size: calc(15px + 0.7vw);
     font-weight: 500;
   }
 
-  .link--back:hover {
+  a.link--back:hover {
     color: #4fb99f;
     text-decoration: none;
   }
