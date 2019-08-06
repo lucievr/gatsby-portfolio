@@ -38,8 +38,8 @@ const GlobalStyles = css`
     transition: background-color 0.6s ease;
 
     nav#navbar {
-      background-color: rgba(80, 80, 242, 0.8);
-      background-color: #6161d1;
+      background: rgb(73,73,171);
+      background: linear-gradient(90deg, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
       transition: background-color 0.6s ease;
     }
 
@@ -102,7 +102,8 @@ const GlobalStyles = css`
     }
 
     .div--circle {
-      background-color: rgba(97, 97, 209, 0.9);
+      background: rgb(73,73,171);
+      background: radial-gradient(circle, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
       border: 3px solid #ffa280;
       transition: all 0.6s ease;
     }
@@ -115,13 +116,16 @@ const GlobalStyles = css`
     }
 
     .btn--submit {
-      background-color: rgba(97, 97, 209, 0.9);
+      background: rgba(85,86,200,1);
+      background: linear-gradient(90deg, rgba(85,86,200,1) 0%, rgba(73,73,171,1) 50%, rgba(85,86,200,1) 100%);
       transition: all 0.6s ease;
+      font-weight: 500;
       color: white;
     }
 
     .btn--submit:hover {
-      background-color: #666;
+      font-weight: 500;
+      background: #666;
     }
 
     footer {
@@ -494,7 +498,7 @@ input[type='checkbox'].dmcheck {
     font-size: calc(13px + 0.6vw);
     background-color: rgba(242, 177, 52, 0.9);
     transition: all 0.6s ease;
-    font-weight: 700;
+    font-weight: 600;
     color: #112f41;
     border: 1px solid black;
     letter-spacing: 1px;
