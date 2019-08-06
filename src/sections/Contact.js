@@ -38,7 +38,11 @@ const Contact = () => {
         <span className="symbol--orange">+</span> Contact{" "}
         <span className="symbol--orange">+</span>
       </h2>
-      <div>
+
+<div style={{display: `flex`, justifyContent: `space-evenly`, flexWrap: `wrap`}}>
+<div>
+<div style={{margin: `1rem`}}>
+  <h5 style={{margin: `1rem`}}>Let's get social</h5>
         <a
           href="https://github.com/lucievr"
           target="_blank"
@@ -60,8 +64,8 @@ const Contact = () => {
         >
           <TiSocialTwitterCircular className="icon--contact hvr-bob" />
         </a>
+        
       </div>
-
       <Formik
         initialValues={{
           "bot-field": "",
@@ -102,6 +106,7 @@ const Contact = () => {
             netlify-honeypot="bot-field"
             action="/success/"
           >
+            <h5 style={{ margin: `0.5rem 1rem 3rem 1rem` }}>Or send me a message</h5>
             <input type="hidden" name="form-name" value="contact" />
             <input name="bot-field" type="hidden" />
             <Form.Row>
@@ -166,6 +171,11 @@ const Contact = () => {
           </Form>
         )}
       </Formik>
+      </div>
+    <div style={{margin: `1rem`}}>
+      <a class="twitter-timeline" data-width="350" data-height="900" data-link-color="#ff7f50" href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw">Tweets by lucie_vrs</a>
+    </div>
+</div>
     </section>
   )
 }
