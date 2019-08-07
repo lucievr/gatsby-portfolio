@@ -528,6 +528,9 @@ input[type='checkbox'].dmcheck {
     padding: 20px;
     margin: 0 auto;
     max-width: 90vw;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 12px solid white;
+    border-radius: 5px;
     @media (min-width: 700px) {
       max-width: 70vw;
     }
