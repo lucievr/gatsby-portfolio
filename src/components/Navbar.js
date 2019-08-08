@@ -7,7 +7,8 @@ import { TiHome } from "react-icons/ti"
 
 const Nav = styled.nav`
   padding: 0 1rem 0 0;
-  background-color: #068587;
+  background: rgb(73,73,171);
+  background: linear-gradient(90deg, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
   transition: background-color 0.6s ease;
   position: fixed;
   flex-flow: row nowrap;
@@ -26,17 +27,17 @@ const NavItem = styled.li`
   display: block;
   a {
     text-decoration: none;
-    color: rgb(251, 251, 251);
+    color: white;
     font-weight: 400;
     padding: 2%;
     width: auto;
     :hover {
-      color: #f2b134;
+      color: #ff7f50;
     }
   }
   &.is-active {
     a {
-      color: #f2b134;
+      color: #ff7f50;
     }
   }
 `

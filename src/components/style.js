@@ -18,165 +18,174 @@ const GlobalStyles = css`
   body.light-mode {
     margin: 0;
     text-align: center;
-    font-size: calc(11px + 0.5vw);
+    font-size: calc(12px + 0.4vw);
     line-height: 1.5;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    color: white;
-    background-color: #112f41;
+    background-color: #dee9ed;
     transition: background-color 0.6s ease;
   }
 
   body.dark-mode {
     margin: 0;
     text-align: center;
-    font-size: calc(11px + 0.5vw);
+    font-size: calc(12px + 0.4vw);
     line-height: 1.5;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    background-color: #dee9ed;
+    color: white;
+    background-color: #112f41;
     transition: background-color 0.6s ease;
 
     nav#navbar {
-      background: rgb(73,73,171);
-      background: linear-gradient(90deg, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
-      transition: background-color 0.6s ease;
+      background: #068587;
+      transition: background 0.6s ease;
     }
 
     ul.nav__wrapper li {
       a {
-        color: white;
+        color: rgb(251, 251, 251);
       :hover {
-      color: #ff7f50;
+      color: #f2b134;
     }
   }
       &.is-active {
     a {
-      color: #ff7f50;
+      color: #f2b134;
       }
       }
     }
 
     section.section--dark {
-      background-color: #dee9ed;
+      background-color: #112f41;
       transition: background-color 0.6s ease;
     }
 
     section.section--light {
-      background-image: url(${bgLightUrl});
+      background-image: url(${bgUrl});
       transition: background-image 0.6s ease;
     }
 
     h2 {
-      color: #4d4d4d;
+      color: white;
       transition: color 0.6s ease;
     }
 
     div.title__top {
-      color: #4d4d4d;
+      color: white;
       transition: color 0.6s ease;
+      font-family: "Mellanie", cursive;
     }
 
     div.Typist span.Cursor {
-      color: #ff7f50;
+      color: #f2b134;
+      transition: color 0.6s ease;
     }
 
     div.title__bottom {
-      color: rgba(80, 80, 242, 0.9);
+      color: #4fb99f;
       transition: color 0.6s ease;
+      font-family: "Mellanie", cursive;
     }
 
     span.title__name {
-      color: #ff7f50;
+      color: #f2b134;
       transition: color 0.6s ease;
+      
     }
 
     span.title__dev {
-      color: #4d4d4d;
+      color: #ff7f50;
       transition: color 0.6s ease;
     }
 
     hr {
-      border-top: 2px dashed #ffa280;
+      border-top: 2px dashed #f2b134;
       transition: border-top 0.6s ease;
     }
 
     div.div--circle {
-      background: rgb(73,73,171);
-      background: radial-gradient(circle, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
-      border: 3px solid #ffa280;
+      background: #068587;
+      border: 3px solid #f2b134;
       transition: background 0.6s ease;
       transition: border 0.6s ease;
     }
 
     div.card--main {
-      background: rgba(73,73,171,1);
-      background: linear-gradient(45deg, rgba(255,127,80,1) 0%, rgba(73,73,171,1) 75%);
-      transition: background-color 0.6s ease;
-      border: 1px solid rgba(255,255,255,0.5);
+      background: #1a5365;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      transition: background 0.6s ease;
+      transition: border 0.6s ease;
     }
 
     div.card__title {
-      color: white;
-      text-shadow: none;
-      border-bottom: 3px dotted #ffa280;
+      color: #f2b134;
+      text-shadow: 1px 1px black;
+      border-bottom: 3px dotted #4fb99f;
+      transition: color 0.6s ease;
+      transition: text-shadow 0.6s ease;
+      transition: border-bottom 0.6s ease;
     }
 
     p.card__subtitle {
-    font-weight: 500;
+    font-weight: 300;
     }
 
     p.text--tech {
       margin: 0;
-      font-weight: 400;
     }
 
     span.span--tech { 
-      color: white;
-      font-weight: 400;
+      color: #ff7f50;
+      font-weight: 500;
     }
 
     a.card__link {
-      color: white;
+      color: #4fb99f;
       font-weight: 400;
     }
 
     a.card__link:hover {
-      color: rgba(85,86,200,1);
+      color: #ff7f50;
     }
 
     svg.icon--contact {
-      color: #ff7f50;
+      color: #f2b134;
     }
     svg.icon--contact:hover {
-      color: #666;
+      color: #ff7f50;
     }
 
     button.btn--submit {
-      background: rgba(73,73,171,1);
-      background: linear-gradient(45deg, rgba(255,127,80,1) 0%, rgba(73,73,171,1) 75%);
+      color: #112f41;
+      background: rgba(242, 177, 52, 0.9);
       transition: background 0.3s ease;
-      font-weight: 500;
-      color: white;
+      transition: color 0.3s ease;
+      font-weight: 600;
     }
 
     button.btn--submit:hover {
-      font-weight: 500;
-      background: rgba(73,73,171,1);
-      background: linear-gradient(90deg, rgba(85,86,200,1) 0%, rgba(73,73,171,1) 50%, rgba(85,86,200,1) 100%);
-      transition: background 0.3s ease;
+      background: #ff7f50;
+      font-weight: 600;
     }
 
     footer {
-      background-color: #dee9ed;
+      background-color: #112f41;
       transition: background-color 0.6s ease;
       padding-bottom: 20px;
-  }
+    }
+
+    footer a {
+      color: #f2b134;
+    }
+    footer a:hover {
+      color: #ff7f50;
+    }
     
   .dark-mode-toggle > button {
     color: #a6a6a6;
     &:last-child {
-      color: #ffe600;
+      color: #262626;
     }
   }
 }
@@ -188,7 +197,7 @@ const GlobalStyles = css`
     font-size: 1.2em;
     background: none;
     border: none;
-    color: #262626;
+    color: #ffe600;
     cursor: pointer;
     transition: color 0.5s ease;
     &:last-child {
@@ -268,17 +277,17 @@ input[type='checkbox'].dmcheck {
   }
 
   section.section--dark {
-    background-color: #112f41;
+    background-color: #dee9ed;
     transition: background-color 0.6s ease;
   }
 
   section.section--light {
-    background-image: url(${bgUrl});
+    background-image: url(${bgLightUrl});
     transition: background-image 0.6s ease;
   }
 
   h2 {
-    color: white;
+    color: #4d4d4d;
     transition: color 0.6s ease;
     font-size: calc(16px + 2vw);
     padding: 10px 10px 30px;
@@ -294,7 +303,8 @@ input[type='checkbox'].dmcheck {
   hr {
     margin: 0;
     border: 0;
-    border-top: 2px dashed #f2b134;
+    border-top: 2px dashed #ffa280;
+    transition: border-top 0.6s ease;
   }
 
   span.symbol--orange {
@@ -304,42 +314,44 @@ input[type='checkbox'].dmcheck {
   /* home section */
 
   div.title__top {
-    color: white;
+    color: #4d4d4d;
     transition: color 0.6s ease;
-    font-size: calc(18px + 2.5vw);
+    font-size: calc(18px + 4vw);
     letter-spacing: 1px;
     font-weight: 700;
-    font-family: "Playfair Display", serif;
+    font-family: "Mellanie", cursive;
     padding-top: calc(60px + 3vw);
   }
 
   div.title__bottom {
-    color: #4fb99f;
+    color: rgba(80, 80, 242, 0.9);
     transition: color 0.6s ease;
-    font-size: calc(14px + 1.2vw);
+    font-size: calc(15px + 3vw);
     font-weight: 700;
-    font-family: "Playfair Display", serif;
+    font-family: "Mellanie", cursive;
     letter-spacing: 1.5px;
     padding-top: 20px;
-    padding-bottom: calc(60px + 3vw);
+    padding-bottom: calc(50px + 2.5vw);
   }
 
   span.title__name {
-    color: #f2b134;
+    font-size: calc(19px + 4.8vw);
+    color: #ff7f50;
     transition: color 0.6s ease;
     font-weight: 800;
   }
 
   span.title__dev {
-    color: #ff7f50;
+    color: #4d4d4d;
     transition: color 0.6s ease;
     font-weight: 700;
   }
 
   div.Typist span.Cursor {
     display: inline-block;
-    color: #f2b134;
-    font-size: calc(20px + 2.5vw);
+    color: #ff7f50;
+    transition: color 0.6s ease;
+    font-size: calc(20px + 4.5vw);
   }
   div.Typist span.Cursor--blinking {
     opacity: 1;
@@ -370,16 +382,15 @@ input[type='checkbox'].dmcheck {
     width: calc(280px + 15vw);
     height: calc(280px + 15vw);
     min-width: 280px;
-    min-weight: 280px;
     max-width: 90vw;
-    max-weight: 90vw;
     margin: 0 auto;
     border-radius: 50%;
-    background-color: #068587;
-    transition: background-color 0.6s ease;
+    background: rgb(73,73,171);
+    background: radial-gradient(circle, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
+    border: 3px solid #ffa280;
+    transition: background 0.6s ease;
     color: white;
     padding: 2px;
-    border: 3px solid #f2b134;
     transition: border 0.6s ease;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   }
@@ -415,28 +426,33 @@ input[type='checkbox'].dmcheck {
     margin-top: calc(20px + 1vw);
     margin-bottom: calc(20px + 1vw);
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    background-color: #1a5365;
-    transition: background-color 0.6s ease;
+    background: rgba(73,73,171,1);
+    background: linear-gradient(45deg, rgba(255,127,80,1) 0%, rgba(73,73,171,1) 75%);
+    transition: background 0.6s ease;
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: border 0.6s ease;
     position: relative;
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
     background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
   }
 
   div.card__title {
-    color: #f2b134;
+    color: white;
+    text-shadow: none;
+    border-bottom: 3px dotted #ffa280;
+    transition: color 0.6 ease;
+    transition: text-shadow 0.6s ease;
+    transition: border-bottom 0.6s ease;
     font-weight: 500;
     font-size: calc(13px + 0.5vw);
     font-family: "Montserrat", sans-serif;
-    text-shadow: 1px 1px black;
     letter-spacing: 2px;
     margin: 16px;
     padding: 4px;
     padding-bottom: 12px;
-    border-bottom: 3px dotted #4fb99f;
   }
 
   div.card__body {
@@ -447,27 +463,28 @@ input[type='checkbox'].dmcheck {
     margin-top: 16px;
     font-size: calc(12px + 0.5vw);
     color: white;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 1px;
     text-shadow: 1.5px 1px black;
   }
 
   a.card__link {
-    color: #4fb99f;
+    color: white;
     font-weight: 400;
-  }
+    }
 
   a.card__link:hover {
-    color: #ff7f50;
+    color: rgba(85,86,200,1);
   }
 
   p.text--tech {
       margin: 0;
-  }
+      font-weight: 400;
+    }
 
   span.span--tech { 
-    color: #ff7f50;
-    font-weight: 500;
+    color: white;
+    font-weight: 400;
   }
 
   /* skills section */
@@ -514,14 +531,15 @@ input[type='checkbox'].dmcheck {
   }
 
   /* contact section */
+  
 
   svg.icon--contact {
     font-size: calc(52px + 2.5vw);
+    color: #ff7f50;
     margin: 10px;
-    color: #f2b134;
   }
   svg.icon--contact:hover {
-    color: #ff7f50;
+    color: #666;
   }
 
   form.form--main {
@@ -529,7 +547,7 @@ input[type='checkbox'].dmcheck {
     margin: 0 auto;
     max-width: 90vw;
     background-color: rgba(255, 255, 255, 0.15);
-    border: 12px solid white;
+    border: 7px solid rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     @media (min-width: 700px) {
       max-width: 70vw;
@@ -549,26 +567,37 @@ input[type='checkbox'].dmcheck {
 
   button.btn--submit {
     font-size: calc(13px + 0.6vw);
-    background-color: rgba(242, 177, 52, 0.9);
-    transition: background-color 0.3s ease;
-    transition: color 0.3s ease;
-    font-weight: 600;
-    color: #112f41;
+    background: rgba(73,73,171,1);
+    background: linear-gradient(45deg, rgba(255,127,80,1) 0%, rgba(73,73,171,1) 75%);
+    transition: background 0.3s ease;
+    font-weight: 500;
+    color: white;
     border: 1px solid black;
     letter-spacing: 1px;
   }
 
   button.btn--submit:hover {
-    background-color: #ff7f50;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
+    background: rgba(73,73,171,1);
+    background: linear-gradient(90deg, rgba(85,86,200,1) 0%, rgba(73,73,171,1) 50%, rgba(85,86,200,1) 100%);
+    transition: background 0.3s ease;
     border: 1px solid black;
   }
 
   footer {
-    background-color: #112f41;
-    transition: background-color 0.6s ease;
-    padding-bottom: 20px;
+      background-color: #dee9ed;
+      transition: background-color 0.6s ease;
+      padding-bottom: 20px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: rgba(85,86,200,1);
+  }
+  footer a:hover {
+    text-decoration: none;
+    color: rgba(255,127,80,1);
   }
 
   ${"" /* success & 404 pages */}
