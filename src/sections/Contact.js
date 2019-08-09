@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect} from "react"
 import Form from "react-bootstrap/Form"
 import { Formik } from "formik"
 import { navigate } from "gatsby"
@@ -10,6 +10,9 @@ import {
   TiSocialLinkedinCircular,
   TiSocialTwitterCircular,
 } from "react-icons/ti"
+
+import { UserCard, RepoCard } from 'react-github-cards';
+import 'react-github-cards/dist/default.css';
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
@@ -32,6 +35,12 @@ function encode(data) {
 }
 
 const Contact = () => {
+
+  useEffect(() => {
+
+  }
+  , []);
+
   return (
     <section id="contact" className="section--dark">
       <h2 className="heading--teal">
@@ -172,9 +181,17 @@ const Contact = () => {
         )}
       </Formik>
       </div>
+
     <div style={{margin: `1rem`}}>
-      <a class="twitter-timeline" data-width="350" data-height="900" data-link-color="#ff7f50" href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw">Tweets by lucie_vrs</a>
+      <a className="twitter-timeline" data-width="350" data-height="900" data-link-color="#ff7f50" href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw">Tweets by lucie_vrs</a>
     </div>
+
+    <div>
+    <UserCard username="lucievr" />
+   
+   <iframe src="https://pingao777.github.io/github-id/?q=lucievr" style={{width: `500px`, height: `400px`}}></iframe>
+  </div>
+
 </div>
     </section>
   )

@@ -7,6 +7,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.10",
     "@emotion/styled": "^10.0.10",
+    "@hot-loader/react-dom": "^16.8.6",
     "@svgr/webpack": "^4.3.0",
     "babel-plugin-styled-components": "^1.10.0",
     "babel-preset-gatsby": "^0.1.11",
@@ -33,6 +34,7 @@
     "react": "^16.8.6",
     "react-bootstrap": "^1.0.0-beta.8",
     "react-dom": "^16.8.6",
+    "react-github-cards": "^1.1.1",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.6.1",
     "react-reveal": "^1.2.2",

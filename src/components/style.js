@@ -71,6 +71,10 @@ const GlobalStyles = css`
       transition: color 0.6s ease;
     }
 
+    h2.heading--teal {
+      color: #4fb99f;
+    }
+
     div.title__top {
       color: white;
       transition: color 0.6s ease;
@@ -294,10 +298,6 @@ input[type='checkbox'].dmcheck {
     font-family: "Playfair Display", serif;
     font-weight: 700;
     letter-spacing: 1px;
-  }
-
-  h2.heading--teal {
-    color: #4fb99f;
   }
 
   hr {
@@ -543,7 +543,7 @@ input[type='checkbox'].dmcheck {
   }
 
   form.form--main {
-    padding: 20px;
+    padding: 2.5rem;
     margin: 0 auto;
     max-width: 90vw;
     background-color: rgba(255, 255, 255, 0.15);
