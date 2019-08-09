@@ -2,7 +2,7 @@ import React from "react"
 
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Navbar from "@components/Navbar"
+import Navigation from "@components/Navbar"
 import Typist from "react-typist"
 
 const Home = () => (
@@ -20,7 +20,7 @@ const Home = () => (
     `}
     render={data => (
       <section id="home" className="section--dark">
-        <Navbar />
+        <Navigation />
 
         <div>
           <div className="title__top">

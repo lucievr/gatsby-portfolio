@@ -1,7 +1,7 @@
 {
-  "name": "lucie-portfolio",
+  "name": "Lucie Vrsovska - portfolio",
   "private": true,
-  "description": "My portfolio site made with Gatsby",
+  "description": "Web developer portfolio of Lucie Vrsovska, a fullstack developer based in Prague, Czech Republic.",
   "version": "0.1.0",
   "author": "Lucie Vrsovska",
   "dependencies": {
@@ -21,6 +21,7 @@
     "gatsby-plugin-emotion": "^4.0.6",
     "gatsby-plugin-google-analytics": "^2.1.7",
     "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-netlify": "^2.1.4",
     "gatsby-plugin-offline": "^2.2.5",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.35",

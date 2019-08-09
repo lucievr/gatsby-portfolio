@@ -19,15 +19,15 @@ injectGlobal`
     box-sizing: border-box;
   }
   @font-face {
-  font-family: "Mellanie";
-  src: url(${Mellanie});
-}
+    font-family: "Mellanie";
+    src: url(${Mellanie});
+  }
 `
 
 const IndexPage = () => (
   <>
     <Global styles={GlobalStyles} />
-    <SEO title="Home" keywords={[`developer`, `portfolio`, `prague`, `gatsby`, `react`, `frontend`, `lucie vrsovska`]} />
+    <SEO title="Home" keywords={[`web developer`, `portfolio`, `lucie vrsovska`, `lucie.dev`, `react developer`, `prague`, `frontend`, `react`, `javascript`, `gatsby`]} />
 
     <Home />
     <hr />
