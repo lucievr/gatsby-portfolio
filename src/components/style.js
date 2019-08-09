@@ -15,6 +15,23 @@ const GlobalStyles = css`
     overflow-x: hidden;
   }
 
+  html::-webkit-scrollbar {
+    width: 25px;
+    height: 25px;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background: rgb(255,127,80);
+    background: linear-gradient(180deg, rgba(153,153,153,1) 30%, rgba(255,127,80,1) 100%);
+    border-radius: 30px;
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+    box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+  }
+
+  html::-webkit-scrollbar-track {
+    background: linear-gradient(to right,#fdfdfd,#f9f9fc 1px,#f2f2f5 1px,#f0eef0);
+  }
+
   body.light-mode {
     margin: 0;
     text-align: center;
