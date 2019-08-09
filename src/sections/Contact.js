@@ -11,8 +11,6 @@ import {
   TiSocialTwitterCircular,
 } from "react-icons/ti"
 
-import { UserCard } from 'react-github-cards';
-import 'react-github-cards/dist/default.css';
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const SignupSchema = Yup.object().shape({
@@ -186,12 +184,6 @@ const Contact = () => {
     <div style={{margin: `1rem`}}>
       <a className="twitter-timeline" data-width="350" data-height="900" data-link-color="#ff7f50" href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw">Tweets by lucie_vrs</a>
     </div>
-
-    <div>
-    <UserCard username="lucievr" />
-   
-   <iframe src="https://pingao777.github.io/github-id/?q=lucievr" style={{width: `500px`, height: `400px`}}></iframe>
-  </div>
 
 </div>
     </section>

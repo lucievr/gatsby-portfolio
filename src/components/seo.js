@@ -84,7 +84,6 @@ function SEO({ description, lang, meta, keywords, title, script }) {
                     charset: `utf-8`
                 },
               ].concat(script)}
-
     />
   )
 }

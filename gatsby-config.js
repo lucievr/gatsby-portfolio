@@ -26,6 +26,37 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-145399159-1`,
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: false,
+        // Setting this parameter is also optional
+        respectDNT: false,
+        // Avoids sending pageview hits from custom paths
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        siteSpeedSampleRate: 100,
+      },
+    },
+    // {
+    //   resolve: "gatsby-source-graphql",
+    //   options: {
+    //     typeName: "GitHub",
+    //     fieldName: "github",
+    //     // Url to query from
+    //     url: "https://api.github.com/graphql",
+    //     // HTTP headers
+    //     headers: {
+    //       // Learn about environment variables: https://gatsby.dev/env-vars
+    //       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+    //     },
+    //     // Additional options to pass to node-fetch
+    //     fetchOptions: {},
+    //   },
+    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
@@ -78,21 +109,6 @@ module.exports = {
         theme_color: `#5556c8`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-145399159-1`,
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: false,
-        // Setting this parameter is also optional
-        respectDNT: false,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        siteSpeedSampleRate: 100,
       },
     },
     {
