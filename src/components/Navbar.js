@@ -57,7 +57,7 @@ const Navbar = () => {
 
         <NavItem>
           <Scroll type="id" element="home">
-            <a href="#">
+            <a href="/">
               <TiHome
                 style={{ fontSize: `calc(10px + 0.9vw)`, marginBottom: `4px` }}
               />
@@ -67,24 +67,24 @@ const Navbar = () => {
 
         <NavItem>
           <Scroll type="id" element="about">
-            <a href="#">About</a>
+            <a href="/">About</a>
           </Scroll>
         </NavItem>
 
         <NavItem>
           <Scroll type="id" element="projects">
-            <a href="#">Projects</a>
+            <a href="/">Projects</a>
           </Scroll>
         </NavItem>
         <NavItem>
           <Scroll type="id" element="skills">
-            <a href="#">Skills</a>
+            <a href="/">Skills</a>
           </Scroll>
         </NavItem>
 
         <NavItem>
           <Scroll type="id" element="contact">
-            <a href="#">Contact</a>
+            <a href="/">Contact</a>
           </Scroll>
         </NavItem>
       </Scrollspy>

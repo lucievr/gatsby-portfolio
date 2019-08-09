@@ -63,13 +63,13 @@ const GlobalStyles = css`
       a {
         color: rgb(251, 251, 251);
       :hover {
-      color: #f2b134;
-    }
-  }
-      &.is-active {
-    a {
-      color: #f2b134;
+        color: #f2b134;
       }
+    }
+      &.is-active {
+        a {
+          color: #f2b134;
+        }
       }
     }
 
@@ -488,10 +488,12 @@ input[type='checkbox'].dmcheck {
   a.card__link {
     color: white;
     font-weight: 400;
+    text-decoration: none;
     }
 
   a.card__link:hover {
     color: rgba(85,86,200,1);
+    text-decoration: none;
   }
 
   p.text--tech {

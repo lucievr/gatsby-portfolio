@@ -11,8 +11,9 @@ import {
   TiSocialTwitterCircular,
 } from "react-icons/ti"
 
-import { UserCard, RepoCard } from 'react-github-cards';
+import { UserCard } from 'react-github-cards';
 import 'react-github-cards/dist/default.css';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
@@ -52,27 +53,27 @@ const Contact = () => {
 <div>
 <div style={{margin: `1rem`}}>
   <h5 style={{margin: `1rem`}}>Let's get social</h5>
-        <a
+        <OutboundLink
           href="https://github.com/lucievr"
           target="_blank"
           rel="noopener noreferrer"
         >
           <TiSocialGithubCircular className="icon--contact hvr-bob" />
-        </a>
-        <a
+        </OutboundLink>
+        <OutboundLink
           href="https://www.linkedin.com/in/lucie-vrsovska/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <TiSocialLinkedinCircular className="icon--contact hvr-bob" />
-        </a>
-        <a
+        </OutboundLink>
+        <OutboundLink
           href="https://twitter.com/lucie_vrs"
           target="_blank"
           rel="noopener noreferrer"
         >
           <TiSocialTwitterCircular className="icon--contact hvr-bob" />
-        </a>
+        </OutboundLink>
         
       </div>
       <Formik

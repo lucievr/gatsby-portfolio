@@ -11,6 +11,7 @@ import Fade from "react-reveal/Fade"
 import { FaLink, FaCode } from "react-icons/fa"
 import DronifyGif from '../images/dronify.gif'
 import PlantypusGif from '../images/plantypus.gif'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const Projects = () => (
   <StaticQuery
@@ -63,22 +64,23 @@ const Projects = () => (
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link
+                    <OutboundLink
                       className="card__link"
                       href="https://plantypus.netlify.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FaLink /> Demo
-                    </Card.Link>
-                    <Card.Link
+                    </OutboundLink>
+                    <OutboundLink
                       className="card__link"
                       href="https://github.com/lucievr/plantypus-cafe-website"
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{marginLeft: `1.25rem`}}
                     >
                       <FaCode /> GitHub
-                    </Card.Link>
+                    </OutboundLink>
                   </Card.Footer>
                 </Card>
               </Fade>
@@ -103,22 +105,23 @@ const Projects = () => (
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link
+                    <OutboundLink
                       className="card__link"
                       href="https://www.lucie.dev/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FaLink /> Demo
-                    </Card.Link>
-                    <Card.Link
+                    </OutboundLink>
+                    <OutboundLink
                       className="card__link"
                       href="https://github.com/lucievr/gatsby-portfolio"
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{marginLeft: `1.25rem`}}
                     >
                       <FaCode /> GitHub
-                    </Card.Link>
+                    </OutboundLink>
                   </Card.Footer>
                 </Card>
               </Fade>
@@ -146,22 +149,23 @@ const Projects = () => (
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link
+                    <OutboundLink
                       className="card__link"
                       href="https://dronify.netlify.com/"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FaLink /> Demo
-                    </Card.Link>
-                    <Card.Link
+                    </OutboundLink>
+                    <OutboundLink
                       className="card__link"
                       href="https://github.com/n0rtt/dronify"
                       target="_blank"
                       rel="noopener noreferrer"
+                      style={{marginLeft: `1.25rem`}}
                     >
                       <FaCode /> GitHub
-                    </Card.Link>
+                    </OutboundLink>
                   </Card.Footer>
                 </Card>
               </Fade>
@@ -185,20 +189,20 @@ const Projects = () => (
                     </Card.Text>
                   </Card.Body>
                   <Card.Footer>
-                    <Card.Link
+                    <OutboundLink
                       className="card__link"
                       href="#"
                       style={{ color: `grey` }}
                     >
                       <FaLink /> Demo
-                    </Card.Link>
-                    <Card.Link
+                    </OutboundLink>
+                    <OutboundLink
                       className="card__link"
                       href="#"
-                      style={{ color: `grey` }}
+                      style={{ color: `grey`, marginLeft: `1.25rem` }}
                     >
                       <FaCode /> GitHub
-                    </Card.Link>
+                    </OutboundLink>
                   </Card.Footer>
                 </Card>
               </Fade>
