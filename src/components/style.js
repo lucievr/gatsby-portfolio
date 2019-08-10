@@ -1,6 +1,7 @@
 import { css } from "@emotion/core"
 import bgUrl from "@images/background.svg"
 import bgLightUrl from "@images/background-light.svg"
+import githubLogo from "@images/github-logo.png"
 
 const GlobalStyles = css`
   * {
@@ -178,6 +179,10 @@ const GlobalStyles = css`
       color: #ff7f50;
     }
 
+    form.form--main {
+      background: #1a5365;
+    }
+
     button.btn--submit {
       color: #112f41;
       background: rgba(242, 177, 52, 0.9);
@@ -189,6 +194,10 @@ const GlobalStyles = css`
     button.btn--submit:hover {
       background: #ff7f50;
       font-weight: 600;
+    }
+
+    .user {
+      background: #068587;
     }
 
     footer {
@@ -613,7 +622,7 @@ ul.nav__wrapper li {
     padding: 2.5rem;
     margin: 0 auto;
     max-width: 90vw;
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: transparent;
     border: 7px solid rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     @media (min-width: 700px) {
@@ -651,6 +660,109 @@ ul.nav__wrapper li {
     transition: background 0.3s ease;
     border: 1px solid black;
   }
+
+  
+        :host {
+          display: inline-block;
+        }
+
+        .user {
+          font-family: "Helvetica", Arial, sans-serif;
+          display: inline-block;
+          width: 300px;
+          height: 360px;
+          overflow: hidden;
+          border-radius: 6px;
+          position: relative;
+          background: rgb(73,73,171);
+          background: radial-gradient(circle, rgba(73,73,171,1) 0%, rgba(85,86,200,1) 50%, rgba(73,73,171,1) 100%);
+          text-align: center;
+          color: #fff;
+          font-weight: 400;
+          transition: background 1000ms ease-out;
+          margin: 0.5rem 1rem 2rem;
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .user dl,
+        .user dd {
+          margin: 0;
+        }
+
+        .user dt {
+          display: none;
+        }
+
+        .user-data {
+          background: #fff url(${githubLogo}) no-repeat 5px 5px;
+          background-size: 25px;
+          height: 85px;
+          line-height: 1.6;
+          letter-spacing: 1px;
+        }
+
+        dd.user-avatar {
+          display: inline-block;
+          margin: 20px 0 10px;
+        }
+
+        .user-avatar img {
+          border-radius: 100%;
+          height: 120px;
+          width: 120px;
+          border: 3px solid #fff;
+          vertical-align: middle;
+          background-color: #fff;
+        }
+
+        dd.user-name,
+        dd.user-account {
+          margin: 5px 0;
+        }
+
+        dd.user-name {
+          font-size: 24px;
+          color: #fff;
+          font-weight: 600;
+          letter-spacing: 1.5px;
+        }
+
+        .user-account {
+          font-size: 16px;
+          color: #fff;
+          margin: 5px 0;
+        }
+
+        .user-stats {
+          border-top: 1px groove #fff;
+          position: relative;
+          top: 210px;
+        }
+
+        .user-stats dd {
+          padding: 5px 17px;
+        }
+
+        .user-repos,
+        .user-following,
+        .user-followers {
+          display: inline-block;
+          font-size: 20px;
+          color: #fff;
+        }
+
+        .user-repos:after,
+        .user-following:after,
+        .user-followers:after {
+          content: attr(data-stats);
+          text-transform: uppercase;
+          display: block;
+          font-size: 11px;
+          color: #fff;
+          font-weight: normal;
+          line-height: 1.7em;
+        }
+     
 
   footer {
       background-color: #dee9ed;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
-import '@github/g-emoji-element'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 const GitHubCard = () => (
     <StaticQuery
@@ -41,20 +41,35 @@ const GitHubCard = () => (
 `}
 render={data => (
       <>
-        <h1>{data.github.user.name}</h1>
-        <p>{data.github.user.login}</p>
-        <img src={data.github.user.avatarUrl} alt="profile avatar" style={{width: `40px`, height: `40px`}} />
-        <p>{data.github.user.url}</p>
-        <div><g-emoji className="g-emoji" alias="rocket" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png">🚀</g-emoji> Web Developer (JavaScript &amp; React)</div>
-        <p>{data.github.user.location}</p>
-        <p>{data.github.user.websiteUrl}</p>
-        <p>{data.github.user.following.totalCount}</p>
-        <p>{data.github.user.followers.totalCount}</p>
-        <p>{data.github.user.repositories.totalCount}</p>
-        <p>{data.github.user.contributionsCollection.contributionCalendar.totalContributions}</p>
-        <img className="emoji" title=":octocat:" alt=":octocat:" src="https://github.githubassets.com/images/icons/emoji/octocat.png" height="20" width="20" align="absmiddle" />
-        <p>{data.github.user.status.message}</p>
-        
+      <OutboundLink
+          href={data.github.user.url}
+          target="_blank"
+          rel="noopener noreferrer"
+      >
+      <article className="user">
+        <dl className="user-data">
+        <dt>Avatar:</dt>
+        <dd class="user-avatar">
+            <img src={data.github.user.avatarUrl} alt="profile avatar" />
+        </dd>
+        <dt>Fullname:</dt>
+        <dd class="user-name">{data.github.user.name}</dd>
+        <dt>Account:</dt>
+        <dd class="user-account">@{data.github.user.login}</dd>
+        <dd class="user-account"><span role="img" aria-label="rocket emoji">🚀</span> JavaScript Developer </dd>
+        <dd class="user-account">Total contributions: {data.github.user.contributionsCollection.contributionCalendar.totalContributions}</dd>
+       
+        </dl>
+        <dl className="user-stats">
+        <dt>Repos</dt>
+        <dd class="user-repos" data-stats="repos">{data.github.user.repositories.totalCount}</dd>
+        <dt>Followers</dt>
+        <dd class="user-followers" data-stats="followers">{data.github.user.followers.totalCount}</dd>
+        <dt>Following</dt>
+        <dd class="user-following" data-stats="following">{data.github.user.following.totalCount}</dd>
+        </dl>
+        </article>
+        </OutboundLink>
       </>
     )}
   />

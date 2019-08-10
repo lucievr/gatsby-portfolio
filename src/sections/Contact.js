@@ -75,6 +75,7 @@ const Contact = () => {
         </OutboundLink>
         
       </div>
+      <GitHubCard />
       <Formik
         initialValues={{
           "bot-field": "",
@@ -185,8 +186,6 @@ const Contact = () => {
     <div style={{margin: `1rem`}}>
       <a className="twitter-timeline" data-width="350" data-height="900" data-link-color="#ff7f50" href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw">Tweets by lucie_vrs</a>
     </div>
-
-    <GitHubCard />
 
 </div>
     </section>
