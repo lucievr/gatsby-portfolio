@@ -137,6 +137,7 @@ const GlobalStyles = css`
       border: 1px solid rgba(0, 0, 0, 0.125);
       transition: background 0.6s ease;
       transition: border 0.6s ease;
+      transition: all 0.3s ease-in-out;
     }
 
     div.card__title {
@@ -496,6 +497,11 @@ ul.nav__wrapper li {
     word-wrap: break-word;
     background-clip: border-box;
     border-radius: 0.25rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  div.card--main:hover {
+    transform: scale(1.03);
   }
 
   div.card__title {

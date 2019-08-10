@@ -12,6 +12,7 @@ import {
 } from "react-icons/ti"
 
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import GitHubCard from "@components/GitHubCard"
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
@@ -35,10 +36,10 @@ function encode(data) {
 
 const Contact = () => {
 
-  useEffect(() => {
+  // useEffect(() => {
 
-  }
-  , []);
+  // }
+  // , []);
 
   return (
     <section id="contact" className="section--dark">
@@ -184,6 +185,8 @@ const Contact = () => {
     <div style={{margin: `1rem`}}>
       <a className="twitter-timeline" data-width="350" data-height="900" data-link-color="#ff7f50" href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw">Tweets by lucie_vrs</a>
     </div>
+
+    <GitHubCard />
 
 </div>
     </section>

@@ -1,4 +1,7 @@
 const path = require('path');
+require("dotenv").config({
+  path: `.env`,
+})
 
 module.exports = {
   siteMetadata: {
@@ -29,7 +32,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-145399159-1`,
+        trackingId: process.env.GA_KEY,
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false,
         // Setting this parameter is optional
@@ -41,22 +44,22 @@ module.exports = {
         siteSpeedSampleRate: 100,
       },
     },
-    // {
-    //   resolve: "gatsby-source-graphql",
-    //   options: {
-    //     typeName: "GitHub",
-    //     fieldName: "github",
-    //     // Url to query from
-    //     url: "https://api.github.com/graphql",
-    //     // HTTP headers
-    //     headers: {
-    //       // Learn about environment variables: https://gatsby.dev/env-vars
-    //       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-    //     },
-    //     // Additional options to pass to node-fetch
-    //     fetchOptions: {},
-    //   },
-    // },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "GitHub",
+        fieldName: "github",
+        // Url to query from
+        url: "https://api.github.com/graphql",
+        // HTTP headers
+        headers: {
+          // Learn about environment variables: https://gatsby.dev/env-vars
+          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+        },
+        // Additional options to pass to node-fetch
+        fetchOptions: {},
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
