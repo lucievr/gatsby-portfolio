@@ -21,7 +21,8 @@ const About = () => {
             . . .
           </span>
           <p className="par--bottom">
-            My current tech stack is mostly JavaScript and React, and I love experimenting with JAMstack and serverless architectures.
+            My current tech stack is mostly JavaScript and React, and I love
+            experimenting with JAMstack and serverless architectures.
           </p>
           <span className="symbol--orange" style={{ fontWeight: `900` }}>
             . . .

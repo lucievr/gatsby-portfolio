@@ -77,13 +77,13 @@ function SEO({ description, lang, meta, keywords, title, script }) {
             : []
         )
         .concat(meta)}
-        script={[
-                {
-                    src: `https://platform.twitter.com/widgets.js`,
-                    type: `text/javascript`,
-                    charset: `utf-8`
-                },
-              ].concat(script)}
+      script={[
+        {
+          src: `https://platform.twitter.com/widgets.js`,
+          type: `text/javascript`,
+          charset: `utf-8`,
+        },
+      ].concat(script)}
     />
   )
 }

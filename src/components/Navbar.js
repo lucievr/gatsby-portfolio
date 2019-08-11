@@ -1,11 +1,13 @@
-import React from "react"
+import React, { useState } from "react"
 import Scroll from "@components/Scroll"
 import DarkModeToggle from "@components/DarkModeToggle"
 import Scrollspy from "react-scrollspy"
-import { TiHome } from "react-icons/ti"
-
+import { TiHome, TiThMenu } from "react-icons/ti"
 
 const Navigation = () => {
+
+  const [ menuActive, setMenuState ] = useState(false);
+
   return (
     <nav id="navbar">
       <span className="darkmode__wrapper">
@@ -15,15 +17,12 @@ const Navigation = () => {
         items={["home", "about", "projects", "skills", "contact"]}
         currentClassName="is-active"
         offset={-200}
-        className="nav__wrapper"
+        className={`nav__wrapper ${menuActive ? "active" : ""}`}
       >
-
         <li>
           <Scroll type="id" element="home">
-            <a href="/">
-              <TiHome
-                style={{ fontSize: `calc(10px + 0.9vw)`, marginBottom: `4px` }}
-              />
+            <a href="/" className="navlink--home">
+              <TiHome />
             </a>
           </Scroll>
         </li>
@@ -51,6 +50,9 @@ const Navigation = () => {
           </Scroll>
         </li>
       </Scrollspy>
+      <div className="menu--burger" onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}>
+        <TiThMenu />
+      </div>
     </nav>
   )
 }
