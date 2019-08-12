@@ -47,15 +47,7 @@ const Contact = () => {
         <span className="symbol--orange">+</span>
       </h2>
 
-      <div
-        style={{
-          display: `flex`,
-          justifyContent: `space-evenly`,
-          flexWrap: `wrap`,
-        }}
-      >
-        <div>
-          <div style={{ margin: `1rem` }}>
+      <div style={{ margin: `1rem` }}>
             <h5 style={{ margin: `1rem` }}>Let's get social</h5>
             <OutboundLink
               href="https://github.com/lucievr"
@@ -79,6 +71,15 @@ const Contact = () => {
               <TiSocialTwitterCircular className="icon--contact hvr-bob" />
             </OutboundLink>
           </div>
+
+      <div
+        style={{
+          display: `flex`,
+          justifyContent: `center`,
+          flexWrap: `wrap`,
+        }}
+      >
+        <div>
           <GitHubCard />
           <Formik
             initialValues={{
@@ -191,7 +192,7 @@ const Contact = () => {
           </Formik>
         </div>
 
-        <div style={{ margin: `1rem` }}>
+        <div style={{ margin: `1.5rem` }}>
           <a
             className="twitter-timeline"
             data-width="350"

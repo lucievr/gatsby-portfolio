@@ -676,7 +676,7 @@ const GlobalStyles = css`
 
   form.form--main {
     padding: 2.5rem;
-    margin: 0 auto;
+    margin: 1rem 2rem;
     max-width: 90vw;
     background-color: transparent;
     border: 7px solid rgba(255, 255, 255, 0.8);
@@ -749,7 +749,7 @@ const GlobalStyles = css`
     color: #fff;
     font-weight: 400;
     transition: background 1000ms ease-out;
-    margin: 0.5rem 1rem 2rem;
+    margin: 1.5rem;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   }
 
