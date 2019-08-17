@@ -124,8 +124,35 @@ module.exports = {
           'Link: </icons/icon-144x144.png>; rel=preload; as=image',
         ],
         headers: {
-          "https://platform.twitter.com/widgets.js": [
-            "cache-control: public, max-age=31536000, immutable",
+          "/*": [
+            "cache-control: public",
+            "cache-control: max-age=31536000",
+            "cache-control: immutable",
+          ],
+          "/*.html": [
+            "cache-control: public",
+            "cache-control: max-age=0",
+            "cache-control: must-revalidate",
+          ],
+          "/public/static/*": [
+            "cache-control: public",
+            "cache-control: max-age=31536000",
+            "cache-control: immutable",
+          ],
+          "/*.js": [
+            "cache-control: public",
+            "cache-control: max-age=31536000",
+            "cache-control: immutable",
+          ],
+          "/*.css": [
+            "cache-control: public",
+            "cache-control: max-age=31536000",
+            "cache-control: immutable",
+          ],
+          "/sw.js": [
+            "cache-control: public",
+            "cache-control: max-age=0",
+            "cache-control: must-revalidate",
           ],
         },
       },

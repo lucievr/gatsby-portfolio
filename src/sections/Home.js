@@ -25,7 +25,7 @@ const Home = () => (
         <div>
           <div className="title__top">
             <Typist
-              cursor={{ hideWhenDone: `true`, hideWhenDoneDelay: `8000` }}
+              cursor={{ hideWhenDone: true, hideWhenDoneDelay: 8000 }}
             >
               <span>
                 Hello, this is <span className="title__name">Lucie</span>

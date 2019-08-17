@@ -20,7 +20,9 @@ injectGlobal`
   }
   @font-face {
     font-family: "Mellanie";
+    font-style: normal;
     src: url(${Mellanie});
+    font-display: swap;
   }
 `
 

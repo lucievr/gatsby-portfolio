@@ -50,7 +50,7 @@ const GlobalStyles = css`
     text-align: center;
     font-size: calc(12px + 0.4vw);
     line-height: 1.5;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 300;
     background-color: #dee9ed;
     transition: background-color 0.6s ease;
@@ -61,7 +61,7 @@ const GlobalStyles = css`
     text-align: center;
     font-size: calc(12px + 0.4vw);
     line-height: 1.5;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 300;
     color: white;
     background-color: #112f41;
@@ -108,7 +108,7 @@ const GlobalStyles = css`
     div.title__top {
       color: white;
       transition: color 0.6s ease;
-      font-family: "Mellanie", cursive;
+      font-family: "Mellanie", Brush Script MT, Segoe Script, cursive;
     }
 
     div.Typist span.Cursor {
@@ -119,7 +119,7 @@ const GlobalStyles = css`
     div.title__bottom {
       color: #4fb99f;
       transition: color 0.6s ease;
-      font-family: "Mellanie", cursive;
+      font-family: "Mellanie", Brush Script MT, Segoe Script, cursive;
     }
 
     span.title__name {
@@ -416,7 +416,7 @@ const GlobalStyles = css`
     transition: color 0.6s ease;
     font-size: calc(16px + 2vw);
     padding: 10px 10px 30px;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", Palatino Linotype, Georgia, serif;
     font-weight: 700;
     letter-spacing: 1px;
   }
@@ -440,7 +440,7 @@ const GlobalStyles = css`
     font-size: calc(18px + 4vw);
     letter-spacing: 1px;
     font-weight: 700;
-    font-family: "Mellanie", cursive;
+    font-family: "Mellanie", Brush Script MT, Segoe Script, cursive;
     padding-top: calc(60px + 3vw);
   }
 
@@ -449,7 +449,7 @@ const GlobalStyles = css`
     transition: color 0.6s ease;
     font-size: calc(15px + 3vw);
     font-weight: 700;
-    font-family: "Mellanie", cursive;
+    font-family: "Mellanie", Brush Script MT, Segoe Script, cursive;
     letter-spacing: 1.5px;
     padding-top: 20px;
     padding-bottom: calc(50px + 2.5vw);
@@ -459,13 +459,11 @@ const GlobalStyles = css`
     font-size: calc(19px + 4.8vw);
     color: #ff7f50;
     transition: color 0.6s ease;
-    font-weight: 800;
   }
 
   span.title__dev {
     color: #4d4d4d;
     transition: color 0.6s ease;
-    font-weight: 700;
   }
 
   div.Typist span.Cursor {
@@ -583,7 +581,7 @@ const GlobalStyles = css`
     transition: border-bottom 0.6s ease;
     font-weight: 500;
     font-size: calc(13px + 0.5vw);
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
     margin: 16px;
     padding: 4px;
@@ -735,7 +733,7 @@ const GlobalStyles = css`
   }
 
   .user {
-    font-family: "Helvetica", Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     display: inline-block;
     width: 300px;
     height: 360px;
@@ -771,7 +769,6 @@ const GlobalStyles = css`
     background-size: 25px;
     height: 85px;
     line-height: 1.6;
-    letter-spacing: 1px;
   }
 
   dd.user-avatar {
@@ -797,7 +794,7 @@ const GlobalStyles = css`
     font-size: 24px;
     color: #fff;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
   }
 
   .user-account {
