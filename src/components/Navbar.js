@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Scroll from "@components/Scroll"
 import DarkModeToggle from "@components/DarkModeToggle"
 import Scrollspy from "react-scrollspy"
-import { TiHome, TiThMenu } from "react-icons/ti"
+import { TiHome, TiThMenu, TiTimes } from "react-icons/ti"
 
 const Navigation = () => {
 
@@ -51,7 +51,7 @@ const Navigation = () => {
         </li>
       </Scrollspy>
       <div className="menu--burger" onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}>
-        <TiThMenu />
+        { menuActive ? <TiTimes /> : <TiThMenu /> }
       </div>
     </nav>
   )

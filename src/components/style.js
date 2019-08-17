@@ -320,7 +320,7 @@ const GlobalStyles = css`
     display: flex;
     align-items: center;
     @media (max-width: 650px) {
-        padding: 0;
+      padding: 0;
     }
   }
 
@@ -334,7 +334,7 @@ const GlobalStyles = css`
     justify-content: center;
     align-items: center;
     @media (max-width: 650px) {
-        display: none;
+      display: none;
     }
   }
 
@@ -348,8 +348,8 @@ const GlobalStyles = css`
     margin: 0.35rem 0.75em;
     display: block;
     @media (max-width: 650px) {
-        padding: 0.2rem 1.5rem;
-        margin: 0;
+      padding: 0.2rem 1.5rem;
+      margin: 0;
     }
     a {
       text-decoration: none;
@@ -374,8 +374,12 @@ const GlobalStyles = css`
     padding: 0.7rem 1.5rem 0.7rem 1.5rem;
     color: white;
 
+    :hover {
+      cursor: pointer;
+    }
+
     @media (max-width: 650px) {
-        display: block;
+      display: block;
     }
   }
 
