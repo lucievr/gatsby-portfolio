@@ -21,7 +21,7 @@ const Navigation = () => {
       >
         <li>
           <Scroll type="id" element="home">
-            <a href="/" className="navlink--home">
+            <a href="/" className="navlink--home" title="home">
               <TiHome />
             </a>
           </Scroll>

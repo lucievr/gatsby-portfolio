@@ -5,6 +5,7 @@ const Toggle = ({ checked, onChange }) => (
     <input
       className="dmcheck"
       type="checkbox"
+      aria-label="dark mode toggle"
       checked={checked}
       onChange={onChange}
       id="dmcheck"

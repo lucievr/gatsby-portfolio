@@ -40,6 +40,7 @@ const Skills = () => {
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="next js"
               >
                 <img
                   src={Next}
@@ -56,6 +57,7 @@ const Skills = () => {
                 href="https://webpack.js.org/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="webpack"
               >
                 <img
                   src={Webpack}
@@ -69,6 +71,7 @@ const Skills = () => {
                 href="https://github.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="github"
               >
                 <img
                   src={Github}
@@ -82,6 +85,7 @@ const Skills = () => {
                 href="https://www.gatsbyjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="gatsby"
               >
                 <img
                   src={Gatsby}
@@ -95,6 +99,7 @@ const Skills = () => {
                 href="https://gulpjs.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="gulp"
               >
                 <img
                   src={Gulp}
@@ -111,6 +116,7 @@ const Skills = () => {
                 href="https://snipcart.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="snipcart"
               >
                 <img
                   src={Snipcart}
@@ -124,27 +130,31 @@ const Skills = () => {
                 href="https://git-scm.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="git"
               >
                 <img src={Git} alt="git" className="icon--skill hvr-grow mid" />
               </a>
             </Col>
             <Col>
               <a
-                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/"
                 target="_blank"
                 rel="noopener noreferrer"
-              />
-              <img
-                src={Jsicon}
-                alt="javascript"
-                className="icon--skill hvr-grow mid"
-              />
+                title="javascript"
+              >
+                <img
+                  src={Jsicon}
+                  alt="javascript"
+                  className="icon--skill hvr-grow mid"
+                />
+              </a>
             </Col>
             <Col>
               <a
                 href="https://reactjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="react"
               >
                 <img
                   src={Reacticon}
@@ -159,10 +169,11 @@ const Skills = () => {
                 href="https://www.mongodb.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="mongo db"
               >
                 <img
                   src={Mongo}
-                  alt="mongodb"
+                  alt="mongo db"
                   className="icon--skill hvr-grow big"
                 />
               </a>
@@ -175,22 +186,25 @@ const Skills = () => {
                 href="https://redux.js.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-              />
-              <img
-                src={Redux}
-                alt="redux"
-                className="icon--skill icon--circle hvr-grow mid"
-              />
+                title="redux"
+              >
+                <img
+                  src={Redux}
+                  alt="redux"
+                  className="icon--skill icon--circle hvr-grow mid"
+                />
+              </a>
             </Col>
             <Col>
               <a
                 href="https://graphql.org/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="graph ql"
               >
                 <img
                   src={Graphqlicon}
-                  alt="graphql"
+                  alt="graph ql"
                   className="icon--skill hvr-grow sem"
                 />
               </a>
@@ -201,18 +215,21 @@ const Skills = () => {
                 href="https://auth0.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-              />
-              <img
-                src={Auth}
-                alt="auth 0"
-                className="icon--skill icon--circle hvr-grow small"
-              />
+                title="auth 0"
+              >
+                <img
+                  src={Auth}
+                  alt="auth 0"
+                  className="icon--skill icon--circle hvr-grow small"
+                />
+              </a>
             </Col>
             <Col>
               <a
                 href="https://www.netlify.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="netlify"
               >
                 <img
                   src={Netlify}
@@ -229,6 +246,7 @@ const Skills = () => {
                 href="https://code.visualstudio.com/"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="vs code"
               >
                 <img
                   src={Code}

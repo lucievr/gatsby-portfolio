@@ -123,6 +123,11 @@ module.exports = {
           'Link: </icons/icon-96x96.png>; rel=preload; as=image',
           'Link: </icons/icon-144x144.png>; rel=preload; as=image',
         ],
+        headers: {
+          "https://platform.twitter.com/widgets.js": [
+            "cache-control: public, max-age=31536000, immutable",
+          ],
+        },
       },
     },
   ],

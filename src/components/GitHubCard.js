@@ -49,20 +49,20 @@ const GitHubCard = () => (
           <article className="user">
             <dl className="user-data">
               <dt>Avatar:</dt>
-              <dd class="user-avatar">
+              <dd className="user-avatar">
                 <img src={data.github.user.avatarUrl} alt="profile avatar" />
               </dd>
               <dt>Fullname:</dt>
-              <dd class="user-name">{data.github.user.name}</dd>
+              <dd className="user-name">{data.github.user.name}</dd>
               <dt>Account:</dt>
-              <dd class="user-account">@{data.github.user.login}</dd>
-              <dd class="user-account">
+              <dd className="user-account">@{data.github.user.login}</dd>
+              <dd className="user-account">
                 <span role="img" aria-label="rocket emoji">
                   🚀
                 </span>{" "}
                 JavaScript Developer{" "}
               </dd>
-              <dd class="user-account">
+              <dd className="user-account">
                 Total contributions:{" "}
                 {
                   data.github.user.contributionsCollection.contributionCalendar
@@ -72,15 +72,15 @@ const GitHubCard = () => (
             </dl>
             <dl className="user-stats">
               <dt>Repos</dt>
-              <dd class="user-repos" data-stats="repos">
+              <dd className="user-repos" data-stats="repos">
                 {data.github.user.repositories.totalCount}
               </dd>
               <dt>Followers</dt>
-              <dd class="user-followers" data-stats="followers">
+              <dd className="user-followers" data-stats="followers">
                 {data.github.user.followers.totalCount}
               </dd>
               <dt>Following</dt>
-              <dd class="user-following" data-stats="following">
+              <dd className="user-following" data-stats="following">
                 {data.github.user.following.totalCount}
               </dd>
             </dl>
