@@ -29,6 +29,22 @@ module.exports = {
         },
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-webfonts`,
+    //   options: {
+    //     fonts: {
+    //       custom: [
+    //         {
+    //           family: "Mellanie",
+    //           fontDisplay: 'swap',
+    //           strategy: 'selfHosted'
+    //         },
+    //       ],
+    //     },
+    //     usePreload: true,
+    //     usePreconnect: true,
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
