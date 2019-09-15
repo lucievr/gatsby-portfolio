@@ -29,22 +29,6 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-webfonts`,
-    //   options: {
-    //     fonts: {
-    //       custom: [
-    //         {
-    //           family: "Mellanie",
-    //           fontDisplay: 'swap',
-    //           strategy: 'selfHosted'
-    //         },
-    //       ],
-    //     },
-    //     usePreload: true,
-    //     usePreconnect: true,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -97,14 +81,14 @@ module.exports = {
         ],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // this optional plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     {
       resolve: 'gatsby-plugin-offline',
       options: {
         runtimeCaching: [
           {
-            // Use cacheFirst since these don't need to be revalidated (same RegExp and same reason as above)
+            // Use cacheFirst since these don't need to be revalidated, same RegExp and same reason as above
             urlPattern: /(\.js$|\.css$|static\/)/,
             handler: `cacheFirst`
           },

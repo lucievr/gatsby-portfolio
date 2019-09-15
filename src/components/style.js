@@ -36,13 +36,7 @@ const GlobalStyles = css`
   }
 
   html::-webkit-scrollbar-track {
-    background: linear-gradient(
-      to right,
-      #fdfdfd,
-      #f9f9fc 1px,
-      #f2f2f5 1px,
-      #f0eef0
-    );
+    background: rgba(255,255,255,0.15);
   }
 
   body.light-mode {

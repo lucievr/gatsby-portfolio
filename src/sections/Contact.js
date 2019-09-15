@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Form from "react-bootstrap/Form"
 import { Formik } from "formik"
 import { navigate } from "gatsby"
@@ -35,10 +35,6 @@ function encode(data) {
 }
 
 const Contact = () => {
-  // useEffect(() => {
-
-  // }
-  // , []);
 
   return (
     <section id="contact" className="section--dark">

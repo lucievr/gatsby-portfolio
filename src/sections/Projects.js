@@ -9,8 +9,9 @@ import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 import Fade from "react-reveal/Fade"
 import { FaLink, FaCode } from "react-icons/fa"
-import DronifyGif from "../images/dronify.gif"
-import PlantypusGif from "../images/plantypus.gif"
+import DronifyVid from "../images/dronify.mp4"
+import PlantypusVid from "../images/plantypus.mp4"
+import ShoolixVid from "../images/shoolix.mp4"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Projects = () => (
@@ -50,10 +51,15 @@ const Projects = () => (
                     PLANTYPUS CAFÉ
                   </Card.Title>
                   <Card.Body className="card__body">
-                    <img
-                      src={PlantypusGif}
-                      alt="plantypus gif"
-                      style={{ width: `100%`, height: `100%` }}
+                  <video
+                      id="plantypus-video"
+                      width="100%"
+                      height="100%"
+                      src={PlantypusVid}
+                      preload="auto"
+                      autoPlay
+                      muted
+                      loop
                     />
                     <Card.Text>
                       <p className="card__subtitle">
@@ -135,10 +141,15 @@ const Projects = () => (
                 <Card className="card--main">
                   <Card.Title className="card__title">DRONIFY</Card.Title>
                   <Card.Body className="card__body">
-                    <img
-                      src={DronifyGif}
-                      alt="dronify gif"
-                      style={{ width: `100%`, height: `100%` }}
+                    <video
+                      id="dronify-video"
+                      width="100%"
+                      height="100%"
+                      src={DronifyVid}
+                      preload="auto"
+                      autoPlay
+                      muted
+                      loop
                     />
                     <Card.Text>
                       <p className="card__subtitle">
@@ -178,14 +189,23 @@ const Projects = () => (
                 <Card className="card--main">
                   <Card.Title className="card__title">SHOOLIX</Card.Title>
                   <Card.Body className="card__body">
-                    <Img fluid={data.shoolixImage.childImageSharp.fluid} />
+                  <video
+                      id="shoolix-video"
+                      width="100%"
+                      height="100%"
+                      src={ShoolixVid}
+                      preload="auto"
+                      autoPlay
+                      muted
+                      loop
+                    />
                     <Card.Text>
                       <p className="card__subtitle">
                         Sport & leisure shoe product compare app. [WIP]
                       </p>
                       <p className="text--tech">
                         <span className="span--tech">Technologies used:</span>{" "}
-                        JavaScript, React, Gatsby, GraphQL, Firebase, Emotion.
+                        JavaScript, React, Gatsby, GraphQL, Firebase, Emotion, Netlify serverless functions.
                       </p>
                     </Card.Text>
                   </Card.Body>
