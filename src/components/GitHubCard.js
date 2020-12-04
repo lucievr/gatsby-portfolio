@@ -56,11 +56,13 @@ const GitHubCard = () => {
             <dd className="user-account">
               <span role="img" aria-label="rocket emoji">
                 🚀
-              </span>{" "}
-              JavaScript Developer{" "}
+              </span>
+              &nbsp;
+              Software Developer
             </dd>
             <dd className="user-account">
-              Total contributions:{" "}
+              Contributions in the last year:
+              &nbsp;
               {
                 userData.contributionsCollection.contributionCalendar
                   .totalContributions

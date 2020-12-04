@@ -47,6 +47,7 @@ const GlobalStyles = css`
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 300;
     background-color: #eef4f6;
+    color: #4d4d4d;
     transition: background-color 0.6s ease;
   }
 
@@ -57,7 +58,8 @@ const GlobalStyles = css`
     line-height: 1.5;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    color: white;
+    color: #ddd;
+    transition: color 0.6s ease;
     background-color: #121d21;
     transition: background-color 0.6s ease;
 
@@ -68,7 +70,7 @@ const GlobalStyles = css`
 
     ul.nav__wrapper li {
       a {
-        color: rgb(251, 251, 251);
+        color: #ddd;
         :hover {
           color: #ff7f50;
         }
@@ -91,22 +93,18 @@ const GlobalStyles = css`
     }
 
     h2 {
-      color: #fff;
+      color: #ddd;
       transition: color 0.6s ease;
     }
 
-    h5 {
-      color: #ddd;
-    }
-
     div.title__top {
-      color: #fff;
+      color: #ddd;
       transition: color 0.6s ease;
       font-family: "Mellanie", Brush Script MT, Segoe Script, cursive;
     }
 
     span.title__dev {
-      color: #fff;
+      color: #ddd;
       transition: color 0.6s ease;
     }
 
@@ -162,7 +160,7 @@ const GlobalStyles = css`
     }
 
     .user {
-      background-color: #0d1417;
+      background-color: #18262b;
       color: #ddd;
     }
 
@@ -222,6 +220,10 @@ const GlobalStyles = css`
       &:last-child {
         color: #f2b134;
       }
+    }
+
+    .switch-label::after {
+      background-color: #bbb;
     }
   }
 
@@ -416,6 +418,10 @@ const GlobalStyles = css`
     font-family: "Playfair Display", Palatino Linotype, Georgia, serif;
     font-weight: 700;
     letter-spacing: 1px;
+  }
+
+  h5 {
+    font-size: calc(15px + 0.7vw);
   }
 
   hr {
@@ -682,15 +688,18 @@ const GlobalStyles = css`
     }
   }
 
-  .form-control:focus {
-    border-color: #4db6ac;
+  .form-control {
+    font-size: calc(12px + 0.4vw);
+    &:focus {
+      border-color: #4db6ac;
+    }
   }
 
   input.form__control {
     margin-bottom: calc(10px + 0.5vw);
   }
 
-  input.form__control ::placeholder {
+  input.form__control::placeholder, textarea.form__control::placeholder {
     font-size: calc(11px + 0.5vw);
   }
 
@@ -722,9 +731,9 @@ const GlobalStyles = css`
     overflow: hidden;
     border-radius: 6px;
     position: relative;
-    background: rgba(0,0,0,0.6);
+    background: #dee9ed;
     text-align: center;
-    color: #fff;
+    color: #444;
     font-weight: 400;
     transition: background 1000ms ease-out;
     margin: 1.5rem;
@@ -767,7 +776,7 @@ const GlobalStyles = css`
   }
 
   dd.user-name {
-    font-size: 24px;
+    font-size: calc(15px + 0.7vw);
     font-weight: 600;
     letter-spacing: 1px;
   }
