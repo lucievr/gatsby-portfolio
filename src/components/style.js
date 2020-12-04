@@ -46,7 +46,7 @@ const GlobalStyles = css`
     line-height: 1.5;
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 300;
-    background-color: #dee9ed;
+    background-color: #eef4f6;
     transition: background-color 0.6s ease;
   }
 
@@ -133,7 +133,6 @@ const GlobalStyles = css`
 
     div.div--circle {
       background: #068587;
-      border: 3px solid #f2b134;
       transition: background 0.6s ease;
       transition: border 0.6s ease;
     }
@@ -295,13 +294,7 @@ const GlobalStyles = css`
 
   nav#navbar {
     padding: 0 1rem 0 0;
-    background: rgb(73, 73, 171);
-    background: linear-gradient(
-      90deg,
-      rgba(73, 73, 171, 1) 0%,
-      rgba(85, 86, 200, 1) 50%,
-      rgba(73, 73, 171, 1) 100%
-    );
+    background: #eef4f6;
     transition: background-color 0.6s ease;
     position: fixed;
     flex-flow: row nowrap;
@@ -313,6 +306,7 @@ const GlobalStyles = css`
     z-index: 1000;
     display: flex;
     align-items: center;
+    box-shadow: rgba(0,0,0,0.1) 0 0 10px;
     @media (max-width: 650px) {
       padding: 0;
     }
@@ -396,7 +390,7 @@ const GlobalStyles = css`
   }
 
   section.section--dark {
-    background-color: #dee9ed;
+    background-color: #eef4f6;
     transition: background-color 0.6s ease;
   }
 
@@ -418,7 +412,7 @@ const GlobalStyles = css`
   hr {
     margin: 0;
     border: 0;
-    border-top: 2px dashed #ffa280;
+    border-top: 2px dashed #4db6ac;
     transition: border-top 0.6s ease;
   }
 
@@ -439,7 +433,7 @@ const GlobalStyles = css`
   }
 
   div.title__bottom {
-    color: rgba(80, 80, 242, 0.9);
+    color: #ff7f50;
     transition: color 0.6s ease;
     font-size: calc(15px + 3vw);
     font-weight: 700;
@@ -451,7 +445,7 @@ const GlobalStyles = css`
 
   span.title__name {
     font-size: calc(19px + 4.8vw);
-    color: #ff7f50;
+    color: #4db6ac;
     transition: color 0.6s ease;
   }
 
@@ -498,19 +492,12 @@ const GlobalStyles = css`
     max-width: 90vw;
     margin: 0 auto;
     border-radius: 50%;
-    background: rgb(73, 73, 171);
-    background: radial-gradient(
-      circle,
-      rgba(73, 73, 171, 1) 0%,
-      rgba(85, 86, 200, 1) 50%,
-      rgba(73, 73, 171, 1) 100%
-    );
-    border: 3px solid #ffa280;
+    background: #fff;
     transition: background 0.6s ease;
     color: white;
     padding: 2px;
     transition: border 0.6s ease;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 50px;
   }
 
   img.img--avatar {
@@ -828,7 +815,7 @@ const GlobalStyles = css`
   }
 
   footer {
-    background-color: #dee9ed;
+    background-color: #eef4f6;
     transition: background-color 0.6s ease;
     margin: 1rem 2.5rem 1.5rem;
     line-height: 1.8;

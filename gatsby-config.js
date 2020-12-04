@@ -1,7 +1,8 @@
-const path = require('path');
+const path = require("path")
 require("dotenv").config({
   path: `.env`,
 })
+const { githubApiQuery } = require('./github-api')
 
 module.exports = {
   siteMetadata: {
@@ -22,10 +23,10 @@ module.exports = {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {
-          '@components': path.resolve(__dirname, 'src/components'),
-          '@images': path.resolve(__dirname, 'src/images'),
-          '@sections': path.resolve(__dirname, 'src/sections'),
-          '@pages': path.resolve(__dirname, 'src/pages'),
+          "@components": path.resolve(__dirname, "src/components"),
+          "@images": path.resolve(__dirname, "src/images"),
+          "@sections": path.resolve(__dirname, "src/sections"),
+          "@pages": path.resolve(__dirname, "src/pages"),
         },
       },
     },
@@ -45,28 +46,23 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: `gatsby-source-github-api`,
       options: {
-        typeName: "GitHub",
-        fieldName: "github",
-        // Url to query from
         url: "https://api.github.com/graphql",
-        // HTTP headers
-        headers: {
-          // Learn about environment variables: https://gatsby.dev/env-vars
-          Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
-        },
-        // Additional options to pass to node-fetch
-        fetchOptions: {},
+        token: process.env.GITHUB_TOKEN,
+        graphQLQuery: githubApiQuery,
+        variables: {
+          github_login: process.env.GITHUB_LOGIN
+        }
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-styled-components`,
-    'gatsby-plugin-use-dark-mode',
+    "gatsby-plugin-use-dark-mode",
     `gatsby-plugin-twitter`,
-    'gatsby-plugin-svgr',
+    "gatsby-plugin-svgr",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -84,23 +80,23 @@ module.exports = {
     // this optional plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     {
-      resolve: 'gatsby-plugin-offline',
+      resolve: "gatsby-plugin-offline",
       options: {
         runtimeCaching: [
           {
             // Use cacheFirst since these don't need to be revalidated, same RegExp and same reason as above
             urlPattern: /(\.js$|\.css$|static\/)/,
-            handler: `cacheFirst`
+            handler: `cacheFirst`,
           },
           {
             // Add runtime caching of various other page resources
             urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
-            handler: `staleWhileRevalidate`
+            handler: `staleWhileRevalidate`,
           },
         ],
         skipWaiting: true,
-        clientsClaim: true
-      }
+        clientsClaim: true,
+      },
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -118,10 +114,10 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         allPageHeaders: [
-          'Link: </icons/icon-48x48.png>; rel=preload; as=image',
-          'Link: </icons/icon-72x72.png>; rel=preload; as=image',
-          'Link: </icons/icon-96x96.png>; rel=preload; as=image',
-          'Link: </icons/icon-144x144.png>; rel=preload; as=image',
+          "Link: </icons/icon-48x48.png>; rel=preload; as=image",
+          "Link: </icons/icon-72x72.png>; rel=preload; as=image",
+          "Link: </icons/icon-96x96.png>; rel=preload; as=image",
+          "Link: </icons/icon-144x144.png>; rel=preload; as=image",
         ],
         headers: {
           "/*": [
