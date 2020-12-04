@@ -27,7 +27,6 @@
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sharp": "^2.10.0",
     "gatsby-plugin-svgr": "^2.0.2",
-    "gatsby-plugin-twitter": "^2.6.0",
     "gatsby-plugin-use-dark-mode": "^1.2.0",
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-source-filesystem": "^2.7.0",

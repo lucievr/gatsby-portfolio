@@ -77,13 +77,6 @@ function SEO({ description, lang, meta, keywords, title, script }) {
             : []
         )
         .concat(meta)}
-      script={[
-        {
-          src: `https://platform.twitter.com/widgets.js`,
-          type: `text/javascript`,
-          charset: `utf-8`,
-        },
-      ].concat(script)}
     />
   )
 }
@@ -91,7 +84,6 @@ function SEO({ description, lang, meta, keywords, title, script }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  script: [],
   keywords: [],
   description: ``,
 }
@@ -100,7 +92,6 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  script: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
 }

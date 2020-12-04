@@ -187,18 +187,6 @@ const Contact = () => {
             )}
           </Formik>
         </div>
-
-        <div style={{ margin: `1.5rem` }}>
-          <a
-            className="twitter-timeline"
-            data-width="350"
-            data-height="900"
-            data-link-color="#ff7f50"
-            href="https://twitter.com/lucie_vrs?ref_src=twsrc%5Etfw"
-          >
-            Tweets by lucie_vrs
-          </a>
-        </div>
       </div>
     </section>
   )
