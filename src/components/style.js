@@ -17,16 +17,15 @@ const GlobalStyles = css`
   }
 
   html::-webkit-scrollbar {
-    width: 25px;
-    height: 25px;
+    width: 22px;
   }
 
   html::-webkit-scrollbar-thumb {
-    background: rgb(255, 127, 80);
+    background: rgba(170, 170, 170, 0.5);
     background: linear-gradient(
       180deg,
-      rgba(153, 153, 153, 1) 30%,
-      rgba(255, 127, 80, 1) 100%
+      #ff7f50 10%,
+      rgba(170, 170, 170, 0.5) 60%
     );
     border-radius: 30px;
     -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25),
@@ -36,7 +35,7 @@ const GlobalStyles = css`
   }
 
   html::-webkit-scrollbar-track {
-    background: rgba(140,140,140,0.08);
+    background: rgba(140, 140, 140, 0.08);
   }
 
   body.light-mode {
@@ -111,48 +110,29 @@ const GlobalStyles = css`
     div.div--circle {
       background: #18262b;
       color: #fff;
-      box-shadow: rgba(0,0,0,0.1) 0px 3px 10px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
       transition: background 0.6s ease;
       transition: border 0.6s ease;
     }
 
     div.card--main {
-      background: #1a5365;
-      border: 1px solid rgba(0, 0, 0, 0.125);
+      background: #18262b;
+      color: #ddd;
       transition: background 0.6s ease;
-      transition: border 0.6s ease;
+      transition: color 0.6s ease;
       transition: all 0.3s ease-in-out;
     }
 
-    div.card__title {
-      color: #f2b134;
-      text-shadow: 1px 1px black;
-      border-bottom: 3px dotted #4fb99f;
-      transition: color 0.6s ease;
-      transition: text-shadow 0.6s ease;
-      transition: border-bottom 0.6s ease;
-    }
-
-    p.card__subtitle {
-      font-weight: 300;
+    .card-footer {
+      background-color: #253a41;
     }
 
     p.text--tech {
       margin: 0;
     }
 
-    span.span--tech {
-      color: #ff7f50;
-      font-weight: 500;
-    }
-
-    a.card__link {
-      color: #4fb99f;
-      font-weight: 400;
-    }
-
     a.card__link:hover {
-      color: #ff7f50;
+      color: #ddd;
     }
 
     svg.icon--contact:hover {
@@ -190,7 +170,8 @@ const GlobalStyles = css`
       }
     }
 
-    input::placeholder, textarea::placeholder {
+    input::placeholder,
+    textarea::placeholder {
       color: #777;
       opacity: 1;
     }
@@ -203,7 +184,8 @@ const GlobalStyles = css`
       color: #000;
     }
 
-    button.btn--submit:hover, .btn-primary:not(:disabled):not(.disabled):active {
+    button.btn--submit:hover,
+    .btn-primary:not(:disabled):not(.disabled):active {
       background: #253a41;
       color: #fff;
     }
@@ -255,7 +237,7 @@ const GlobalStyles = css`
   .toggle-control {
     position: relative;
     display: inline-block;
-    height: 16px
+    height: 16px;
   }
 
   .switch-input {
@@ -413,11 +395,9 @@ const GlobalStyles = css`
   h2 {
     color: #4d4d4d;
     transition: color 0.6s ease;
-    font-size: calc(16px + 2vw);
+    font-size: calc(18px + 1.3vw);
     padding: 10px 10px 30px;
-    font-family: "Playfair Display", Palatino Linotype, Georgia, serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-family: "Cantata One", Palatino Linotype, Georgia, serif;
   }
 
   h5 {
@@ -546,15 +526,11 @@ const GlobalStyles = css`
     margin: 20px auto;
     margin-top: calc(20px + 1vw);
     margin-bottom: calc(20px + 1vw);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-    background: rgba(73, 73, 171, 1);
-    background: linear-gradient(
-      45deg,
-      rgba(255, 127, 80, 1) 0%,
-      rgba(73, 73, 171, 1) 75%
-    );
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    color: #4d4d4d;
     transition: background 0.6s ease;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: none;
     transition: border 0.6s ease;
     position: relative;
     display: flex;
@@ -570,16 +546,12 @@ const GlobalStyles = css`
   }
 
   div.card__title {
-    color: white;
-    text-shadow: none;
-    border-bottom: 3px dotted #ffa280;
+    border-bottom: 3px dotted #4db6ac;
     transition: color 0.6 ease;
-    transition: text-shadow 0.6s ease;
-    transition: border-bottom 0.6s ease;
     font-weight: 500;
     font-size: calc(13px + 0.5vw);
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 16px;
     padding: 4px;
     padding-bottom: 12px;
@@ -592,20 +564,16 @@ const GlobalStyles = css`
   p.card__subtitle {
     margin-top: 16px;
     font-size: calc(12px + 0.5vw);
-    color: white;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-shadow: 1.5px 1px black;
   }
 
   a.card__link {
-    color: white;
+    color: #4db6ac;
     font-weight: 400;
     text-decoration: none;
   }
 
   a.card__link:hover {
-    color: rgba(85, 86, 200, 1);
+    color: #4d4d4d;
     text-decoration: none;
   }
 
@@ -615,8 +583,12 @@ const GlobalStyles = css`
   }
 
   span.span--tech {
-    color: white;
+    color: #ff7f50;
     font-weight: 400;
+  }
+
+  .card-footer {
+    background-color: rgba(0, 0, 0, 0.03);
   }
 
   /* skills section */
@@ -699,7 +671,8 @@ const GlobalStyles = css`
     margin-bottom: calc(10px + 0.5vw);
   }
 
-  input.form__control::placeholder, textarea.form__control::placeholder {
+  input.form__control::placeholder,
+  textarea.form__control::placeholder {
     font-size: calc(11px + 0.5vw);
   }
 
@@ -713,7 +686,8 @@ const GlobalStyles = css`
     letter-spacing: 1px;
   }
 
-  button.btn--submit:hover, .btn-primary:not(:disabled):not(.disabled):active {
+  button.btn--submit:hover,
+  .btn-primary:not(:disabled):not(.disabled):active {
     background: rgba(0, 0, 0, 0.6);
     border: none;
     transition: background 0.3s ease;
@@ -737,7 +711,7 @@ const GlobalStyles = css`
     font-weight: 400;
     transition: background 1000ms ease-out;
     margin: 1.5rem;
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   .user dl,

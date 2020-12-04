@@ -4,4 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 require('typeface-montserrat')
-require('typeface-playfair-display')
+require('typeface-cantata-one')

@@ -88,7 +88,7 @@ const Projects = () => (
                       rel="noopener noreferrer"
                       style={{ marginLeft: `1.25rem` }}
                     >
-                      <FaCode /> GitHub
+                      <FaCode /> Code
                     </OutboundLink>
                   </Card.Footer>
                 </Card>
@@ -127,7 +127,7 @@ const Projects = () => (
                       rel="noopener noreferrer"
                       style={{ marginLeft: `1.25rem` }}
                     >
-                      <FaCode /> GitHub
+                      <FaCode /> Code
                     </OutboundLink>
                   </Card.Footer>
                 </Card>
@@ -178,7 +178,7 @@ const Projects = () => (
                       rel="noopener noreferrer"
                       style={{ marginLeft: `1.25rem` }}
                     >
-                      <FaCode /> GitHub
+                      <FaCode /> Code
                     </OutboundLink>
                   </Card.Footer>
                 </Card>
@@ -222,7 +222,7 @@ const Projects = () => (
                       href="#"
                       style={{ color: `grey`, marginLeft: `1.25rem` }}
                     >
-                      <FaCode /> GitHub
+                      <FaCode /> Code
                     </OutboundLink>
                   </Card.Footer>
                 </Card>
