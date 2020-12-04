@@ -37,7 +37,7 @@ const Projects = () => (
     `}
     render={data => (
       <section id="projects" className="section--dark">
-        <h2 className="heading--teal">
+        <h2>
           <span className="symbol--orange">+</span> Projects{" "}
           <span className="symbol--orange">+</span>
         </h2>

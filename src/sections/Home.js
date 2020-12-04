@@ -28,7 +28,7 @@ const Home = () => (
               cursor={{ hideWhenDone: true, hideWhenDoneDelay: 8000 }}
             >
               <span>
-                Hello, this is <span className="title__name">Lucie</span>
+                Meet <span className="title__name">Lucie</span>
               </span>
             </Typist>
           </div>

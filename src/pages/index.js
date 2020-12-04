@@ -43,7 +43,7 @@ const IndexPage = () => (
 
     <footer>© {new Date().getFullYear()} Lucie Vrsovska. 
     Code-crafted by <a href="https://www.lucie.dev/" target="_blank" rel="noopener noreferrer" style={{fontWeight: `bold`}}>
-    Lucie</a> 🦄✨
+    Lucie</a>
     </footer>
     </>
 )

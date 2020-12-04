@@ -36,7 +36,7 @@ const GlobalStyles = css`
   }
 
   html::-webkit-scrollbar-track {
-    background: rgba(255,255,255,0.15);
+    background: rgba(140,140,140,0.08);
   }
 
   body.light-mode {
@@ -58,11 +58,11 @@ const GlobalStyles = css`
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 300;
     color: white;
-    background-color: #112f41;
+    background-color: #121d21;
     transition: background-color 0.6s ease;
 
     nav#navbar {
-      background: #068587;
+      background: #18262b;
       transition: background 0.6s ease;
     }
 
@@ -70,18 +70,18 @@ const GlobalStyles = css`
       a {
         color: rgb(251, 251, 251);
         :hover {
-          color: #f2b134;
+          color: #ff7f50;
         }
       }
       &.is-active {
         a {
-          color: #f2b134;
+          color: #ff7f50;
         }
       }
     }
 
     section.section--dark {
-      background-color: #112f41;
+      background-color: #121d21;
       transition: background-color 0.6s ease;
     }
 
@@ -91,48 +91,29 @@ const GlobalStyles = css`
     }
 
     h2 {
-      color: white;
+      color: #fff;
       transition: color 0.6s ease;
     }
 
-    h2.heading--teal {
-      color: #4fb99f;
+    h5 {
+      color: #ddd;
     }
 
     div.title__top {
-      color: white;
+      color: #fff;
       transition: color 0.6s ease;
       font-family: "Mellanie", Brush Script MT, Segoe Script, cursive;
-    }
-
-    div.Typist span.Cursor {
-      color: #f2b134;
-      transition: color 0.6s ease;
-    }
-
-    div.title__bottom {
-      color: #4fb99f;
-      transition: color 0.6s ease;
-      font-family: "Mellanie", Brush Script MT, Segoe Script, cursive;
-    }
-
-    span.title__name {
-      color: #f2b134;
-      transition: color 0.6s ease;
     }
 
     span.title__dev {
-      color: #ff7f50;
+      color: #fff;
       transition: color 0.6s ease;
     }
 
-    hr {
-      border-top: 2px dashed #f2b134;
-      transition: border-top 0.6s ease;
-    }
-
     div.div--circle {
-      background: #068587;
+      background: #18262b;
+      color: #fff;
+      box-shadow: rgba(0,0,0,0.1) 0px 3px 10px;
       transition: background 0.6s ease;
       transition: border 0.6s ease;
     }
@@ -176,51 +157,70 @@ const GlobalStyles = css`
       color: #ff7f50;
     }
 
-    svg.icon--contact {
-      color: #f2b134;
-    }
     svg.icon--contact:hover {
-      color: #ff7f50;
-    }
-
-    form.form--main {
-      background: #1a5365;
-    }
-
-    button.btn--submit {
-      color: #112f41;
-      background: rgba(242, 177, 52, 0.9);
-      transition: background 0.3s ease;
-      transition: color 0.3s ease;
-      font-weight: 600;
-    }
-
-    button.btn--submit:hover {
-      background: #ff7f50;
-      font-weight: 600;
+      color: #253a41;
     }
 
     .user {
-      background: #068587;
+      background-color: #0d1417;
+      color: #ddd;
+    }
+
+    .user-avatar img {
+      background-color: #253a41;
+      border: 3px solid #253a41;
+    }
+
+    .user-data {
+      background: #253a41 url(${githubLogo}) no-repeat 5px 5px;
+    }
+
+    .user-stats {
+      border-top: 2px solid #253a41;
+    }
+
+    form.form--main {
+      border: 7px solid #253a41;
+    }
+
+    .form-control {
+      background-color: #0e171a;
+      border: 1px solid #000;
+      color: #bbb;
+      &:focus {
+        box-shadow: 0 0 0 0.2rem #253a41;
+      }
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #777;
+      opacity: 1;
+    }
+
+    label {
+      color: #ddd;
+    }
+
+    button.btn--submit {
+      color: #000;
+    }
+
+    button.btn--submit:hover, .btn-primary:not(:disabled):not(.disabled):active {
+      background: #253a41;
+      color: #fff;
     }
 
     footer {
-      background-color: #112f41;
+      background-color: #121d21;
+      color: #bbb;
       transition: background-color 0.6s ease;
       padding-bottom: 20px;
     }
 
-    footer a {
-      color: #f2b134;
-    }
-    footer a:hover {
-      color: #ff7f50;
-    }
-
     .dark-mode-toggle > button {
-      color: #a6a6a6;
+      color: #555;
       &:last-child {
-        color: #262626;
+        color: #f2b134;
       }
     }
   }
@@ -232,15 +232,16 @@ const GlobalStyles = css`
   .dark-mode-toggle {
     display: flex;
     margin: 0 auto;
+    align-items: center;
     & > button {
       font-size: 1.5rem;
       background: none;
       border: none;
-      color: #ffe600;
+      color: #f5dd00;
       cursor: pointer;
       transition: color 0.5s ease;
       &:last-child {
-        color: #a6a6a6;
+        color: #b9b9b9;
       }
 
       &:focus {
@@ -251,45 +252,53 @@ const GlobalStyles = css`
 
   .toggle-control {
     position: relative;
-    padding: 0 4px;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    height: 16px
   }
 
-  input[type="checkbox"].dmcheck {
+  .switch-input {
+    display: none;
+  }
+  .switch-label {
+    display: block;
     width: 40px;
-    height: 10px;
-    background: #555;
-    position: relative;
-    border-radius: 5px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    height: 16px;
+    text-indent: -150%;
+    clip: rect(0 0 0 0);
+    color: transparent;
+    user-select: none;
+  }
+  .switch-label::before,
+  .switch-label::after {
+    content: "";
+    display: block;
+    position: absolute;
     cursor: pointer;
-    vertical-align: 2px;
-    outline: none;
-
-    &:checked + label {
-      left: 30px;
-    }
-
-    &:focus-visible {
-      outline: solid 2px white;
-    }
-
-    & + label {
-      display: inline-block;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      transition: all 0.5s ease;
-      cursor: pointer;
-      position: absolute;
-      left: 2px;
-      background: #fff;
-      opacity: 0.8;
-      background-color: rgba(255, 255, 255, 0.9);
-    }
+  }
+  .switch-label::before {
+    width: 100%;
+    height: 100%;
+    background-color: #dedede;
+    border-radius: 9999em;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+  }
+  .switch-label::after {
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+    -webkit-transition: left 0.25s ease;
+    transition: left 0.25s ease;
+  }
+  .switch-input:checked + .switch-label::before {
+    background-color: #253a41;
+  }
+  .switch-input:checked + .switch-label::after {
+    left: 24px;
   }
 
   nav#navbar {
@@ -306,7 +315,7 @@ const GlobalStyles = css`
     z-index: 1000;
     display: flex;
     align-items: center;
-    box-shadow: rgba(0,0,0,0.1) 0 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 10px;
     @media (max-width: 650px) {
       padding: 0;
     }
@@ -341,7 +350,7 @@ const GlobalStyles = css`
     }
     a {
       text-decoration: none;
-      color: white;
+      color: #4d4d4d;
       font-weight: 400;
       padding: 2%;
       width: auto;
@@ -494,7 +503,8 @@ const GlobalStyles = css`
     border-radius: 50%;
     background: #fff;
     transition: background 0.6s ease;
-    color: white;
+    color: #000;
+    font-weight: 400;
     padding: 2px;
     transition: border 0.6s ease;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 50px;
@@ -672,6 +682,10 @@ const GlobalStyles = css`
     }
   }
 
+  .form-control:focus {
+    border-color: #4db6ac;
+  }
+
   input.form__control {
     margin-bottom: calc(10px + 0.5vw);
   }
@@ -682,31 +696,18 @@ const GlobalStyles = css`
 
   button.btn--submit {
     font-size: calc(13px + 0.6vw);
-    background: rgba(73, 73, 171, 1);
-    background: linear-gradient(
-      45deg,
-      rgba(255, 127, 80, 1) 0%,
-      rgba(73, 73, 171, 1) 75%
-    );
+    background: #4db6ac;
     transition: background 0.3s ease;
     font-weight: 500;
     color: white;
-    border: 1px solid black;
+    border: none;
     letter-spacing: 1px;
   }
 
-  button.btn--submit:hover {
-    font-weight: 500;
-    color: white;
-    background: rgba(73, 73, 171, 1);
-    background: linear-gradient(
-      90deg,
-      rgba(85, 86, 200, 1) 0%,
-      rgba(73, 73, 171, 1) 50%,
-      rgba(85, 86, 200, 1) 100%
-    );
+  button.btn--submit:hover, .btn-primary:not(:disabled):not(.disabled):active {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
     transition: background 0.3s ease;
-    border: 1px solid black;
   }
 
   :host {
@@ -721,13 +722,7 @@ const GlobalStyles = css`
     overflow: hidden;
     border-radius: 6px;
     position: relative;
-    background: rgb(73, 73, 171);
-    background: radial-gradient(
-      circle,
-      rgba(73, 73, 171, 1) 0%,
-      rgba(85, 86, 200, 1) 50%,
-      rgba(73, 73, 171, 1) 100%
-    );
+    background: rgba(0,0,0,0.6);
     text-align: center;
     color: #fff;
     font-weight: 400;
@@ -773,14 +768,12 @@ const GlobalStyles = css`
 
   dd.user-name {
     font-size: 24px;
-    color: #fff;
     font-weight: 600;
     letter-spacing: 1px;
   }
 
   .user-account {
     font-size: 16px;
-    color: #fff;
     margin: 5px 0;
   }
 
@@ -799,7 +792,6 @@ const GlobalStyles = css`
   .user-followers {
     display: inline-block;
     font-size: 20px;
-    color: #fff;
   }
 
   .user-repos:after,
@@ -809,7 +801,6 @@ const GlobalStyles = css`
     text-transform: uppercase;
     display: block;
     font-size: 11px;
-    color: #fff;
     font-weight: normal;
     line-height: 1.7em;
   }
@@ -823,12 +814,12 @@ const GlobalStyles = css`
 
   footer a {
     text-decoration: none;
-    color: rgba(85, 86, 200, 1);
+    color: #ff7f50;
   }
 
   footer a:hover {
     text-decoration: none;
-    color: rgba(255, 127, 80, 1);
+    color: #4d4d4d;
   }
 
   ${"" /* success & 404 pages */}

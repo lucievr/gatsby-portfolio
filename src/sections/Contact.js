@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section--dark">
-      <h2 className="heading--teal">
+      <h2>
         <span className="symbol--orange">+</span> Contact{" "}
         <span className="symbol--orange">+</span>
       </h2>
