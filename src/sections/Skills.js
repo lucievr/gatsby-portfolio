@@ -1,24 +1,23 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 
-import Auth from "@images/auth0.png"
-import Code from "@images/code.png"
+import Firebase from "@images/firebase.png"
 import Gatsby from "@images/gatsby.png"
 import Git from "@images/git.png"
-import Github from "@images/github.png"
-import Graphqlicon from "@images/graphql.png"
-import Gulp from "@images/gulp.png"
+import Graphql from "@images/graphql.png"
 import Jsicon from "@images/js.png"
 import Mongo from "@images/mongodb.png"
-import Netlify from "@images/netlify.png"
+import MySql from "@images/mysql.png"
 import Next from "@images/nextjs.png"
+import NodeJs from "@images/nodejs.png"
+import Python from "@images/python.png"
 import Reacticon from "@images/react.png"
 import Redux from "@images/redux.png"
-import Snipcart from "@images/snipcart.png"
+import Ubuntu from "@images/ubuntu.png"
+import VsCode from "@images/vscode.png"
 import Webpack from "@images/webpack.png"
 
 const Skills = () => {
@@ -40,12 +39,12 @@ const Skills = () => {
                 href="https://nextjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="next js"
+                title="Next.js"
               >
                 <img
                   src={Next}
-                  alt="next js"
-                  className="icon--skill icon--circle hvr-grow mid"
+                  alt="nextjs"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>
@@ -57,54 +56,54 @@ const Skills = () => {
                 href="https://webpack.js.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="webpack"
+                title="Webpack"
               >
                 <img
                   src={Webpack}
                   alt="webpack"
-                  className="icon--skill hvr-grow big"
+                  className="icon--skill hvr-grow med"
                 />
               </a>
             </Col>
             <Col>
               <a
-                href="https://github.com/"
+                href="https://graphql.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="github"
+                title="GraphQL"
               >
                 <img
-                  src={Github}
-                  alt="github"
-                  className="icon--skill hvr-grow small"
+                  src={Graphql}
+                  alt="graphql"
+                  className="icon--skill hvr-grow"
                 />
               </a>
             </Col>
             <Col>
               <a
-                href="https://www.gatsbyjs.org/"
+                href="https://www.gatsbyjs.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="gatsby"
+                title="Gatsby"
               >
                 <img
                   src={Gatsby}
                   alt="gatsby"
-                  className="icon--skill icon--circle icon--gatsby hvr-grow mid"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>
             <Col>
               <a
-                href="https://gulpjs.com/"
+                href="https://nodejs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="gulp"
+                title="Node.js"
               >
                 <img
-                  src={Gulp}
-                  alt="gulp"
-                  className="icon--skill hvr-grow small"
+                  src={NodeJs}
+                  alt="nodejs"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>
@@ -113,15 +112,15 @@ const Skills = () => {
           <Row>
             <Col>
               <a
-                href="https://snipcart.com/"
+                href="https://firebase.google.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="snipcart"
+                title="Firebase"
               >
                 <img
-                  src={Snipcart}
-                  alt="snipcart"
-                  className="icon--skill hvr-grow big"
+                  src={Firebase}
+                  alt="firebase"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>
@@ -130,7 +129,7 @@ const Skills = () => {
                 href="https://git-scm.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="git"
+                title="Git"
               >
                 <img src={Git} alt="git" className="icon--skill hvr-grow mid" />
               </a>
@@ -140,7 +139,7 @@ const Skills = () => {
                 href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="javascript"
+                title="JavaScript"
               >
                 <img
                   src={Jsicon}
@@ -154,26 +153,26 @@ const Skills = () => {
                 href="https://reactjs.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="react"
+                title="React"
               >
                 <img
                   src={Reacticon}
                   alt="react"
-                  className="icon--skill hvr-grow sem"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>
 
             <Col>
               <a
-                href="https://www.mongodb.com/"
+                href="https://code.visualstudio.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="mongo db"
+                title="VS Code"
               >
                 <img
-                  src={Mongo}
-                  alt="mongo db"
+                  src={VsCode}
+                  alt="vs code"
                   className="icon--skill hvr-grow big"
                 />
               </a>
@@ -186,54 +185,54 @@ const Skills = () => {
                 href="https://redux.js.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="redux"
+                title="Redux"
               >
                 <img
                   src={Redux}
                   alt="redux"
-                  className="icon--skill icon--circle hvr-grow mid"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>
             <Col>
               <a
-                href="https://graphql.org/"
+                href="https://www.mongodb.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="graph ql"
+                title="MongoDB"
               >
                 <img
-                  src={Graphqlicon}
-                  alt="graph ql"
-                  className="icon--skill hvr-grow sem"
+                  src={Mongo}
+                  alt="mongo db"
+                  className="icon--skill hvr-grow big"
                 />
               </a>
             </Col>
 
             <Col>
               <a
-                href="https://auth0.com/"
+                href="https://www.python.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="auth 0"
+                title="Python"
               >
                 <img
-                  src={Auth}
-                  alt="auth 0"
-                  className="icon--skill icon--circle hvr-grow small"
+                  src={Python}
+                  alt="python"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>
             <Col>
               <a
-                href="https://www.netlify.com/"
+                href="https://ubuntu.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="netlify"
+                title="Ubuntu"
               >
                 <img
-                  src={Netlify}
-                  alt="netlify"
+                  src={Ubuntu}
+                  alt="ubuntu"
                   className="icon--skill hvr-grow mid"
                 />
               </a>
@@ -241,17 +240,17 @@ const Skills = () => {
           </Row>
 
           <Row>
-            <Col>
+          <Col>
               <a
-                href="https://code.visualstudio.com/"
+                href="https://www.mysql.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="vs code"
+                title="MySQL"
               >
                 <img
-                  src={Code}
-                  alt="vs code"
-                  className="icon--skill hvr-grow med"
+                  src={MySql}
+                  alt="mysql"
+                  className="icon--skill hvr-grow mid"
                 />
               </a>
             </Col>

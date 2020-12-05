@@ -620,16 +620,12 @@ const GlobalStyles = css`
     line-height: 1.7;
   }
 
+  .react-reveal {
+    width: 100%;
+  }
+
   img.icon--skill.hvr-grow {
     margin: calc(17px + 1.2vw);
-    width: calc(50px + 1.7vw);
-  }
-
-  img.icon--skill.hvr-grow.small {
-    width: calc(53px + 2vw);
-  }
-
-  img.icon--skill.hvr-grow.sem {
     width: calc(50px + 1.9vw);
   }
 
@@ -642,16 +638,7 @@ const GlobalStyles = css`
   }
 
   img.icon--skill.hvr-grow.big {
-    width: calc(47px + 1vw);
-  }
-
-  img.icon--circle {
-    border-radius: 50%;
-  }
-
-  img.icon--gatsby {
-    border: 4px solid #663399;
-    border-radius: 50%;
+    width: calc(49px + 1vw);
   }
 
   /* contact section */
