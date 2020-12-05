@@ -1,10 +1,8 @@
 import React from "react"
-import Form from "react-bootstrap/Form"
-import { Formik } from "formik"
+import { Formik, Form, Field } from "formik"
 import { navigate } from "gatsby"
 import * as Yup from "yup"
 import Button from "react-bootstrap/Button"
-import Col from "react-bootstrap/Col"
 import {
   TiSocialGithubCircular,
   TiSocialLinkedinCircular,
@@ -35,7 +33,6 @@ function encode(data) {
 }
 
 const Contact = () => {
-
   return (
     <section id="contact" className="section--plain">
       <h2>
@@ -44,29 +41,29 @@ const Contact = () => {
       </h2>
 
       <div style={{ margin: `1rem` }}>
-            <h5 style={{ margin: `1rem` }}>Let's get social</h5>
-            <OutboundLink
-              href="https://github.com/lucievr"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <TiSocialGithubCircular className="icon--contact hvr-bob" />
-            </OutboundLink>
-            <OutboundLink
-              href="https://www.linkedin.com/in/lucie-vrsovska/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <TiSocialLinkedinCircular className="icon--contact hvr-bob" />
-            </OutboundLink>
-            <OutboundLink
-              href="https://twitter.com/lucie_vrs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <TiSocialTwitterCircular className="icon--contact hvr-bob" />
-            </OutboundLink>
-          </div>
+        <h5 style={{ margin: `1rem` }}>Let's get social</h5>
+        <OutboundLink
+          href="https://github.com/lucievr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TiSocialGithubCircular className="icon--contact hvr-bob" />
+        </OutboundLink>
+        <OutboundLink
+          href="https://www.linkedin.com/in/lucie-vrsovska/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TiSocialLinkedinCircular className="icon--contact hvr-bob" />
+        </OutboundLink>
+        <OutboundLink
+          href="https://twitter.com/lucie_vrs"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TiSocialTwitterCircular className="icon--contact hvr-bob" />
+        </OutboundLink>
+      </div>
 
       <div
         style={{
@@ -96,11 +93,11 @@ const Contact = () => {
                 body: encode({ "form-name": "contact", ...values }),
               })
                 .then(() => {
-                  navigate("/success/")
+                  actions.setSubmitting(false)
                   actions.resetForm()
+                  navigate("/success/")
                 })
                 .catch(error => alert(error))
-                .finally(() => actions.setSubmitting(false))
             }}
           >
             {({
@@ -124,10 +121,11 @@ const Contact = () => {
                 </h5>
                 <input type="hidden" name="form-name" value="contact" />
                 <input name="bot-field" type="hidden" />
-                <Form.Row>
-                  <Form.Group as={Col} md="6" controlId="formGridName">
-                    <Form.Label>Full name *</Form.Label>
-                    <Form.Control
+                <div className="form__container">
+                  <div className="form__row">
+                  <div className="form__input">
+                    <label htmlFor="name">Full Name *</label>
+                    <Field
                       className="form__control"
                       type="text"
                       placeholder="Enter your name"
@@ -137,12 +135,12 @@ const Contact = () => {
                       value={values.name}
                     />
                     {errors.name && touched.name ? (
-                      <div style={{ color: `#ff7f50` }}>{errors.name}</div>
+                      <div className="error-message">{errors.name}</div>
                     ) : null}
-                  </Form.Group>
-                  <Form.Group as={Col} md="6" controlId="formGridEmail">
-                    <Form.Label>Email *</Form.Label>
-                    <Form.Control
+                    </div>
+                    <div className="form__input">
+                    <label htmlFor="email">Email *</label>
+                    <Field
                       className="form__control"
                       type="email"
                       placeholder="Your email"
@@ -152,29 +150,28 @@ const Contact = () => {
                       value={values.email}
                     />
                     {errors.email && touched.email ? (
-                      <div style={{ color: `#ff7f50` }}>{errors.email}</div>
+                      <div className="error-message">{errors.email}</div>
                     ) : null}
-                  </Form.Group>
-                </Form.Row>
-
-                <Form.Group controlId="exampleForm.ControlTextarea1">
-                  <Form.Label>Your message *</Form.Label>
-                  <Form.Control
-                    className="form__control"
-                    type="text"
-                    as="textarea"
-                    rows="5"
-                    placeholder="Enter your message here..."
-                    name="message"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.message}
-                  />
-                  {errors.message && touched.message ? (
-                    <div style={{ color: `#ff7f50` }}>{errors.message}</div>
-                  ) : null}
-                </Form.Group>
-
+                    </div>
+                  </div>
+                  <div className="form__input">
+                    <label htmlFor="message">Your message *</label>
+                    <Field
+                      className="field__text"
+                      type="text"
+                      as="textarea"
+                      rows="5"
+                      placeholder="Enter your message here..."
+                      name="message"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.message}
+                    />
+                    {errors.message && touched.message ? (
+                      <div className="error-message">{errors.message}</div>
+                    ) : null}
+                  </div>
+                </div>
                 <Button
                   className="btn--submit hvr-glow"
                   block

@@ -161,7 +161,7 @@ const GlobalStyles = css`
       border: 7px solid #253a41;
     }
 
-    .form-control {
+    .form__control, .field__text {
       background-color: #0e171a;
       border: 1px solid #000;
       color: #bbb;
@@ -667,20 +667,57 @@ const GlobalStyles = css`
     }
   }
 
-  .form-control {
+  .form__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__input {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+  }
+
+  .form__control, .field__text {
     font-size: calc(12px + 0.4vw);
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
     &:focus {
       border-color: #4db6ac;
+      outline: 0;
       box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.05);
     }
   }
 
-  input.form__control {
+  textarea.field__text {
+    height: auto;
+  }
+
+  input.form__control, textarea.field__text {
     margin-bottom: calc(10px + 0.5vw);
+  }
+  .error-message {
+    margin-bottom: calc(10px + 0.5vw);
+    color: #ff7f50;
   }
 
   input.form__control::placeholder,
-  textarea.form__control::placeholder {
+  textarea.field__text::placeholder {
     font-size: calc(11px + 0.5vw);
   }
 
@@ -821,11 +858,6 @@ const GlobalStyles = css`
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-
-  .section-suc {
-    background-color: #1a5365;
-    min-height: 100vh;
   }
 
   a.link--back {
