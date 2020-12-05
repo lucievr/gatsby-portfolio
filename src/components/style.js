@@ -81,12 +81,12 @@ const GlobalStyles = css`
       }
     }
 
-    section.section--dark {
+    section.section--plain {
       background-color: #121d21;
       transition: background-color 0.6s ease;
     }
 
-    section.section--light {
+    section.section--bgImage {
       background-image: url(${bgUrl});
       transition: background-image 0.6s ease;
     }
@@ -380,14 +380,18 @@ const GlobalStyles = css`
     padding-top: calc(25px + 1.5vw);
     padding-bottom: calc(35px + 1.5vw);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
-  section.section--dark {
+  section.section--plain {
     background-color: #eef4f6;
     transition: background-color 0.6s ease;
   }
 
-  section.section--light {
+  section.section--bgImage {
     background-image: url(${bgLightUrl});
     transition: background-image 0.6s ease;
   }
@@ -520,10 +524,26 @@ const GlobalStyles = css`
 
   /* projects section */
 
+  div.container--projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
+  }
+
+  div.container__item {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+  }
+
   div.card--main {
     width: calc(260px + 7vw);
     max-width: 90vw;
-    margin: 20px auto;
+    margin: 20px;
     margin-top: calc(20px + 1vw);
     margin-bottom: calc(20px + 1vw);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -664,6 +684,7 @@ const GlobalStyles = css`
     font-size: calc(12px + 0.4vw);
     &:focus {
       border-color: #4db6ac;
+      box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.05);
     }
   }
 

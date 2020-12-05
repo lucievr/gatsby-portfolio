@@ -23,7 +23,7 @@ import Webpack from "@images/webpack.png"
 
 const Skills = () => {
   return (
-    <section id="skills" className="section--light">
+    <section id="skills" className="section--bgImage">
       <h2>
         <span className="symbol--orange">+</span> Skills{" "}
         <span className="symbol--orange">+</span>

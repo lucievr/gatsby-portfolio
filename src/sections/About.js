@@ -4,7 +4,7 @@ import Logo from "@images/favicon.png"
 
 const About = () => {
   return (
-    <section id="about" className="section--light">
+    <section id="about" className="section--bgImage">
       <h2>
         <span className="symbol--orange">+</span> About{" "}
         <span className="symbol--orange">+</span>

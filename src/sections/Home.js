@@ -19,7 +19,7 @@ const Home = () => (
       }
     `}
     render={data => (
-      <section id="home" className="section--dark">
+      <section id="home" className="section--plain">
         <Navigation />
 
         <div>
