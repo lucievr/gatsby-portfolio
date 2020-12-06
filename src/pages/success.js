@@ -26,14 +26,14 @@ const SuccessPage = () => (
         <section className="section-suc">
           <SEO title="Success: Form sent" />
           <h2 className="title__name">Success!</h2>
-          <p>Your form has been successfully submitted.</p>
+          <p>Your message has been sent.</p>
           <div className="div--img">
             <Img fluid={data.successImage.childImageSharp.fluid} />
           </div>
           <Link className="link--back" to="/">
-            Go back to the homepage
+            Go back to homepage
           </Link>
-          <footer style={{ backgroundColor: `#1a5365`, marginTop: `40px` }}>
+          <footer style={{marginTop: `40px` }}>
             © {new Date().getFullYear()} Lucie Vrsovska
           </footer>
         </section>

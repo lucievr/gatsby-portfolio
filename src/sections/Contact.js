@@ -14,15 +14,15 @@ import GitHubCard from "@components/GitHubCard"
 
 const SignupSchema = Yup.object().shape({
   name: Yup.string()
-    .min(5, "Too Short!")
-    .max(70, "Too Long!")
+    .min(3, "Name too short")
+    .max(70, "Name too long")
     .required("Required"),
   email: Yup.string()
     .email("Invalid email")
     .required("Required"),
   message: Yup.string()
-    .min(35, "Your message is too short!")
-    .max(5000, "Your message is too long!")
+    .min(15, "Your message is too short")
+    .max(5000, "Your message is too long")
     .required("Required"),
 })
 
@@ -93,9 +93,9 @@ const Contact = () => {
                 body: encode({ "form-name": "contact", ...values }),
               })
                 .then(() => {
-                  actions.setSubmitting(false)
-                  actions.resetForm()
                   navigate("/success/")
+                  actions.resetForm()
+                  actions.setSubmitting(false)
                 })
                 .catch(error => alert(error))
             }}

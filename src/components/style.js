@@ -194,7 +194,6 @@ const GlobalStyles = css`
       background-color: #121d21;
       color: #bbb;
       transition: background-color 0.6s ease;
-      padding-bottom: 20px;
     }
 
     .dark-mode-toggle > button {
@@ -613,15 +612,15 @@ const GlobalStyles = css`
 
   /* skills section */
 
+  section.skills .react-reveal {
+    width: 100%;
+  }
+
   div.div--skills {
     max-width: 70vw;
     margin: 0 auto;
     padding-bottom: calc(20px + 1vw);
     line-height: 1.7;
-  }
-
-  .react-reveal {
-    width: 100%;
   }
 
   img.icon--skill.hvr-grow {
@@ -851,6 +850,12 @@ const GlobalStyles = css`
   }
 
   ${"" /* success & 404 pages */}
+
+  section.section-suc {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
   div.div--img {
     width: calc(280px + 12vw);
     max-width: 95vw;
@@ -861,13 +866,13 @@ const GlobalStyles = css`
   }
 
   a.link--back {
-    color: #ff7f50;
+    color: #4db6ac;
     font-size: calc(15px + 0.7vw);
     font-weight: 500;
   }
 
   a.link--back:hover {
-    color: #4fb99f;
+    color: #ff7f50;
     text-decoration: none;
   }
 
