@@ -47,7 +47,7 @@ const GlobalStyles = css`
     font-weight: 300;
     background-color: #eef4f6;
     color: #4d4d4d;
-    transition: background-color 0.6s ease;
+    transition: all 0.6s ease;
   }
 
   body.dark-mode {
@@ -58,9 +58,8 @@ const GlobalStyles = css`
     font-family: "Montserrat", Helvetica, Arial, sans-serif;
     font-weight: 300;
     color: #ddd;
-    transition: color 0.6s ease;
     background-color: #121d21;
-    transition: background-color 0.6s ease;
+    transition: all 0.6s ease;
 
     nav#navbar {
       background: #18262b;
@@ -108,23 +107,21 @@ const GlobalStyles = css`
     }
 
     div.div--circle {
-      background: #18262b;
+      background-color: #18262b;
       color: #fff;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px;
-      transition: background 0.6s ease;
-      transition: border 0.6s ease;
+      transition: all 0.6s ease;
     }
 
     div.card--main {
-      background: #18262b;
+      background-color: #18262b;
       color: #ddd;
-      transition: background 0.6s ease;
-      transition: color 0.6s ease;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.6s ease;
     }
 
     .card-footer {
       background-color: #253a41;
+      transition: background-color 0.6s ease;
     }
 
     p.text--tech {
@@ -142,29 +139,36 @@ const GlobalStyles = css`
     .user {
       background-color: #18262b;
       color: #ddd;
+      transition: all 0.6s ease;
     }
 
     .user-avatar img {
       background-color: #253a41;
       border: 3px solid #253a41;
+      transition: all 0.6s ease;
     }
 
     .user-data {
       background: #253a41 url(${githubLogo}) no-repeat 5px 5px;
+      background-size: 25px;
+      transition: background 0.6s ease;
     }
 
     .user-stats {
       border-top: 2px solid #253a41;
+      transition: border-top 0.6s ease;
     }
 
     form.form--main {
       border: 7px solid #253a41;
+      transition: border 0.6s ease;
     }
 
     .form__control, .field__text {
       background-color: #0e171a;
       border: 1px solid #000;
       color: #bbb;
+      transition: all 0.6s ease;
       &:focus {
         box-shadow: 0 0 0 0.2rem #253a41;
       }
@@ -174,26 +178,30 @@ const GlobalStyles = css`
     textarea::placeholder {
       color: #777;
       opacity: 1;
+      transition: color 0.6s ease;
     }
 
     label {
       color: #ddd;
+      transition: color 0.6s ease;
     }
 
     button.btn--submit {
       color: #000;
+      transition: color 0.6s ease;
     }
 
     button.btn--submit:hover,
     .btn-primary:not(:disabled):not(.disabled):active {
       background: #253a41;
       color: #fff;
+      transition: all 0.3s ease;
     }
 
     footer {
       background-color: #121d21;
       color: #bbb;
-      transition: background-color 0.6s ease;
+      transition: all 0.6s ease;
     }
 
     .dark-mode-toggle > button {
@@ -490,12 +498,11 @@ const GlobalStyles = css`
     max-width: 90vw;
     margin: 0 auto;
     border-radius: 50%;
-    background: #fff;
-    transition: background 0.6s ease;
+    background-color: #fff;
+    transition: all 0.6s ease;
     color: #000;
     font-weight: 400;
     padding: 2px;
-    transition: border 0.6s ease;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 50px;
   }
 
@@ -546,18 +553,15 @@ const GlobalStyles = css`
     margin-top: calc(20px + 1vw);
     margin-bottom: calc(20px + 1vw);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background-color: #fff;
     color: #4d4d4d;
-    transition: background 0.6s ease;
-    border: none;
-    transition: border 0.6s ease;
     position: relative;
     display: flex;
     flex-direction: column;
     word-wrap: break-word;
     background-clip: border-box;
     border-radius: 0.25rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.6s ease;
   }
 
   div.card--main:hover {
@@ -585,6 +589,11 @@ const GlobalStyles = css`
     font-size: calc(12px + 0.5vw);
   }
 
+  .card-footer {
+      background-color: rgba(0,0,0,0.03);
+      transition: background-color 0.6s ease;
+    }
+
   a.card__link {
     color: #4db6ac;
     font-weight: 400;
@@ -604,10 +613,6 @@ const GlobalStyles = css`
   span.span--tech {
     color: #ff7f50;
     font-weight: 400;
-  }
-
-  .card-footer {
-    background-color: rgba(0, 0, 0, 0.03);
   }
 
   /* skills section */
@@ -658,6 +663,7 @@ const GlobalStyles = css`
     background-color: transparent;
     border: 7px solid rgba(255, 255, 255, 0.8);
     border-radius: 5px;
+    transition: all 0.6s ease;
     @media (min-width: 700px) {
       max-width: 70vw;
     }
@@ -696,6 +702,7 @@ const GlobalStyles = css`
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
+    transition: all 0.6s ease;
     &:focus {
       border-color: #4db6ac;
       outline: 0;
@@ -723,9 +730,9 @@ const GlobalStyles = css`
   button.btn--submit {
     font-size: calc(13px + 0.6vw);
     background: #4db6ac;
-    transition: background 0.3s ease;
     font-weight: 500;
-    color: white;
+    color: #fff;
+    transition: color 0.6s ease;
     border: none;
     letter-spacing: 1px;
   }
@@ -753,9 +760,9 @@ const GlobalStyles = css`
     text-align: center;
     color: #444;
     font-weight: 400;
-    transition: background 1000ms ease-out;
     margin: 1.5rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.6s ease;
   }
 
   .user dl,
@@ -772,6 +779,7 @@ const GlobalStyles = css`
     background-size: 25px;
     height: 85px;
     line-height: 1.6;
+    transition: background 0.6s ease;
   }
 
   dd.user-avatar {
@@ -786,6 +794,7 @@ const GlobalStyles = css`
     border: 3px solid #fff;
     vertical-align: middle;
     background-color: #fff;
+    transition: all 0.6s ease;
   }
 
   dd.user-name,
@@ -808,6 +817,7 @@ const GlobalStyles = css`
     border-top: 1px groove #fff;
     position: relative;
     top: 210px;
+    transition: border-top 0.6s ease;
   }
 
   .user-stats dd {

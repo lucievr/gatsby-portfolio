@@ -43,7 +43,7 @@ const Projects = () => {
       <div className="container--projects">
       {
         projects.map((project) => (
-          <div className="container__item">
+          <div className="container__item" key={project.title}>
           <Fade bottom delay={project.delay}>
           <Card className="card--main">
             <Card.Title className="card__title">{project.title}</Card.Title>

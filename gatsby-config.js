@@ -2,7 +2,7 @@ const path = require("path")
 require("dotenv").config({
   path: `.env`,
 })
-const { githubApiQuery } = require('./github-api')
+const { githubApiQuery } = require("./github-api")
 
 module.exports = {
   siteMetadata: {
@@ -52,14 +52,13 @@ module.exports = {
         token: process.env.GITHUB_TOKEN,
         graphQLQuery: githubApiQuery,
         variables: {
-          github_login: process.env.GITHUB_LOGIN
-        }
+          github_login: process.env.GITHUB_LOGIN,
+        },
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-emotion`,
-    `gatsby-plugin-styled-components`,
     "gatsby-plugin-use-dark-mode",
     "gatsby-plugin-svgr",
     {

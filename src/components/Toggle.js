@@ -8,9 +8,9 @@ const Toggle = ({ checked, onChange }) => (
       aria-label="dark mode toggle"
       checked={checked}
       onChange={onChange}
-      id="dmcheck"
+      id="toggle"
     />
-    <label htmlFor="dmcheck" className="switch-label" />
+    <label htmlFor="toggle" className="switch-label"></label>
   </div>
 )
 

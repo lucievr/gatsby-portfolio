@@ -50,7 +50,13 @@ const Navigation = () => {
           </Scroll>
         </li>
       </Scrollspy>
-      <div className="menu--burger" onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}>
+      <div 
+        className="menu--burger"
+        role="button"
+        tabIndex={0}
+        onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}
+        onKeyDown={() => setMenuState((prevMenuActive) => !prevMenuActive)}
+      >
         { menuActive ? <TiTimes /> : <TiThMenu /> }
       </div>
     </nav>

@@ -130,6 +130,7 @@ const Contact = () => {
                       type="text"
                       placeholder="Enter your name"
                       name="name"
+                      id="name"
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.name}
@@ -145,6 +146,7 @@ const Contact = () => {
                       type="email"
                       placeholder="Your email"
                       name="email"
+                      id="email"
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.email}
@@ -163,6 +165,7 @@ const Contact = () => {
                       rows="5"
                       placeholder="Enter your message here..."
                       name="message"
+                      id="message"
                       onChange={handleChange}
                       onBlur={handleBlur}
                       value={values.message}

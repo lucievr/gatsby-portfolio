@@ -29,7 +29,7 @@ injectGlobal`
 const IndexPage = () => (
   <>
     <Global styles={GlobalStyles} />
-    <SEO title="Home" keywords={[`web developer`, `portfolio`, `lucie vrsovska`, `lucie.dev`, `react developer`, `prague`, `frontend`, `react`, `javascript`, `gatsby`]} />
+    <SEO title="Home" keywords={[`web developer`, `portfolio`, `lucie vrsovska`, `lucie.dev`, `react developer`, `lisbon`, `frontend`, `react`, `javascript`, `gatsby`]} />
 
     <Home />
     <hr />
