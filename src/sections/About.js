@@ -13,16 +13,15 @@ const About = () => {
         <div className="div--circle">
           <img src={Logo} alt="logo" className="img--avatar" />
           <p className="par--top">
-            Welcome to my site! I am a full-stack web developer based in Prague,
-            Czech Republic, who is passionate about modern technologies and
+            Welcome to my site! I am a software developer based in Lisbon,
+            Portugal, who is passionate about modern technologies and
             creative ways of solving problems.
           </p>
           <span className="symbol--orange" style={{ fontWeight: `900` }}>
             . . .
           </span>
           <p className="par--bottom">
-            My current tech stack is mostly JavaScript and React, and I love
-            experimenting with JAMstack and serverless architectures.
+          In addition to fullstack web development I&nbsp;love experimenting with mobile apps, UI/UX, and modern tech stacks and software architectures.
           </p>
           <span className="symbol--orange" style={{ fontWeight: `900` }}>
             . . .

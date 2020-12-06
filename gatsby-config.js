@@ -6,8 +6,8 @@ const { githubApiQuery } = require("./github-api")
 
 module.exports = {
   siteMetadata: {
-    title: `Lucie Vrsovska - portfolio`,
-    description: `Web developer portfolio of Lucie Vrsovska, a fullstack developer based in Prague, Czech Republic.`,
+    title: `Lucie Vrsovska · Developer Portfolio`,
+    description: `Web developer portfolio of Lucie Vrsovska, a fullstack developer based in Lisbon, Portugal.`,
     author: `Lucie Vrsovska`,
   },
   plugins: [
@@ -19,6 +19,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
@@ -102,10 +103,12 @@ module.exports = {
         name: `lucie.dev`,
         short_name: `lucie.dev`,
         start_url: `/`,
-        background_color: `#dee9ed`,
-        theme_color: `#5556c8`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        background_color: `#eef4f6`,
+        theme_color: `#4db6ac`,
+        description: `Web developer portfolio of Lucie Vrsovska, a fullstack developer based in Lisbon, Portugal.`,
+        lang: `en`,
+        display: `standalone`,
+        icon: `src/images/favicon.png`,
       },
     },
     {
