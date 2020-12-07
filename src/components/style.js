@@ -605,7 +605,7 @@ const GlobalStyles = css`
       justify-content: center;
     }
 
-  a.card__link {
+  a.card__link, div.card__link {
     color: #4db6ac;
     font-weight: 400;
     text-decoration: none;

@@ -3,5 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-require('typeface-montserrat')
-require('typeface-cantata-one')
+require("typeface-montserrat")
+require("typeface-cantata-one")
+
+export const onServiceWorkerUpdateReady = () => window.location.reload()
+
