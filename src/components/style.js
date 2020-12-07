@@ -584,14 +584,25 @@ const GlobalStyles = css`
     padding-top: 0;
   }
 
+  div.img.flatsy {
+    margin: 0.5rem 0 1.6rem 0;
+  }
+
   p.card__subtitle {
     margin-top: 16px;
     font-size: calc(12px + 0.5vw);
   }
 
+  p.wip {
+    margin-bottom: 0;
+    margin-left: 1rem;
+  }
+
   .card-footer {
       background-color: rgba(0,0,0,0.03);
       transition: background-color 0.6s ease;
+      display: flex;
+      justify-content: center;
     }
 
   a.card__link {
