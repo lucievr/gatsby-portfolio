@@ -7,4 +7,3 @@ require("typeface-montserrat")
 require("typeface-cantata-one")
 
 export const onServiceWorkerUpdateReady = () => window.location.reload()
-

@@ -3,8 +3,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Card from "react-bootstrap/Card"
-import OverlayTrigger from "react-bootstrap/OverlayTrigger"
-import Tooltip from "react-bootstrap/Tooltip"
 import Fade from "react-reveal/Fade"
 import { FaLink, FaCode } from "react-icons/fa"
 
@@ -50,12 +48,6 @@ const Projects = () => {
       }
     }
   `)
-
-  const renderTooltip = props => (
-    <Tooltip id="button-tooltip" {...props}>
-      Link soon (app being approved by Google Play)
-    </Tooltip>
-  )
 
   return (
     <section id="projects" className="section--plain">
@@ -113,28 +105,14 @@ const Projects = () => {
                     </>
                   ) : (
                     <>
-                      {project.name === "flatsy" ? (
-                        <OverlayTrigger
-                          placement="top"
-                          delay={{ show: 250, hide: 400 }}
-                          overlay={renderTooltip}
-                        >
-                          <div
-                            className="card__link"
-                          >
-                            <FaLink /> Demo
-                          </div>
-                        </OverlayTrigger>
-                      ) : (
-                        <OutboundLink
-                          className="card__link"
-                          href={project.demoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <FaLink /> Demo
-                        </OutboundLink>
-                      )}
+                      <OutboundLink
+                        className="card__link"
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaLink /> Demo
+                      </OutboundLink>
                       <OutboundLink
                         className="card__link"
                         href={project.codeUrl}

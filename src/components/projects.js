@@ -6,7 +6,7 @@ const projects = [
     delay: 100,
     subtitle: 'Mobile flat finding app for connecting potential landlords and tenants',
     tech: 'React Native, Expo, Android & iOS support, Redux Thunk, Firebase, Google Maps.',
-    demoUrl: '', // TODO add once approved by Google Play
+    demoUrl: 'https://play.google.com/store/apps/details?id=dev.lucie.flatsy',
     codeUrl: 'https://github.com/lucievr/flatsy-app'
   },
   {
