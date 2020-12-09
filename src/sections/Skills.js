@@ -1,5 +1,4 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
@@ -31,7 +30,6 @@ const Skills = () => {
         As a fullstack developer, I have picked up a lot of different skills and
         used various technologies and tools.
       </div>
-      <Fade right>
         <Container>
           <Row>
             <Col>
@@ -256,7 +254,6 @@ const Skills = () => {
             </Col>
           </Row>
         </Container>
-      </Fade>
     </section>
   )
 }

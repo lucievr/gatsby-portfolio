@@ -111,7 +111,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaLink /> Demo
+                        <FaLink />&nbsp;Demo
                       </OutboundLink>
                       <OutboundLink
                         className="card__link"
@@ -120,7 +120,7 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         style={{ marginLeft: `1.25rem` }}
                       >
-                        <FaCode /> Code
+                        <FaCode />&nbsp;Code
                       </OutboundLink>
                     </>
                   )}

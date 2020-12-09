@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import Scroll from "@components/Scroll"
 import DarkModeToggle from "@components/DarkModeToggle"
 import Scrollspy from "react-scrollspy"
-import { TiHome, TiThMenu, TiTimes } from "react-icons/ti"
+import { TiHome } from "react-icons/ti"
+import { FiMenu } from "react-icons/fi"
+import { VscClose } from 'react-icons/vsc'
 
 const Navigation = () => {
-
-  const [ menuActive, setMenuState ] = useState(false);
+  const [menuActive, setMenuState] = useState(false)
 
   return (
     <nav id="navbar">
@@ -50,14 +51,14 @@ const Navigation = () => {
           </Scroll>
         </li>
       </Scrollspy>
-      <div 
+      <div
         className="menu--burger"
         role="button"
         tabIndex={0}
-        onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}
-        onKeyDown={() => setMenuState((prevMenuActive) => !prevMenuActive)}
+        onClick={() => setMenuState(prevMenuActive => !prevMenuActive)}
+        onKeyDown={() => setMenuState(prevMenuActive => !prevMenuActive)}
       >
-        { menuActive ? <TiTimes /> : <TiThMenu /> }
+        {menuActive ? <VscClose /> : <FiMenu />}
       </div>
     </nav>
   )

@@ -80,6 +80,10 @@ const GlobalStyles = css`
       }
     }
 
+    div.menu--burger {
+      color: #ddd;
+    }
+
     section.section--plain {
       background-color: #121d21;
       transition: background-color 0.6s ease;
@@ -225,6 +229,7 @@ const GlobalStyles = css`
     margin: 0 auto;
     align-items: center;
     & > button {
+      display: flex;
       font-size: 1.5rem;
       background: none;
       border: none;
@@ -232,13 +237,23 @@ const GlobalStyles = css`
       cursor: pointer;
       transition: color 0.5s ease;
       &:last-child {
-        color: #b9b9b9;
+        color: #c2c2c2;
       }
 
       &:focus {
         outline: none;
       }
     }
+  }
+
+  svg.sun-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  svg.moon-icon {
+    width: 18px;
+    height: 18px;
   }
 
   .toggle-control {
@@ -360,10 +375,14 @@ const GlobalStyles = css`
     display: none;
     margin: 0 0 0 auto;
     padding: 0.7rem 1.5rem 0.7rem 1.5rem;
-    color: white;
+    color: #555;
 
-    :hover {
+    &:hover {
       cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
     }
 
     @media (max-width: 650px) {
@@ -383,14 +402,16 @@ const GlobalStyles = css`
   /* common styles */
 
   section {
-    padding: 5px;
-    padding-top: calc(25px + 1.5vw);
-    padding-bottom: calc(35px + 1.5vw);
+    padding-top: calc(15px + 2vw);
+    padding-bottom: calc(25px + 2vw);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    &.contact {
+      padding-bottom: 0;
+    }
   }
 
   section.section--plain {
@@ -407,8 +428,11 @@ const GlobalStyles = css`
     color: #4d4d4d;
     transition: color 0.6s ease;
     font-size: calc(18px + 1.3vw);
-    padding: 10px 10px 30px;
+    padding: 10px 10px 20px;
     font-family: "Cantata One", Palatino Linotype, Georgia, serif;
+    @media (max-width: 850px) {
+      padding: 10px;
+    }
   }
 
   h5 {
@@ -495,13 +519,14 @@ const GlobalStyles = css`
     width: calc(280px + 15vw);
     height: calc(280px + 15vw);
     min-width: 280px;
-    max-width: 90vw;
+    max-width: 100vw;
     margin: 0 auto;
+    margin-top: 5px;
     border-radius: 50%;
     background-color: #fff;
     transition: all 0.6s ease;
     color: #000;
-    font-weight: 400;
+    font-weight: 300;
     padding: 2px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 50px;
   }
@@ -514,7 +539,7 @@ const GlobalStyles = css`
   }
 
   p.par--top {
-    font-size: calc(9px + 0.5vw);
+    font-size: calc(10px + 0.4vw);
     line-height: 1.7;
     margin: 0 auto;
     width: 80%;
@@ -522,7 +547,7 @@ const GlobalStyles = css`
   }
 
   p.par--bottom {
-    font-size: calc(9px + 0.5vw);
+    font-size: calc(10px + 0.4vw);
     line-height: 1.7;
     margin: 0 auto;
     width: 71%;
@@ -590,7 +615,7 @@ const GlobalStyles = css`
 
   p.card__subtitle {
     margin-top: 16px;
-    font-size: calc(12px + 0.5vw);
+    font-size: calc(12px + 0.32vw);
   }
 
   p.wip {
@@ -609,6 +634,8 @@ const GlobalStyles = css`
     color: #4db6ac;
     font-weight: 400;
     text-decoration: none;
+    display: flex;
+    align-items: center;
   }
 
   a.card__link:hover {
@@ -637,6 +664,9 @@ const GlobalStyles = css`
     margin: 0 auto;
     padding-bottom: calc(20px + 1vw);
     line-height: 1.7;
+    @media (max-width: 650px) {
+      max-width: 90vw;
+    }
   }
 
   img.icon--skill.hvr-grow {
@@ -668,8 +698,8 @@ const GlobalStyles = css`
   }
 
   form.form--main {
-    padding: 2.5rem;
-    margin: 1rem 2rem;
+    padding: calc(10px + 2vw);
+    margin: 15px 10px 10px;
     max-width: 90vw;
     background-color: transparent;
     border: 7px solid rgba(255, 255, 255, 0.8);
@@ -692,6 +722,9 @@ const GlobalStyles = css`
   .form__row {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 550px) {
+      flex-direction: column;
+    }
   }
 
   .form__input {

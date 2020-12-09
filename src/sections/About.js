@@ -21,7 +21,7 @@ const About = () => {
             . . .
           </span>
           <p className="par--bottom">
-          In addition to fullstack web development I&nbsp;love experimenting with mobile apps, UI/UX, and modern tech stacks and software architectures.
+          In addition to fullstack web development I&nbsp;love experimenting with mobile apps, UI/UX, and modern tech stacks and software&nbsp;architectures.
           </p>
           <span className="symbol--orange" style={{ fontWeight: `900` }}>
             . . .
