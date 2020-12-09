@@ -99,7 +99,7 @@ const Projects = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <FaLink /> Info
+                        <FaLink />&nbsp;Info
                       </OutboundLink>
                       <p className="wip">[WIP]</p>
                     </>
