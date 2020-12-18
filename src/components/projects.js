@@ -15,7 +15,7 @@ const projects = [
     video: true,
     delay: 0,
     subtitle: 'Online shop for natural cosmetics and zero waste bathroom products',
-    tech: 'Node.js & Express, React, Redux Saga, Stripe, Firebase, SCSS, PWA.',
+    tech: 'TypeScript, Node.js & Express, React, Stripe, Redux Saga, Firebase, SCSS.',
     demoUrl: 'https://padma-shop.herokuapp.com/',
     codeUrl: 'https://github.com/lucievr/padma-shop'
   },
@@ -25,7 +25,7 @@ const projects = [
     video: true,
     delay: 0,
     subtitle: 'E-commerce site for high-tech multi-purpose drones',
-    tech: 'JAMstack, Auth0, React, Redux, Gatsby, GraphQL, MongoDB, Emotion.',
+    tech: 'MongoDB, GraphQL, JAMstack, Auth0, React, Gatsby, Redux, Emotion.',
     demoUrl: 'https://dronify.netlify.com/',
     codeUrl: 'https://github.com/lucievr/dronify'
   },
@@ -35,7 +35,7 @@ const projects = [
   video: false,
   delay: 100,
   subtitle: 'Plant-based bistro & espresso bar website',
-  tech: 'HTML, SCSS + BEM styling, Bootstrap, vanilla JavaScript, Gulp.',
+  tech: 'Vanilla JavaScript, HTML, SCSS + BEM styling, Bootstrap, Gulp.',
   demoUrl: 'https://plantypus.netlify.com/',
   codeUrl: 'https://github.com/lucievr/plantypus-cafe-website'
 },
@@ -45,7 +45,7 @@ const projects = [
   video: false,
   delay: 0,
   subtitle: 'Developer portfolio site',
-  tech: 'JavaScript, React, Gatsby, GraphQL, Styled Components, JAMstack & PWA.',
+  tech: 'JAMstack & PWA, Gatsby, JavaScript, React, GraphQL, Styled Components.',
   demoUrl: 'https://www.lucie.dev/',
   codeUrl: 'https://github.com/lucievr/gatsby-portfolio'
 },

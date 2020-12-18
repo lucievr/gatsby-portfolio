@@ -7,14 +7,14 @@ import Firebase from "@images/firebase.png"
 import Gatsby from "@images/gatsby.png"
 import Git from "@images/git.png"
 import Graphql from "@images/graphql.png"
+import Jest from "@images/jest.png"
 import Jsicon from "@images/js.png"
 import Mongo from "@images/mongodb.png"
 import MySql from "@images/mysql.png"
-import Next from "@images/nextjs.png"
 import NodeJs from "@images/nodejs.png"
-import Python from "@images/python.png"
 import Reacticon from "@images/react.png"
 import Redux from "@images/redux.png"
+import TypescriptIcon from "@images/typescript.png"
 import Ubuntu from "@images/ubuntu.png"
 import VsCode from "@images/vscode.png"
 import Webpack from "@images/webpack.png"
@@ -34,14 +34,14 @@ const Skills = () => {
           <Row>
             <Col>
               <a
-                href="https://nextjs.org/"
+                href="https://www.typescriptlang.org/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Next.js"
+                title="TypeScript"
               >
                 <img
-                  src={Next}
-                  alt="nextjs"
+                  src={TypescriptIcon}
+                  alt="typescript"
                   className="icon--skill hvr-grow mid"
                 />
               </a>
@@ -209,14 +209,14 @@ const Skills = () => {
 
             <Col>
               <a
-                href="https://www.python.org/"
+                href="https://jestjs.io/"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Python"
+                title="Jest"
               >
                 <img
-                  src={Python}
-                  alt="python"
+                  src={Jest}
+                  alt="jest"
                   className="icon--skill hvr-grow mid"
                 />
               </a>
