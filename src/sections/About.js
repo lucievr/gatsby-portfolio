@@ -1,6 +1,6 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
-import Logo from "@images/favicon.png"
+import Lucie from "@images/lucie.jpg"
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
       </h2>
       <Fade left>
         <div className="div--circle">
-          <img src={Logo} alt="logo" className="img--avatar" />
+          <img src={Lucie} alt="avatar" className="img--avatar" />
           <p className="par--top">
             Welcome to my site! I am a software developer based in Lisbon,
             Portugal, who is passionate about modern technologies and

@@ -535,7 +535,7 @@ const GlobalStyles = css`
     width: calc(55px + 6vw);
     border-radius: 50%;
     margin: 0;
-    padding-top: calc(5px + 1vw);
+    margin-top: calc(5px + 1vw);
   }
 
   p.par--top {
