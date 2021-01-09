@@ -1,7 +1,7 @@
 
 <p align="center">
   <a href="https://lucie.dev">
-    <img alt="lucievr" src="https://firebasestorage.googleapis.com/v0/b/padma-db.appspot.com/o/favicon.png?alt=media&token=99543c67-af81-479b-88ab-662c91bf9a75" width="60" />
+    <img alt="lucievr" src="https://firebasestorage.googleapis.com/v0/b/padma-db.appspot.com/o/avatar.png?alt=media&token=bfb31597-46cd-4571-93e0-bf84509e5a2a" width="60" />
   </a>
 </p>
 <h1 align="center">

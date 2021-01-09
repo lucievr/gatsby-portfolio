@@ -108,7 +108,7 @@ module.exports = {
         description: `Web developer portfolio of Lucie Vrsovska, a fullstack developer based in Lisbon, Portugal.`,
         lang: `en`,
         display: `standalone`,
-        icon: `src/images/favicon.png`,
+        icon: `src/images/avatar.png`,
       },
     },
     {
