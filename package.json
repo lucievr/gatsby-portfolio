@@ -31,7 +31,7 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-source-filesystem": "^2.7.0",
     "gatsby-source-github-api": "^0.2.1",
-    "gatsby-transformer-remark": "^2.12.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.8.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.0",
